@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
+header h1 {
+  display: flex;
+  cursor: cell;
+  width: 100%;
+  margin: 2vh 3vh 1vh 3vh;
+  font-size: 35vh;
+  font-family: "Fugaz One", cursive; }
+  header h1 span:hover {
+    color: #eeeeee; }
+  header h1 span {
+    color: #92FB6D;
+    display: inline-block;
+    margin: 0 -1vh 0 -1vh;
+    user-select: none; }
+  header h1 .logo-letter1 {
+    animation: logo_letter 0.5s linear 0.3s forwards; }
+  header h1 .logo-letter2 {
+    animation: logo_letter 0.5s linear 0.6s forwards; }
+  header h1 .logo-letter3 {
+    animation: logo_letter 0.5s linear 0.9s forwards; }
+  header h1 .logo-letter4 {
+    animation: logo_letter 0.5s linear 1.2s forwards; }
+  header h1 .logo-letter5 {
+    animation: logo_letter 0.5s linear 1.5s forwards; }
+  header h1 .logo-letter6 {
+    animation: logo_letter 0.5s linear 1.8s forwards; }
+
+@keyframes logo_letter {
+  25% {
+    color: #BFFBAA; }
+  50% {
+    color: #E8FBE2; }
+  75% {
+    color: #BFFBAA; } }
+
+nav.navbar--navColor {
+  padding: 0;
+  background-color: #393e46;
+  cursor: cell;
+  border-bottom: #92FB6D solid 1vh; }
+
+#navbarsEx {
+  cursor: pointer; }
+
+nav li:hover {
+  color: #eeeeee; }
+
+nav li .nav-item--style {
+  user-select: none;
+  text-decoration: none;
+  color: #92FB6D;
+  font-size: 3vh; }
+
+nav li span {
+  transition: color 0.5s; }
+
+footer .footer_barraRedes {
+  border-top: #92FB6D solid 0.5vh;
+  border-bottom: #92FB6D solid 0.5vh;
+  background-color: #393e46; }
+  footer .footer_barraRedes h6 {
+    color: #eeeeee;
+    font-size: 4vh; }
+
+footer .footer_contenido {
+  background-color: #393e46;
+  font-size: 2.4vh; }
+  footer .footer_contenido h6 {
+    font-size: 3vh;
+    color: #92FB6D;
+    opacity: 0.8;
+    border-bottom: #92FB6D 0.1vh solid; }
+  footer .footer_contenido p, footer .footer_contenido a {
+    color: #eeeeee;
+    opacity: 0.8; }
+
+div.album--style {
+  background-color: #eeeeee; }
+
+div.album .album_novedades:hover {
+  box-shadow: 2vh 0.5vh #92FB6D; }
+
+div.album .album_novedades {
+  cursor: crosshair;
+  background-color: #eeeeee;
+  border: #CCE639 solid 0.5vh;
+  box-shadow: -2vh -0.5vh #A8D8EA;
+  transition: box-shadow 0.8s; }
+  div.album .album_novedades .album_novedades--title {
+    border-bottom: #CCE639 0.8vh solid;
+    background-color: #393e46;
+    font-size: 4vh;
+    font-family: "Mukta Malar", sans-serif;
+    color: #CCE639; }
+
+div.album .album_producto--style:hover {
+  background-color: #B0BFD7;
+  transform: scale(1.08); }
+
+div.album .album_producto--style {
+  transition: background-color 0.8s,transform 0.8s;
+  background-color: #393e46; }
+  div.album .album_producto--style img {
+    opacity: 0.6; }
+  div.album .album_producto--style .album_producto_text--name {
+    font-size: 6.5vh;
+    color: #393e46;
+    text-shadow: #92FB6D 0.1vh 0.1vh, #92FB6D -0.1vh 0.1vh, #92FB6D -0.1vh -0.1vh, #92FB6D 0.1vh -0.1vh;
+    font-weight: bold; }
+  div.album .album_producto--style .album_producto_text--price {
+    font-size: 6.5vh;
+    color: #393e46;
+    text-shadow: #92FB6D 0.1vh 0.1vh, #92FB6D -0.1vh 0.1vh, #92FB6D -0.1vh -0.1vh, #92FB6D 0.1vh -0.1vh;
+    font-weight: bold;
+    font-size: 4vh; }
+
+div.albumP--style {
+  background-color: #eeeeee; }
+  div.albumP--style .albumP_producto:hover {
+    box-shadow: 0 0; }
+  div.albumP--style .albumP_producto {
+    border: #92FB6D 0.4vh groove;
+    box-shadow: 0.5vh 0.9vh #A8D8EA;
+    transition: box-shadow 1s; }
+    div.albumP--style .albumP_producto .albumP_producto--body {
+      border-top: #92FB6D 0.8vh groove; }
+      div.albumP--style .albumP_producto .albumP_producto--body .albumP_producto_name {
+        font-size: 3.2vh;
+        color: #393e46;
+        font-weight: bold; }
+      div.albumP--style .albumP_producto .albumP_producto--body .albumP_producto_text {
+        font-size: 2.5vh;
+        color: #393e46; }
+      div.albumP--style .albumP_producto .albumP_producto--body .albumP_producto_price {
+        font-size: 3.2vh;
+        color: #393e46;
+        font-weight: bold;
+        font-size: 2.5vh; }
+
+body {
+  background-color: #393e46; }

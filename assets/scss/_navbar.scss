@@ -1,0 +1,21 @@
+nav.navbar--navColor {
+	padding: 0;
+	background-color: $color3;
+	cursor: cell;
+	border-bottom: $color1 solid 1vh;
+}
+
+#navbarsEx {cursor: pointer;}
+nav{
+	li:hover {color:$color4;}
+	li {
+		.nav-item--style {
+			user-select: none;
+			text-decoration: none;
+			color: $color1;
+			font-size: 3vh;
+		}
+		span {transition: color 0.5s}	
+		
+	}
+}

@@ -1,0 +1,27 @@
+@import "utilities/variables";
+
+footer{
+	.footer_barraRedes {
+		border-top: $color1 solid 0.5vh;
+		border-bottom: $color1 solid 0.5vh;
+		background-color:$color3;
+
+			h6 {color:$color4;font-size: 4vh;}
+	}
+
+	.footer_contenido {
+		background-color:$color3;
+		font-size: 2.4vh;
+
+		h6 {font-size: 3vh;color:$color1;
+			opacity: 0.8;
+			border-bottom:$color1 0.1vh solid;}
+
+		@mixin footerStyle{
+			color:$color4;
+			opacity: 0.8;}
+
+		p,a{@include footerStyle;}
+
+	}
+}

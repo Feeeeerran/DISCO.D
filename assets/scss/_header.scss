@@ -1,0 +1,32 @@
+@import "utilities/variables";
+
+header {
+
+	
+	h1 {
+		display: flex;
+		cursor:cell;
+		width: 100%;
+		margin:2vh 3vh 1vh 3vh;
+		font:{size: 35vh;family:$titulo};
+
+		span:hover {color:$color4;}
+		span {
+			color:$color1;
+			display: inline-block;
+			margin:0 -1vh 0 -1vh;
+			user-select: none;
+		}	
+
+		@for $i from 1 through 6 {
+			.logo-letter#{$i}{
+				animation: logo_letter 0.5s linear 0.3s*$i forwards;}
+		}
+
+		@keyframes logo_letter {
+			25%{color:#BFFBAA;}
+			50%{color:#E8FBE2;}
+			75%{color:#BFFBAA;}
+		}
+	}	
+}
