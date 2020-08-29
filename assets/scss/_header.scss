@@ -13,7 +13,7 @@ header {
 
 		span:hover {transform: scale(0.95)}
 		span {
-			transition: transform 1s;
+			transition:transform 1.2s;
 			color:$color1;
 			display: inline-block;
 			margin:0 -1vh 0 -1vh;
@@ -26,7 +26,7 @@ header {
 		a {
 			span:hover {transform: scale(0.95)}
 			span {
-				transition: transform 1s;
+				transition: transform 1.2s;
 				color:$color1;
 				display: inline-block;
 				margin:0 -1vh 0 -1vh;
@@ -42,6 +42,8 @@ header {
 		}
 
 		@keyframes logo_letter {
-			50%{color:white;}
-		}	
+			40%{color:white;}
+			50%{color:$color2;}
+			60%{color:white;}
+		}
 }

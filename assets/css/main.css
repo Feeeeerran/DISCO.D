@@ -16,7 +16,7 @@ header h1 {
   header h1 span:hover {
     transform: scale(0.95); }
   header h1 span {
-    transition: transform 1s;
+    transition: transform 1.2s;
     color: #92FB6D;
     display: inline-block;
     margin: 0 -1vh 0 -1vh;
@@ -26,7 +26,7 @@ header h1.titulo_section a span:hover {
   transform: scale(0.95); }
 
 header h1.titulo_section a span {
-  transition: transform 1s;
+  transition: transform 1.2s;
   color: #92FB6D;
   display: inline-block;
   margin: 0 -1vh 0 -1vh;
@@ -52,7 +52,11 @@ header .logo-letter6 {
   animation: logo_letter 0.3s linear 0.48s forwards; }
 
 @keyframes logo_letter {
+  40% {
+    color: white; }
   50% {
+    color: #A8D8EA; }
+  60% {
     color: white; } }
 
 nav.navbar--navColor {
@@ -165,3 +169,18 @@ div.albumP--style {
 
 body {
   background-color: #393e46; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #CDFB6D; }
+
+::-webkit-scrollbar-thumb {
+  background: #393e46; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6D7786; }
