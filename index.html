@@ -31,13 +31,17 @@
 
 	<nav class="navbar navbar--navColor justify-content-center sticky-top">
 
-        <span data-target="#navbarsEx" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-		    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round">
-	        <path stroke="none" d="M0 0h24v24H0z" />
-	        <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
-	        <path d="M10 12l-2 -2.2l.6 -1" />
-		    </svg>
-		</span>
+        <span onclick="myFunction(this)" data-target="#navbarsEx" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond navbar_navIcon" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
+            <path d="M10 12l-2 -2.2l.6 -1" />
+            </svg>
+        </span>
+
+        <script>
+            function myFunction(x) {x.classList.toggle("change");}
+        </script>
 
 	    <div class="collapse navbar-collapse show" id="navbarsEx">
 	        <ul class="navbar-nav navbar-expand-md justify-content-around">
