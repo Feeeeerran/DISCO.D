@@ -60,6 +60,10 @@ nav.navbar--navColor {
   background-color: #393e46;
   cursor: cell;
   border-bottom: #92FB6D solid 1.5vh; }
+  nav.navbar--navColor .navbar_navIcon {
+    transition: 0.4s; }
+  nav.navbar--navColor .change .navbar_navIcon {
+    transform: rotate(-45deg); }
 
 #navbarsEx {
   cursor: pointer; }
