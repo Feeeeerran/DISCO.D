@@ -10,23 +10,38 @@ header {
 		margin:2vh 3vh 1vh 3vh;
 		font:{size: 35vh;family:$titulo};
 
-		span:hover {color:$color4;}
+
+		span:hover {transform: scale(0.95)}
 		span {
+			transition: transform 1s;
 			color:$color1;
 			display: inline-block;
 			margin:0 -1vh 0 -1vh;
 			user-select: none;
-		}	
+		}
+	}
+
+
+	h1.titulo_section {
+		a {
+			span:hover {transform: scale(0.95)}
+			span {
+				transition: transform 1s;
+				color:$color1;
+				display: inline-block;
+				margin:0 -1vh 0 -1vh;
+				user-select: none;
+				cursor:cell;
+			}
+		}
+	}
 
 		@for $i from 1 through 6 {
 			.logo-letter#{$i}{
-				animation: logo_letter 0.5s linear 0.3s*$i forwards;}
+				animation: logo_letter 0.3s linear 0.08s*$i forwards;}
 		}
 
 		@keyframes logo_letter {
-			25%{color:#BFFBAA;}
-			50%{color:#E8FBE2;}
-			75%{color:#BFFBAA;}
-		}
-	}	
+			50%{color:white;}
+		}	
 }

@@ -14,38 +14,52 @@ header h1 {
   font-size: 35vh;
   font-family: "Fugaz One", cursive; }
   header h1 span:hover {
-    color: #eeeeee; }
+    transform: scale(0.95); }
   header h1 span {
+    transition: transform 1s;
     color: #92FB6D;
     display: inline-block;
     margin: 0 -1vh 0 -1vh;
     user-select: none; }
-  header h1 .logo-letter1 {
-    animation: logo_letter 0.5s linear 0.3s forwards; }
-  header h1 .logo-letter2 {
-    animation: logo_letter 0.5s linear 0.6s forwards; }
-  header h1 .logo-letter3 {
-    animation: logo_letter 0.5s linear 0.9s forwards; }
-  header h1 .logo-letter4 {
-    animation: logo_letter 0.5s linear 1.2s forwards; }
-  header h1 .logo-letter5 {
-    animation: logo_letter 0.5s linear 1.5s forwards; }
-  header h1 .logo-letter6 {
-    animation: logo_letter 0.5s linear 1.8s forwards; }
+
+header h1.titulo_section a span:hover {
+  transform: scale(0.95); }
+
+header h1.titulo_section a span {
+  transition: transform 1s;
+  color: #92FB6D;
+  display: inline-block;
+  margin: 0 -1vh 0 -1vh;
+  user-select: none;
+  cursor: cell; }
+
+header .logo-letter1 {
+  animation: logo_letter 0.3s linear 0.08s forwards; }
+
+header .logo-letter2 {
+  animation: logo_letter 0.3s linear 0.16s forwards; }
+
+header .logo-letter3 {
+  animation: logo_letter 0.3s linear 0.24s forwards; }
+
+header .logo-letter4 {
+  animation: logo_letter 0.3s linear 0.32s forwards; }
+
+header .logo-letter5 {
+  animation: logo_letter 0.3s linear 0.4s forwards; }
+
+header .logo-letter6 {
+  animation: logo_letter 0.3s linear 0.48s forwards; }
 
 @keyframes logo_letter {
-  25% {
-    color: #BFFBAA; }
   50% {
-    color: #E8FBE2; }
-  75% {
-    color: #BFFBAA; } }
+    color: white; } }
 
 nav.navbar--navColor {
   padding: 0;
   background-color: #393e46;
   cursor: cell;
-  border-bottom: #92FB6D solid 1vh; }
+  border-bottom: #92FB6D solid 1.5vh; }
 
 #navbarsEx {
   cursor: pointer; }
