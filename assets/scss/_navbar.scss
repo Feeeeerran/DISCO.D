@@ -5,13 +5,14 @@ nav.navbar--navColor {
 	border-bottom: $color1 solid 1.5vh;
 
 
-	.navbar_navIcon {
-		transition:0.4s;
-	} 
+	.navbar_navIcon {transition:0.4s;} 
+	.change .navbar_navIcon {transform: rotate(-45deg);}
 
-	.change .navbar_navIcon {
-		transform: rotate(-45deg);
-	}
+	.navbar_navIcon_prod {transform: rotate(-45deg);}
+	.navbar_navIcon_prod {transition:0.4s;} 
+	.change .navbar_navIcon_prod {transform: rotate(0deg);}
+
+
 }
 
 

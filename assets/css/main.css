@@ -68,6 +68,12 @@ nav.navbar--navColor {
     transition: 0.4s; }
   nav.navbar--navColor .change .navbar_navIcon {
     transform: rotate(-45deg); }
+  nav.navbar--navColor .navbar_navIcon_prod {
+    transform: rotate(-45deg); }
+  nav.navbar--navColor .navbar_navIcon_prod {
+    transition: 0.4s; }
+  nav.navbar--navColor .change .navbar_navIcon_prod {
+    transform: rotate(0deg); }
 
 #navbarsEx {
   cursor: pointer; }
