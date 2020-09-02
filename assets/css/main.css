@@ -10,7 +10,7 @@ header h1 {
   display: flex;
   cursor: cell;
   width: 100%;
-  margin: 2vh 3vh 1vh 3vh;
+  margin: -1vh 3vh 1vh 3vh;
   font-size: 35vh;
   font-family: "Fugaz One", cursive; }
   header h1 span:hover {
@@ -121,7 +121,7 @@ div.album .album_novedades {
   background-color: #eeeeee;
   border: #CCE639 solid 0.5vh;
   box-shadow: -2vh -0.5vh #A8D8EA;
-  transition: box-shadow 0.8s; }
+  transition: box-shadow 1.4s; }
   div.album .album_novedades .album_novedades--title {
     border-bottom: #CCE639 0.8vh solid;
     background-color: #393e46;
@@ -172,6 +172,63 @@ div.albumP--style {
         color: #393e46;
         font-weight: bold;
         font-size: 2.5vh; }
+
+section.producto {
+  padding-top: 3vh;
+  padding-bottom: 8vh;
+  background-color: #eeeeee; }
+  section.producto .producto_nav {
+    padding-bottom: 0.5vh; }
+    section.producto .producto_nav li.breadcrumb-item a {
+      color: #393e46; }
+    section.producto .producto_nav li.breadcrumb-item a.producto_nav--logo:hover {
+      text-decoration: none; }
+    section.producto .producto_nav li.breadcrumb-item a.producto_nav--logo {
+      color: #92FB6D;
+      font-family: "Fugaz One", cursive;
+      font-size: 5vh; }
+  section.producto .producto_foto {
+    border-radius: 0.5vh;
+    border: #92FB6D 0.4vh groove;
+    box-shadow: 0.5vh 0.9vh #A8D8EA, -0.5vh -0.9vh #92FB6D; }
+    section.producto .producto_foto .producto_foto--slider {
+      background-color: #393e46; }
+  section.producto .producto_data {
+    padding-top: 5vh; }
+    section.producto .producto_data .producto_data_name {
+      text-shadow: 1vh 0 #A8D8EA;
+      margin: 0;
+      color: #393e46;
+      font-family: "Mukta Malar", sans-serif;
+      font-size: 10vh;
+      font-weight: bold; }
+    section.producto .producto_data .producto_data_price {
+      filter: grayscale(40%);
+      color: #92FB6D;
+      font-weight: bold;
+      font-size: 6.5vh;
+      font-family: "Mukta Malar", sans-serif;
+      text-shadow: #393e46 0.15vh 0.1vh, #393e46 -0.1vh 0.1vh, #393e46 -0.1vh -0.1vh, #393e46 0.15vh -0.1vh; }
+    section.producto .producto_data ul.nav-tabs {
+      border-bottom: 0.2vh solid #92FB6D; }
+      section.producto .producto_data ul.nav-tabs a.nav-link {
+        color: #393e46; }
+      section.producto .producto_data ul.nav-tabs a.nav-link.active {
+        font-weight: bold; }
+    section.producto .producto_data .producto_data_text {
+      color: #393e46; }
+    section.producto .producto_data form {
+      margin-top: 8vh;
+      color: #393e46; }
+      section.producto .producto_data form h6 {
+        margin-bottom: 1.5vh;
+        font-size: 3vh;
+        font-weight: bold; }
+      section.producto .producto_data form label.active.btn-secondary {
+        color: #92FB6D;
+        filter: blur(0); }
+      section.producto .producto_data form label.btn {
+        filter: blur(0.08vh); }
 
 body {
   background-color: #393e46; }
