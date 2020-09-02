@@ -186,7 +186,7 @@ section.producto {
     section.producto .producto_nav li.breadcrumb-item a.producto_nav--logo {
       color: #92FB6D;
       font-family: "Fugaz One", cursive;
-      font-size: 5vh; }
+      font-size: 6vh; }
   section.producto .producto_foto {
     border-radius: 0.5vh;
     border: #92FB6D 0.4vh groove;
