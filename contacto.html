@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TIENDA - Producto X</title>
+    <meta charset="UTF-8">
+    <meta class="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ferris">
+    <meta name="description" content="Producto x">
+    <meta name="keywords" content="(Pais),(Producto),Fiabilidad,Compre segura,Económico,Calidad, Original,Variedad">
+
+    <link rel="icon" type="image/svg" href="http://www.w3.org/2000/svg" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+	
+    <nav class="navbar navbar--navColor justify-content-center sticky-top">
+
+        <span onclick="myFunction(this)" data-target="#navbarsEx" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond navbar_navIcon_prod" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
+            <path d="M10 12l-2 -2.2l.6 -1" />
+            </svg>
+        </span>
+
+        <script>
+            function myFunction(x) {x.classList.toggle("change");}
+        </script>
+
+        <div class="collapse navbar-collapse hide" id="navbarsEx">
+            <ul class="navbar-nav navbar-expand-md justify-content-around">
+
+                <li class="nav-item active">
+                    <a class="nav-link nav-item--style" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="section.html"><span class="nav-item--style">PRODUCTO 1</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="section.html"><span class="nav-item--style">PRODUCTO 2</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="section.html"><span class="nav-item--style">PRODUCTO 3</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="section.html"><span class="nav-item--style">PRODUCTO 4</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="section.html"><span class="nav-item--style">PRODUCTO 5</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html"><span class="nav-item--style">CONTACTO</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+	
+    
+    <header class="container-fluid contacto">
+        <section class="row pb-5 justify-content-center">
+            <a href="index.html">
+                <h1 class="d-flex d contacto_logo--style">
+                    <span class="logo-letter1-contacto">T</span>
+                    <span class="logo-letter2-contacto">I</span>
+                    <span class="logo-letter3-contacto">E</span>
+                    <span class="logo-letter4-contacto">N</span>
+                    <span class="logo-letter5-contacto">D</span>
+                    <span class="logo-letter6-contacto">A</span>
+                </h1>
+            </a>
+        </section>
+    </header>
+
+
+
+
+    
+    <section class="contacto pb-5">
+        <div class="container-fluid">
+            <div class="row justify-content-around">
+                <div class="col-lg-6 iframe-full-height-wrap">
+                    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Chuo%20City,%20T%C5%8Dky%C5%8D-to%20103-0026+(TIENDA)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+
+                <div class="col-lg-6 px-4 px-xl-5 pb-5 contacto_data">
+                    <h2 class="mb-4 text-center">¡ CONTÁCTANOS !</h2>
+                    <form class="needs-validation my-3" novalidate="">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="cf-name">Nombre:&nbsp;<span class="text-warning">*</span></label>
+                                    <input class="form-control" type="text" id="cf-name" placeholder="Sr. Ejemplo" required="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="cf-email">Email:&nbsp;<span class="text-warning">*</span></label>
+                                    <input class="form-control" type="email" id="cf-email" placeholder="ejemplo@email.com" required="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="cf-phone">Nº de teléfono:&nbsp;<span class="text-warning">*</span></label>
+                                    <input class="form-control" type="text" id="cf-phone" placeholder="+54 (2604) 111 11" required="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="cf-subject">Dirección:</label>
+                                    <input class="form-control" type="text" id="cf-subject" placeholder="Alaska">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-message">Lo que nos quieras decir :) &nbsp;<span class="text-warning">*</span></label>
+                            <textarea class="form-control" id="cf-message" rows="6" placeholder="Esta pagina esta muy fachera" required=""></textarea>
+                        </div>
+                        <button class="mt-2 btn btn-outline-dark" type="button" data-toggle="modal" data-target="#enviar">
+                            Enviar
+                        </button>
+
+                        <div class="modal fade" id="enviar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Ajá !</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Creias que ibas a enviar algo, bueno lo siento, todavia me falta backend
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <footer class="page-footer font-small unique-color-dark">
+        <div class="container-fluid footer_barraRedes">
+            <div class="row py-1">
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+                    <a href="#" class="text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="52" height="52" viewBox="0 0 24 24" stroke-width="1" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-decoration-none ml-2 mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="52" height="52" viewBox="0 0 24 24" stroke-width="1" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="52" height="52" viewBox="0 0 24 24" stroke-width="1" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497 -3.753C20.18 7.773 21.692 5.25 22 4.009z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid  mt-5">
+            <div class="row mt-3 footer_contenido d-flex justify-content-around">
+                <div class="col-md-4 col-lg-5 col-xl-4 mb-4">
+                    <h6 class="text-uppercase font-weight-bold mb-4">TIENDA</h6>
+                    <p>
+                        Sobre nosotros.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, numquam maiores quis! Iusto tenetur, expedita explicabo dolorem fugit ad, inventore voluptas at architecto minus corporis dignissimos nisi tempore doloribus laudantium.
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 text-center mb-4">
+                    <h6 class="text-uppercase font-weight-bold mb-4">PRODUCTOS</h6>
+                    <div class="row">
+                        <p class="col-sm-6">
+                            <a class="text-decoration-none" href="#">Producto 1</a>
+                        </p>
+                        <p class="col-sm-6">
+                            <a class="text-decoration-none" href="#">Producto 2</a>
+                        </p>
+                        <p class="col-sm-6">
+                            <a class="text-decoration-none" href="#!">Producto 3</a>
+                        </p>
+                        <p class="col-sm-6">
+                            <a class="text-decoration-none" href="#">Producto 4</a>
+                        </p>
+                        <p class="col-sm-6">
+                            <a class="text-decoration-none" href="#">Producto 5</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4 col-xl-4 text-center mb-md-0 mb-4">
+                    <h6 class="text-uppercase font-weight-bold mb-4">Contactanos</h6>
+                    <p>🏠 Tokyo</p>
+                    <p>📧 tienda@gmail.com</p>
+                    <p>📞 123 123 324 5</p>
+                    <p>📞 123 43 6564 23</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>

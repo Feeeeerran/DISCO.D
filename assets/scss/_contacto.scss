@@ -1,0 +1,38 @@
+@import "utilities/variables";
+@import "header";
+
+.contacto {
+	background-color: $color4;
+
+
+	iframe {margin:1vh;border:$color1 groove 0.5vh;}
+
+	
+	.contacto_data {
+		h2 {
+			color:$color3;
+			font:{family:$subtitulo;size:10vh;}}
+		
+		form {
+			color:$color3;
+			.modal-header {
+				border-color: $color2;
+				h5 {
+					margin-left: 3vh;
+					font-family: $subtitulo;
+					color:$color1;
+					font-size: 8vh;
+				}
+			}
+			.modal-body {
+				color:$color4;
+				background-color:$color3;
+				border-color:$color2;
+				font-size:3vh;
+			}
+
+		}
+	}
+
+
+}

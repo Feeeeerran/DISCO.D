@@ -2,15 +2,15 @@
 
 header {
 
-	
-	h1 {
+	@mixin LOGObasic {
 		display: flex;
 		cursor:cell;
 		width: 100%;
 		margin:-1vh 3vh 1vh 3vh;
 		font:{size: 35vh;family:$titulo};
+	}
 
-
+	@mixin LOGOinteract {
 		span:hover {transform: scale(0.95)}
 		span {
 			transition:transform 1.2s;
@@ -20,30 +20,56 @@ header {
 			user-select: none;
 		}
 	}
+	
 
+	h1 {
+		@include LOGObasic;
+		@include LOGOinteract;
+	}
 
 	h1.titulo_section {
+		@include LOGObasic;
 		a {
-			span:hover {transform: scale(0.95)}
-			span {
-				transition: transform 1.2s;
-				color:$color1;
-				display: inline-block;
-				margin:0 -1vh 0 -1vh;
-				user-select: none;
-				cursor:cell;
-			}
+			@include LOGOinteract;
 		}
 	}
 
-		@for $i from 1 through 6 {
-			.logo-letter#{$i}{
-				animation: logo_letter 0.3s linear 0.08s*$i forwards;}
+	a:hover {text-decoration: none;}
+	h1.contacto_logo--style {
+		@include LOGObasic;
+		@include LOGOinteract;
+		padding-top: 4vh;
+		font-size:18vh;
+		cursor: default;
+		span:hover {transform: scale(1);}
+		span {
+			cursor: pointer;
+			margin:0;
 		}
 
-		@keyframes logo_letter {
-			40%{color:white;}
-			50%{color:$color2;}
-			60%{color:white;}
-		}
+	}
+	
+}
+
+
+
+@for $i from 1 through 6 {
+	.logo-letter#{$i}{
+		animation: logo_letter 0.3s linear 0.08s*$i forwards;}
+	.logo-letter#{$i}-contacto{
+		animation: logo_contacto 20s linear 0.08s*$i infinite;}
+}
+
+@keyframes logo_letter {
+	40%{color:white;}
+	50%{color:$color2;}
+	60%{color:white;}
+}
+
+@keyframes logo_contacto {
+	49.7%{color:$color1;}
+	49.8%{color:white;}
+	50%{color:$color2;}
+	50.2%{color:white;}
+	50.3%{color:$color1;}
 }

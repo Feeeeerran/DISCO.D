@@ -62,9 +62,22 @@ section.producto {
 			label.active.btn-secondary {color:$color1;filter:blur(0)}
 			label.btn {filter:blur(0.08vh);}
 
-
-				
+			.modal-header {
+				border-color: $color2;
+				h5 {
+					margin-left: 3vh;
+					font-family: $subtitulo;
+					color:$color1;
+					font-size: 8vh;
+				}
 			}
+			.modal-body {
+				color:$color4;
+				background-color:$color3;
+				border-color:$color2;
+				font-size:3vh;
+			}	
+		}
 			
 	}
 }

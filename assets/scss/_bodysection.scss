@@ -48,7 +48,7 @@ div.albumP--style {
 	.albumP_producto:hover {box-shadow:0 0}
 	.albumP_producto{
 		border:$color1 0.4vh groove;
-		box-shadow:0.5vh 0.9vh $color2; 
+		box-shadow:0.8vh 1.2vh $color2,-0.8vh -1.2vh $color1; 
 		transition: box-shadow 1s;
 
 		@mixin product {
