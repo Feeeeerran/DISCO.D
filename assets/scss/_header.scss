@@ -1,7 +1,7 @@
 @import "utilities/variables";
 
 header {
-
+	background-color: $color3;
 	@mixin LOGObasic {
 		display: flex;
 		cursor:cell;

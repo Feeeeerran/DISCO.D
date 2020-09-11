@@ -6,7 +6,8 @@
 @import "producto";
 @import "contacto";
 
-body {background-color: $color3;}
+
+body {background-color: $color4;}
 
 /* width */
 ::-webkit-scrollbar {
@@ -28,6 +29,6 @@ body {background-color: $color3;}
   background:#6D7786;
 }
 
-
+@import "mediaqueries";
 
 

@@ -10,64 +10,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
-header h1 {
-  display: flex;
-  cursor: cell;
-  width: 100%;
-  margin: -1vh 3vh 1vh 3vh;
-  font-size: 35vh;
-  font-family: "Fugaz One", cursive; }
-  header h1 span:hover {
-    transform: scale(0.95); }
-  header h1 span {
-    transition: transform 1.2s;
-    color: #92FB6D;
-    display: inline-block;
-    margin: 0 -1vh 0 -1vh;
-    user-select: none; }
-
-header h1.titulo_section {
-  display: flex;
-  cursor: cell;
-  width: 100%;
-  margin: -1vh 3vh 1vh 3vh;
-  font-size: 35vh;
-  font-family: "Fugaz One", cursive; }
-  header h1.titulo_section a span:hover {
-    transform: scale(0.95); }
-  header h1.titulo_section a span {
-    transition: transform 1.2s;
-    color: #92FB6D;
-    display: inline-block;
-    margin: 0 -1vh 0 -1vh;
-    user-select: none; }
-
-header a:hover {
-  text-decoration: none; }
-
-header h1.contacto_logo--style {
-  display: flex;
-  cursor: cell;
-  width: 100%;
-  margin: -1vh 3vh 1vh 3vh;
-  font-size: 35vh;
-  font-family: "Fugaz One", cursive;
-  padding-top: 4vh;
-  font-size: 18vh;
-  cursor: default; }
-  header h1.contacto_logo--style span:hover {
-    transform: scale(0.95); }
-  header h1.contacto_logo--style span {
-    transition: transform 1.2s;
-    color: #92FB6D;
-    display: inline-block;
-    margin: 0 -1vh 0 -1vh;
-    user-select: none; }
-  header h1.contacto_logo--style span:hover {
-    transform: scale(1); }
-  header h1.contacto_logo--style span {
-    cursor: pointer;
-    margin: 0; }
+header {
+  background-color: #393e46; }
+  header h1 {
+    display: flex;
+    cursor: cell;
+    width: 100%;
+    margin: -1vh 3vh 1vh 3vh;
+    font-size: 35vh;
+    font-family: "Fugaz One", cursive; }
+    header h1 span:hover {
+      transform: scale(0.95); }
+    header h1 span {
+      transition: transform 1.2s;
+      color: #92FB6D;
+      display: inline-block;
+      margin: 0 -1vh 0 -1vh;
+      user-select: none; }
+  header h1.titulo_section {
+    display: flex;
+    cursor: cell;
+    width: 100%;
+    margin: -1vh 3vh 1vh 3vh;
+    font-size: 35vh;
+    font-family: "Fugaz One", cursive; }
+    header h1.titulo_section a span:hover {
+      transform: scale(0.95); }
+    header h1.titulo_section a span {
+      transition: transform 1.2s;
+      color: #92FB6D;
+      display: inline-block;
+      margin: 0 -1vh 0 -1vh;
+      user-select: none; }
+  header a:hover {
+    text-decoration: none; }
+  header h1.contacto_logo--style {
+    display: flex;
+    cursor: cell;
+    width: 100%;
+    margin: -1vh 3vh 1vh 3vh;
+    font-size: 35vh;
+    font-family: "Fugaz One", cursive;
+    padding-top: 4vh;
+    font-size: 18vh;
+    cursor: default; }
+    header h1.contacto_logo--style span:hover {
+      transform: scale(0.95); }
+    header h1.contacto_logo--style span {
+      transition: transform 1.2s;
+      color: #92FB6D;
+      display: inline-block;
+      margin: 0 -1vh 0 -1vh;
+      user-select: none; }
+    header h1.contacto_logo--style span:hover {
+      transform: scale(1); }
+    header h1.contacto_logo--style span {
+      cursor: pointer;
+      margin: 0; }
 
 .logo-letter1 {
   animation: logo_letter 0.3s linear 0.08s forwards; }
@@ -131,15 +130,15 @@ nav.navbar--navColor {
   cursor: cell;
   border-bottom: #92FB6D solid 1.5vh; }
   nav.navbar--navColor .navbar_navIcon {
+    transform: rotate(-45deg); }
+  nav.navbar--navColor .navbar_navIcon {
     transition: 0.4s; }
   nav.navbar--navColor .change .navbar_navIcon {
-    transform: rotate(-45deg); }
-  nav.navbar--navColor .navbar_navIcon_prod {
-    transform: rotate(-45deg); }
-  nav.navbar--navColor .navbar_navIcon_prod {
-    transition: 0.4s; }
-  nav.navbar--navColor .change .navbar_navIcon_prod {
     transform: rotate(0deg); }
+  nav.navbar--navColor .navbar_navIcon_sect {
+    transition: 0.4s; }
+  nav.navbar--navColor .change .navbar_navIcon_sect {
+    transform: rotate(-45deg); }
 
 #navbarsEx {
   cursor: pointer; }
@@ -308,64 +307,63 @@ section.producto {
         border-color: #A8D8EA;
         font-size: 3vh; }
 
-header h1 {
-  display: flex;
-  cursor: cell;
-  width: 100%;
-  margin: -1vh 3vh 1vh 3vh;
-  font-size: 35vh;
-  font-family: "Fugaz One", cursive; }
-  header h1 span:hover {
-    transform: scale(0.95); }
-  header h1 span {
-    transition: transform 1.2s;
-    color: #92FB6D;
-    display: inline-block;
-    margin: 0 -1vh 0 -1vh;
-    user-select: none; }
-
-header h1.titulo_section {
-  display: flex;
-  cursor: cell;
-  width: 100%;
-  margin: -1vh 3vh 1vh 3vh;
-  font-size: 35vh;
-  font-family: "Fugaz One", cursive; }
-  header h1.titulo_section a span:hover {
-    transform: scale(0.95); }
-  header h1.titulo_section a span {
-    transition: transform 1.2s;
-    color: #92FB6D;
-    display: inline-block;
-    margin: 0 -1vh 0 -1vh;
-    user-select: none; }
-
-header a:hover {
-  text-decoration: none; }
-
-header h1.contacto_logo--style {
-  display: flex;
-  cursor: cell;
-  width: 100%;
-  margin: -1vh 3vh 1vh 3vh;
-  font-size: 35vh;
-  font-family: "Fugaz One", cursive;
-  padding-top: 4vh;
-  font-size: 18vh;
-  cursor: default; }
-  header h1.contacto_logo--style span:hover {
-    transform: scale(0.95); }
-  header h1.contacto_logo--style span {
-    transition: transform 1.2s;
-    color: #92FB6D;
-    display: inline-block;
-    margin: 0 -1vh 0 -1vh;
-    user-select: none; }
-  header h1.contacto_logo--style span:hover {
-    transform: scale(1); }
-  header h1.contacto_logo--style span {
-    cursor: pointer;
-    margin: 0; }
+header {
+  background-color: #393e46; }
+  header h1 {
+    display: flex;
+    cursor: cell;
+    width: 100%;
+    margin: -1vh 3vh 1vh 3vh;
+    font-size: 35vh;
+    font-family: "Fugaz One", cursive; }
+    header h1 span:hover {
+      transform: scale(0.95); }
+    header h1 span {
+      transition: transform 1.2s;
+      color: #92FB6D;
+      display: inline-block;
+      margin: 0 -1vh 0 -1vh;
+      user-select: none; }
+  header h1.titulo_section {
+    display: flex;
+    cursor: cell;
+    width: 100%;
+    margin: -1vh 3vh 1vh 3vh;
+    font-size: 35vh;
+    font-family: "Fugaz One", cursive; }
+    header h1.titulo_section a span:hover {
+      transform: scale(0.95); }
+    header h1.titulo_section a span {
+      transition: transform 1.2s;
+      color: #92FB6D;
+      display: inline-block;
+      margin: 0 -1vh 0 -1vh;
+      user-select: none; }
+  header a:hover {
+    text-decoration: none; }
+  header h1.contacto_logo--style {
+    display: flex;
+    cursor: cell;
+    width: 100%;
+    margin: -1vh 3vh 1vh 3vh;
+    font-size: 35vh;
+    font-family: "Fugaz One", cursive;
+    padding-top: 4vh;
+    font-size: 18vh;
+    cursor: default; }
+    header h1.contacto_logo--style span:hover {
+      transform: scale(0.95); }
+    header h1.contacto_logo--style span {
+      transition: transform 1.2s;
+      color: #92FB6D;
+      display: inline-block;
+      margin: 0 -1vh 0 -1vh;
+      user-select: none; }
+    header h1.contacto_logo--style span:hover {
+      transform: scale(1); }
+    header h1.contacto_logo--style span {
+      cursor: pointer;
+      margin: 0; }
 
 .logo-letter1 {
   animation: logo_letter 0.3s linear 0.08s forwards; }
@@ -448,7 +446,7 @@ header h1.contacto_logo--style {
       font-size: 3vh; }
 
 body {
-  background-color: #393e46; }
+  background-color: #eeeeee; }
 
 /* width */
 ::-webkit-scrollbar {
@@ -464,3 +462,48 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #6D7786; }
+
+@media only screen and (max-width: 992px) {
+  header h1 {
+    margin: 0;
+    margin-left: -0.2rem;
+    font-size: 10.8rem; }
+    header h1 span {
+      margin: 0 -0.3rem 0 -0.3rem; } }
+
+@media only screen and (max-width: 768px) {
+  header h1 {
+    margin: 0;
+    margin-left: -0.2rem;
+    font-size: 8.8rem; }
+    header h1 span {
+      margin: 0 -0.3rem 0 -0.3rem; } }
+
+@media only screen and (max-width: 600px) {
+  header h1 {
+    margin: 0;
+    margin-left: -0.1rem;
+    margin-bottom: -1rem;
+    font-size: 6.8rem; }
+    header h1 span {
+      margin: 0 -0.2rem 0 -0.2rem; }
+  header h1.titulo_section {
+    margin: 0;
+    margin-left: -0.1rem;
+    margin-bottom: -1rem;
+    font-size: 6.8rem; }
+    header h1.titulo_section a span {
+      margin: 0 -0.2rem 0 -0.2rem; }
+  header h1.contacto_logo--style {
+    margin: 0;
+    margin-left: -0.1rem;
+    margin-bottom: -1rem;
+    font-size: 6.8rem;
+    font-size: 6rem;
+    padding-top: 0.5rem; }
+    header h1.contacto_logo--style span {
+      margin: 0 -0.2rem 0 -0.2rem; }
+  nav {
+    transform: translate(0, -1rem); }
+    nav span {
+      transform: scale(0.7) translate(0, 1rem); } }

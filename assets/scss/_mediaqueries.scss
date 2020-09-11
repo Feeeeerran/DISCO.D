@@ -1,0 +1,63 @@
+//  A LA HORA DE PASAR A 78, ACORDARSE DE LOS TAMAÑOS QUE CAMBIAR
+@media only screen and (max-width: 992px) {
+	header {
+		h1 {
+			margin:0;margin-left: -0.2rem;
+			font-size:10.8rem;
+			span {
+				margin:0 -0.3rem 0 -0.3rem;
+			}
+		}
+	}
+}
+
+//  A LA HORA DE PASAR A 78, ACORDARSE DE LOS TAMAÑOS QUE CAMBIAR
+@media only screen and (max-width: 768px) {
+	header {
+		h1 {
+			margin:0;margin-left: -0.2rem;
+			font-size:8.8rem;
+			span {
+				margin:0 -0.3rem 0 -0.3rem;
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+	header {
+		@mixin LOGObasic--query{
+			margin:0;margin-left: -0.1rem;margin-bottom: -1rem;
+			font-size:6.8rem;}
+
+		@mixin LOGOinteract--query {
+			span {margin:0 -0.2rem 0 -0.2rem;}}
+
+		h1 {@include LOGObasic--query; @include LOGOinteract--query;}
+
+		h1.titulo_section {
+			@include LOGObasic--query;
+			a {@include LOGOinteract--query;}
+		}
+
+
+		h1.contacto_logo--style {
+			@include LOGObasic--query;
+			font-size:6rem;
+			@include LOGOinteract--query;
+			padding-top: 0.5rem;
+		}
+	}
+
+	nav{
+		transform:translate(0,-1rem);
+		span {transform: scale(0.7) translate(0,1rem);}
+
+
+
+	}
+		
+
+}
+
