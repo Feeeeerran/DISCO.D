@@ -5,30 +5,29 @@ nav.navbar--navColor {
 	border-bottom: $color1 solid 1.5vh;
 
 
-	.navbar_navIcon {transform: rotate(-45deg)}
+	.navbar_navIcon {transform: rotate(-45deg);}
 	.navbar_navIcon {transition:0.4s;} 
 	.change .navbar_navIcon {transform: rotate(0deg);}
-
-	.navbar_navIcon_sect {transition:0.4s;} 
-	.change .navbar_navIcon_sect {transform: rotate(-45deg);}
-
 }
 
 
 
 
 
-#navbarsEx {cursor: pointer;}
+#navbars {cursor: pointer;}
 nav{
-	li:hover {color:$color4;}
-	li {
-		.nav-item--style {
-			user-select: none;
-			text-decoration: none;
-			color: $color1;
-			font-size: 3vh;
+	justify-content: start;
+	ul {
+		li:hover {color:$color4;}
+		li {
+			.nav-item--style {
+				user-select: none;
+				text-decoration: none;
+				color: $color1;
+				font-size: 3vh;
+			}
+			span {transition: color 0.5s}	
 		}
-		span {transition: color 0.5s}	
-		
 	}
+	
 }

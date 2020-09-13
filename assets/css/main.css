@@ -8,8 +8,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
 header {
   background-color: #393e46; }
   header h1 {
@@ -20,13 +18,14 @@ header {
     font-size: 35vh;
     font-family: "Fugaz One", cursive; }
     header h1 span:hover {
-      transform: scale(0.95); }
+      font-size: 33vh; }
     header h1 span {
-      transition: transform 1.2s;
+      transition: font-size 0.5s;
       color: #92FB6D;
       display: inline-block;
       margin: 0 -1vh 0 -1vh;
-      user-select: none; }
+      user-select: none;
+      text-shadow: 0 0 0.5vh #92FB6D; }
   header h1.titulo_section {
     display: flex;
     cursor: cell;
@@ -35,94 +34,38 @@ header {
     font-size: 35vh;
     font-family: "Fugaz One", cursive; }
     header h1.titulo_section a span:hover {
-      transform: scale(0.95); }
+      font-size: 33vh; }
     header h1.titulo_section a span {
-      transition: transform 1.2s;
+      transition: font-size 0.5s;
       color: #92FB6D;
       display: inline-block;
       margin: 0 -1vh 0 -1vh;
-      user-select: none; }
+      user-select: none;
+      text-shadow: 0 0 0.5vh #92FB6D; }
   header a:hover {
     text-decoration: none; }
-  header h1.contacto_logo--style {
-    display: flex;
-    cursor: cell;
-    width: 100%;
-    margin: -1vh 3vh 1vh 3vh;
-    font-size: 35vh;
-    font-family: "Fugaz One", cursive;
-    padding-top: 4vh;
-    font-size: 18vh;
-    cursor: default; }
-    header h1.contacto_logo--style span:hover {
-      transform: scale(0.95); }
-    header h1.contacto_logo--style span {
-      transition: transform 1.2s;
-      color: #92FB6D;
-      display: inline-block;
-      margin: 0 -1vh 0 -1vh;
-      user-select: none; }
-    header h1.contacto_logo--style span:hover {
-      transform: scale(1); }
-    header h1.contacto_logo--style span {
-      cursor: pointer;
-      margin: 0; }
-
-.logo-letter1 {
-  animation: logo_letter 0.3s linear 0.08s forwards; }
-
-.logo-letter1-contacto {
-  animation: logo_contacto 20s linear 0.08s infinite; }
-
-.logo-letter2 {
-  animation: logo_letter 0.3s linear 0.16s forwards; }
-
-.logo-letter2-contacto {
-  animation: logo_contacto 20s linear 0.16s infinite; }
-
-.logo-letter3 {
-  animation: logo_letter 0.3s linear 0.24s forwards; }
-
-.logo-letter3-contacto {
-  animation: logo_contacto 20s linear 0.24s infinite; }
-
-.logo-letter4 {
-  animation: logo_letter 0.3s linear 0.32s forwards; }
-
-.logo-letter4-contacto {
-  animation: logo_contacto 20s linear 0.32s infinite; }
-
-.logo-letter5 {
-  animation: logo_letter 0.3s linear 0.4s forwards; }
-
-.logo-letter5-contacto {
-  animation: logo_contacto 20s linear 0.4s infinite; }
-
-.logo-letter6 {
-  animation: logo_letter 0.3s linear 0.48s forwards; }
-
-.logo-letter6-contacto {
-  animation: logo_contacto 20s linear 0.48s infinite; }
+  header .logo-letter1 {
+    animation: logo_letter 0.3s linear 0.08s forwards; }
+  header .logo-letter2 {
+    animation: logo_letter 0.3s linear 0.16s forwards; }
+  header .logo-letter3 {
+    animation: logo_letter 0.3s linear 0.24s forwards; }
+  header .logo-letter4 {
+    animation: logo_letter 0.3s linear 0.32s forwards; }
+  header .logo-letter5 {
+    animation: logo_letter 0.3s linear 0.4s forwards; }
+  header .logo-letter6 {
+    animation: logo_letter 0.3s linear 0.48s forwards; }
 
 @keyframes logo_letter {
-  40% {
+  45% {
     color: white; }
   50% {
-    color: #A8D8EA; }
-  60% {
+    color: #A8D8EA;
+    transform: scale(0.98);
+    text-shadow: 0 0 3vh #A8D8EA; }
+  55% {
     color: white; } }
-
-@keyframes logo_contacto {
-  49.7% {
-    color: #92FB6D; }
-  49.8% {
-    color: white; }
-  50% {
-    color: #A8D8EA; }
-  50.2% {
-    color: white; }
-  50.3% {
-    color: #92FB6D; } }
 
 nav.navbar--navColor {
   padding: 0;
@@ -135,25 +78,21 @@ nav.navbar--navColor {
     transition: 0.4s; }
   nav.navbar--navColor .change .navbar_navIcon {
     transform: rotate(0deg); }
-  nav.navbar--navColor .navbar_navIcon_sect {
-    transition: 0.4s; }
-  nav.navbar--navColor .change .navbar_navIcon_sect {
-    transform: rotate(-45deg); }
 
-#navbarsEx {
+#navbars {
   cursor: pointer; }
 
-nav li:hover {
-  color: #eeeeee; }
-
-nav li .nav-item--style {
-  user-select: none;
-  text-decoration: none;
-  color: #92FB6D;
-  font-size: 3vh; }
-
-nav li span {
-  transition: color 0.5s; }
+nav {
+  justify-content: start; }
+  nav ul li:hover {
+    color: #eeeeee; }
+  nav ul li .nav-item--style {
+    user-select: none;
+    text-decoration: none;
+    color: #92FB6D;
+    font-size: 3vh; }
+  nav ul li span {
+    transition: color 0.5s; }
 
 footer .footer_barraRedes {
   border-top: #92FB6D solid 0.5vh;
@@ -164,11 +103,13 @@ footer .footer_barraRedes {
     font-size: 4vh; }
 
 footer .footer_contenido {
+  padding-top: 5vh;
   background-color: #393e46;
   font-size: 2.4vh; }
   footer .footer_contenido h6 {
-    font-size: 3vh;
+    font-size: 4.5vh;
     color: #92FB6D;
+    text-shadow: 0 0 0.4vh #A8D8EA;
     opacity: 0.8;
     border-bottom: #92FB6D 0.1vh solid; }
   footer .footer_contenido p, footer .footer_contenido a {
@@ -179,14 +120,13 @@ div.album--style {
   background-color: #eeeeee; }
 
 div.album .album_novedades:hover {
-  box-shadow: 2vh 0.5vh #92FB6D; }
+  box-shadow: 2vh 1vh #92FB6D, -2vh -1vh #A8D8EA; }
 
 div.album .album_novedades {
   cursor: crosshair;
   background-color: #eeeeee;
   border: #CCE639 solid 0.5vh;
-  box-shadow: -2vh -0.5vh #A8D8EA;
-  transition: box-shadow 1.4s; }
+  transition: box-shadow 0.9s; }
   div.album .album_novedades .album_novedades--title {
     border-bottom: #CCE639 0.8vh solid;
     background-color: #393e46;
@@ -206,33 +146,34 @@ div.album .album_producto--style {
   div.album .album_producto--style .album_producto_text--name {
     font-size: 6.5vh;
     color: #393e46;
-    text-shadow: #92FB6D 0.1vh 0.1vh, #92FB6D -0.1vh 0.1vh, #92FB6D -0.1vh -0.1vh, #92FB6D 0.1vh -0.1vh;
+    text-shadow: 0 0 1vh #92FB6D, 0 0 1.5vh #A8D8EA;
     font-weight: bold; }
   div.album .album_producto--style .album_producto_text--price {
     font-size: 6.5vh;
     color: #393e46;
-    text-shadow: #92FB6D 0.1vh 0.1vh, #92FB6D -0.1vh 0.1vh, #92FB6D -0.1vh -0.1vh, #92FB6D 0.1vh -0.1vh;
+    text-shadow: 0 0 1vh #92FB6D, 0 0 1.5vh #A8D8EA;
     font-weight: bold;
+    text-shadow: 0 0 2vh #CCE639;
     font-size: 4vh; }
 
-div.albumP--style {
+div.albumSect--style {
   background-color: #eeeeee; }
-  div.albumP--style .albumP_producto:hover {
+  div.albumSect--style .albumSect_producto:hover {
     box-shadow: 0 0; }
-  div.albumP--style .albumP_producto {
+  div.albumSect--style .albumSect_producto {
     border: #92FB6D 0.4vh groove;
-    box-shadow: 0.8vh 1.2vh #A8D8EA, -0.8vh -1.2vh #92FB6D;
-    transition: box-shadow 1s; }
-    div.albumP--style .albumP_producto .albumP_producto--body {
+    transition: box-shadow 1s;
+    box-shadow: 0.8vh 1.2vh #A8D8EA, -0.8vh -1.2vh #92FB6D; }
+    div.albumSect--style .albumSect_producto .albumSect_producto--body {
       border-top: #92FB6D 0.8vh groove; }
-      div.albumP--style .albumP_producto .albumP_producto--body .albumP_producto_name {
+      div.albumSect--style .albumSect_producto .albumSect_producto--body .albumSect_producto_name {
         font-size: 3.2vh;
         color: #393e46;
         font-weight: bold; }
-      div.albumP--style .albumP_producto .albumP_producto--body .albumP_producto_text {
+      div.albumSect--style .albumSect_producto .albumSect_producto--body .albumSect_producto_text {
         font-size: 2.5vh;
         color: #393e46; }
-      div.albumP--style .albumP_producto .albumP_producto--body .albumP_producto_price {
+      div.albumSect--style .albumSect_producto .albumSect_producto--body .albumSect_producto_price {
         font-size: 3.2vh;
         color: #393e46;
         font-weight: bold;
@@ -307,143 +248,31 @@ section.producto {
         border-color: #A8D8EA;
         font-size: 3vh; }
 
-header {
-  background-color: #393e46; }
-  header h1 {
-    display: flex;
-    cursor: cell;
-    width: 100%;
-    margin: -1vh 3vh 1vh 3vh;
-    font-size: 35vh;
-    font-family: "Fugaz One", cursive; }
-    header h1 span:hover {
-      transform: scale(0.95); }
-    header h1 span {
-      transition: transform 1.2s;
-      color: #92FB6D;
-      display: inline-block;
-      margin: 0 -1vh 0 -1vh;
-      user-select: none; }
-  header h1.titulo_section {
-    display: flex;
-    cursor: cell;
-    width: 100%;
-    margin: -1vh 3vh 1vh 3vh;
-    font-size: 35vh;
-    font-family: "Fugaz One", cursive; }
-    header h1.titulo_section a span:hover {
-      transform: scale(0.95); }
-    header h1.titulo_section a span {
-      transition: transform 1.2s;
-      color: #92FB6D;
-      display: inline-block;
-      margin: 0 -1vh 0 -1vh;
-      user-select: none; }
-  header a:hover {
-    text-decoration: none; }
-  header h1.contacto_logo--style {
-    display: flex;
-    cursor: cell;
-    width: 100%;
-    margin: -1vh 3vh 1vh 3vh;
-    font-size: 35vh;
-    font-family: "Fugaz One", cursive;
-    padding-top: 4vh;
-    font-size: 18vh;
-    cursor: default; }
-    header h1.contacto_logo--style span:hover {
-      transform: scale(0.95); }
-    header h1.contacto_logo--style span {
-      transition: transform 1.2s;
-      color: #92FB6D;
-      display: inline-block;
-      margin: 0 -1vh 0 -1vh;
-      user-select: none; }
-    header h1.contacto_logo--style span:hover {
-      transform: scale(1); }
-    header h1.contacto_logo--style span {
-      cursor: pointer;
-      margin: 0; }
-
-.logo-letter1 {
-  animation: logo_letter 0.3s linear 0.08s forwards; }
-
-.logo-letter1-contacto {
-  animation: logo_contacto 20s linear 0.08s infinite; }
-
-.logo-letter2 {
-  animation: logo_letter 0.3s linear 0.16s forwards; }
-
-.logo-letter2-contacto {
-  animation: logo_contacto 20s linear 0.16s infinite; }
-
-.logo-letter3 {
-  animation: logo_letter 0.3s linear 0.24s forwards; }
-
-.logo-letter3-contacto {
-  animation: logo_contacto 20s linear 0.24s infinite; }
-
-.logo-letter4 {
-  animation: logo_letter 0.3s linear 0.32s forwards; }
-
-.logo-letter4-contacto {
-  animation: logo_contacto 20s linear 0.32s infinite; }
-
-.logo-letter5 {
-  animation: logo_letter 0.3s linear 0.4s forwards; }
-
-.logo-letter5-contacto {
-  animation: logo_contacto 20s linear 0.4s infinite; }
-
-.logo-letter6 {
-  animation: logo_letter 0.3s linear 0.48s forwards; }
-
-.logo-letter6-contacto {
-  animation: logo_contacto 20s linear 0.48s infinite; }
-
-@keyframes logo_letter {
-  40% {
-    color: white; }
-  50% {
-    color: #A8D8EA; }
-  60% {
-    color: white; } }
-
-@keyframes logo_contacto {
-  49.7% {
-    color: #92FB6D; }
-  49.8% {
-    color: white; }
-  50% {
-    color: #A8D8EA; }
-  50.2% {
-    color: white; }
-  50.3% {
-    color: #92FB6D; } }
-
 .contacto {
   background-color: #eeeeee; }
   .contacto iframe {
-    margin: 1vh;
-    border: #92FB6D groove 0.5vh; }
-  .contacto .contacto_data h2 {
-    color: #393e46;
-    font-family: "Mukta Malar", sans-serif;
-    font-size: 10vh; }
-  .contacto .contacto_data form {
-    color: #393e46; }
-    .contacto .contacto_data form .modal-header {
-      border-color: #A8D8EA; }
-      .contacto .contacto_data form .modal-header h5 {
-        margin-left: 3vh;
-        font-family: "Mukta Malar", sans-serif;
-        color: #92FB6D;
-        font-size: 8vh; }
-    .contacto .contacto_data form .modal-body {
-      color: #eeeeee;
-      background-color: #393e46;
-      border-color: #A8D8EA;
-      font-size: 3vh; }
+    border: #92FB6D groove 0.5vh;
+    height: 85%; }
+  .contacto .contacto_data {
+    letter-spacing: -0.2vh; }
+    .contacto .contacto_data h2 {
+      color: #393e46;
+      font-family: "Mukta Malar", sans-serif;
+      font-size: 4.8vh; }
+    .contacto .contacto_data form {
+      color: #393e46; }
+      .contacto .contacto_data form .modal-header {
+        border-color: #A8D8EA; }
+        .contacto .contacto_data form .modal-header h5 {
+          margin-left: 3vh;
+          font-family: "Mukta Malar", sans-serif;
+          color: #92FB6D;
+          font-size: 8vh; }
+      .contacto .contacto_data form .modal-body {
+        color: #eeeeee;
+        background-color: #393e46;
+        border-color: #A8D8EA;
+        font-size: 3vh; }
 
 body {
   background-color: #eeeeee; }
@@ -485,6 +314,8 @@ body {
     margin-left: -0.1rem;
     margin-bottom: -1rem;
     font-size: 6.8rem; }
+    header h1 span:hover {
+      font-size: 6.8rem; }
     header h1 span {
       margin: 0 -0.2rem 0 -0.2rem; }
   header h1.titulo_section {
@@ -492,6 +323,8 @@ body {
     margin-left: -0.1rem;
     margin-bottom: -1rem;
     font-size: 6.8rem; }
+    header h1.titulo_section a span:hover {
+      font-size: 6.8rem; }
     header h1.titulo_section a span {
       margin: 0 -0.2rem 0 -0.2rem; }
   header h1.contacto_logo--style {
@@ -501,9 +334,62 @@ body {
     font-size: 6.8rem;
     font-size: 6rem;
     padding-top: 0.5rem; }
+    header h1.contacto_logo--style span:hover {
+      font-size: 6.8rem; }
     header h1.contacto_logo--style span {
       margin: 0 -0.2rem 0 -0.2rem; }
   nav {
+    justify-content: center !important;
     transform: translate(0, -1rem); }
     nav span {
-      transform: scale(0.7) translate(0, 1rem); } }
+      transform: scale(0.7) translate(0, 1rem); }
+    nav ul li {
+      margin: 0 auto; }
+      nav ul li span {
+        font-size: 1rem !important; }
+  div.album {
+    padding-top: 0.8rem !important; }
+    div.album .album_novedades:hover {
+      box-shadow: -0.5rem -0.5rem #A8D8EA, 0.5rem 0.5rem #92FB6D; }
+    div.album .album_novedades {
+      box-shadow: -0.5rem -0.5rem #A8D8EA, 0.5rem 0.5rem #92FB6D;
+      transition: none; }
+      div.album .album_novedades .album_novedades--title {
+        font-size: 1.6rem; }
+      div.album .album_novedades .album_novedades--body > blockquote {
+        font-size: 0.9rem; }
+    div.album .album_producto--style:hover {
+      transform: scale(1.03); }
+    div.album .album_producto--style {
+      transition: background-color 0.3s, transform 0.8s; }
+      div.album .album_producto--style .album_producto_text--name {
+        font-size: 1.8rem; }
+      div.album .album_producto--style .album_producto_text--price {
+        font-size: 1.5rem; }
+    div.album div.carousel-item > img {
+      height: 15rem; }
+  div.albumSect--style .albumSect_producto {
+    box-shadow: 0.2rem 0.4rem #A8D8EA, -0.2rem -0.4rem #92FB6D;
+    transition: box-shadow 0.4s; }
+    div.albumSect--style .albumSect_producto .albumSect_producto--body {
+      padding: 0.6rem !important;
+      border-top: #92FB6D 0.3rem groove; }
+      div.albumSect--style .albumSect_producto .albumSect_producto--body .albumSect_producto_name {
+        margin-bottom: 0 !important;
+        font-size: 1.4rem; }
+      div.albumSect--style .albumSect_producto .albumSect_producto--body .albumSect_producto_text {
+        margin-bottom: 0.2rem !important;
+        font-size: 1rem; }
+      div.albumSect--style .albumSect_producto .albumSect_producto--body .albumSect_producto_price {
+        margin-bottom: 0 !important;
+        font-size: 1.4rem;
+        font-size: 1.1rem; }
+  footer .footer_contenido {
+    font-size: 1rem; }
+    footer .footer_contenido h6 {
+      font-size: 1.8rem; }
+  .contacto iframe {
+    border: #92FB6D groove 0.5vh;
+    height: 165%; }
+  .contacto .iframe {
+    margin-bottom: 8rem; } }

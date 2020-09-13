@@ -15,9 +15,23 @@
 </head>
 <body>
 	
-    <nav class="navbar navbar--navColor justify-content-center sticky-top">
+    <header class="container-fluid">
+        <section class="row">
+            <h1 class="d-flex justify-content-center titulo_section">
+                <a href="index.html"><span class="logo-letter1">T</span></a>
+                <a href="index.html"><span class="logo-letter2">I</span></a>
+                <a href="index.html"><span class="logo-letter3">E</span></a>
+                <a href="index.html"><span class="logo-letter4">N</span></a>
+                <a href="index.html"><span class="logo-letter5">D</span></a>
+                <a href="index.html"><span class="logo-letter6">A</span></a>
+            </h1>
+        </section>
+    </header>
 
-        <span onclick="myFunction(this)" data-target="#navbarsEx" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+
+
+    <nav class="navbar navbar--navColor justify-content-center sticky-top">
+        <span onclick="myFunction(this)" data-target="#navbars" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond navbar_navIcon_prod" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" />
             <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
@@ -29,7 +43,7 @@
             function myFunction(x) {x.classList.toggle("change");}
         </script>
 
-        <div class="collapse navbar-collapse hide" id="navbarsEx">
+        <div class="collapse navbar-collapse hide" id="navbars">
             <ul class="navbar-nav navbar-expand-md justify-content-around">
 
                 <li class="nav-item active">
@@ -57,36 +71,12 @@
         </div>
     </nav>
 
-	
     
-    <header class="container-fluid contacto">
-        <section class="row pb-5 justify-content-center">
-            <a href="index.html">
-                <h1 class="d-flex d contacto_logo--style">
-                    <span class="logo-letter1-contacto">T</span>
-                    <span class="logo-letter2-contacto">I</span>
-                    <span class="logo-letter3-contacto">E</span>
-                    <span class="logo-letter4-contacto">N</span>
-                    <span class="logo-letter5-contacto">D</span>
-                    <span class="logo-letter6-contacto">A</span>
-                </h1>
-            </a>
-        </section>
-    </header>
-
-
-
-
-    
-    <section class="contacto pb-5">
+    <section class="contacto py-5">
         <div class="container-fluid">
             <div class="row justify-content-around">
-                <div class="col-lg-6 iframe-full-height-wrap">
-                    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Chuo%20City,%20T%C5%8Dky%C5%8D-to%20103-0026+(TIENDA)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                </div>
-
                 <div class="col-lg-6 px-4 px-xl-5 pb-5 contacto_data">
-                    <h2 class="mb-4 text-center">¡ CONTÁCTANOS !</h2>
+                    <h2 class="mb-4 text-left">CONTÁCTANOS</h2>
                     <form class="needs-validation my-3" novalidate="">
                         <div class="row">
                             <div class="col-sm-6">
@@ -139,6 +129,9 @@
                         </div>
                     </form>
                 </div>
+                <div class="col-lg-6 iframe-full-height-wrap iframe">
+                    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Chuo%20City,%20T%C5%8Dky%C5%8D-to%20103-0026+(TIENDA)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -179,9 +172,10 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid  mt-5">
-            <div class="row mt-3 footer_contenido d-flex justify-content-around">
-                <div class="col-md-4 col-lg-5 col-xl-4 mb-4">
+
+        <div class="container-fluid">
+            <div class="row footer_contenido d-flex justify-content-around">
+                <div class="col-md-4 col-lg-5 col-xl-4 mb-4 text-left">
                     <h6 class="text-uppercase font-weight-bold mb-4">TIENDA</h6>
                     <p>
                         Sobre nosotros.
@@ -208,12 +202,43 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-4 col-xl-4 text-center mb-md-0 mb-4">
+                <div class="col-md-5 col-lg-4 col-xl-4 text-right mb-md-0 mb-4">
                     <h6 class="text-uppercase font-weight-bold mb-4">Contactanos</h6>
-                    <p>🏠 Tokyo</p>
-                    <p>📧 tienda@gmail.com</p>
-                    <p>📞 123 123 324 5</p>
-                    <p>📞 123 43 6564 23</p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#CCE639" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <line x1="18" y1="6" x2="18" y2="6.01" />
+                            <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+                            <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+                            <line x1="9" y1="4" x2="9" y2="17" />
+                            <line x1="15" y1="15" x2="15" y2="20" />
+                        </svg>
+                        Tokyo
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="align-content-center icon icon-tabler icon-tabler-mail-opened" width="40" height="40" viewBox="0 2 24 24" stroke-width="1" stroke="#CCE639" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <polyline points="3 9 12 15 21 9 12 3 3 9" />
+                            <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                            <line x1="3" y1="19" x2="9" y2="13" />
+                            <line x1="15" y1="13" x2="21" y2="19" />
+                        </svg>
+                        tienda@gmail.com
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-calling" width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#CCE639" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                        </svg>
+                        123 123 324 5
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-calling" width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#CCE639" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                        </svg>
+                        123 43 6564 23
+                    </p>
                 </div>
             </div>
         </div>

@@ -5,13 +5,12 @@ div.album--style {background-color:$color4;}
 
 div.album {
 
-	.album_novedades:hover {box-shadow:2vh 0.5vh $color1}
+	.album_novedades:hover {box-shadow:2vh 1vh $color1,-2vh -1vh $color2;}
 	.album_novedades{
 		cursor: crosshair;
 		background-color:$color4;
 		border:$amarillo solid 0.5vh;
-		box-shadow:-2vh -0.5vh $color2;
-		transition: box-shadow 1.4s;
+		transition: box-shadow 0.9s;
 
 		.album_novedades--title {
 			border-bottom: $amarillo 0.8vh solid;
@@ -31,41 +30,41 @@ div.album {
 		@mixin product {
 			font-size:6.5vh;
 			color:$color3;
-			text-shadow:$color1 0.1vh 0.1vh,$color1 -0.1vh 0.1vh,$color1 -0.1vh -0.1vh,$color1 0.1vh -0.1vh;
+			text-shadow: 0 0 1vh $color1,0 0 1.5vh $color2;
 			font-weight: bold;
 		}
 		.album_producto_text--name{
 			@include product;}
 		.album_producto_text--price{
 			@include product;
+			text-shadow: 0 0 2vh $amarillo;
 			font-size: 4vh;}
 	}
 }
 
-div.albumP--style {
+div.albumSect--style {
 	background-color:$color4;
 
-	.albumP_producto:hover {box-shadow:0 0}
-	.albumP_producto{
+	.albumSect_producto:hover {box-shadow:0 0}
+	.albumSect_producto{
 		border:$color1 0.4vh groove;
-		box-shadow:0.8vh 1.2vh $color2,-0.8vh -1.2vh $color1; 
 		transition: box-shadow 1s;
+		box-shadow:0.8vh 1.2vh $color2,-0.8vh -1.2vh $color1;
 
 		@mixin product {
 			font-size:3.2vh;
 			color:$color3;
 			font-weight: bold;}
-		.albumP_producto--body {
+		.albumSect_producto--body {
 			border-top:$color1 0.8vh groove;
-			.albumP_producto_name{
+			.albumSect_producto_name{
 				@include product;}
-			.albumP_producto_text{
+			.albumSect_producto_text{
 				font-size: 2.5vh;
 				color:$color3;}
-			.albumP_producto_price{
+			.albumSect_producto_price{
 				@include product;
 				font-size: 2.5vh;}
 		}
 	}
-
 }

@@ -1,18 +1,15 @@
 @import "utilities/variables";
-@import "header";
 
 .contacto {
 	background-color: $color4;
-
-
-	iframe {margin:1vh;border:$color1 groove 0.5vh;}
-
+	iframe {border:$color1 groove 0.5vh; height: 85%}
 	
 	.contacto_data {
 		h2 {
 			color:$color3;
-			font:{family:$subtitulo;size:10vh;}}
-		
+			font:{family:$subtitulo;size:4.8vh;}}
+			letter-spacing: -0.2vh;
+
 		form {
 			color:$color3;
 			.modal-header {
@@ -30,9 +27,6 @@
 				border-color:$color2;
 				font-size:3vh;
 			}
-
 		}
 	}
-
-
 }
