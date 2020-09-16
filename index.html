@@ -27,10 +27,7 @@
 		</section>
 	</header>
 
-
-
 	<nav class="navbar navbar--navColor sticky-top justify-content-center">
-
         <span onclick="myFunction(this)" data-target="#navbars" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond navbar_navIcon" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round" >
             <path stroke="none" d="M0 0h24v24H0z" />
@@ -38,7 +35,6 @@
             <path d="M10 12l-2 -2.2l.6 -1" />
             </svg>
         </span>
-
 
         <script>
             function myFunction(x) {x.classList.toggle("change");}
@@ -69,15 +65,15 @@
 	    </div>
 	</nav>
 
-	<div class="album py-5 album--style">
-	    <div class="container">
+	<div class="album album--style">
+		<div class="container">
 	        <div class="row">
 	        	<div class="col-md-12 mb-4">
-					<div class="card album_novedades">
-					    <div class="card-header album_novedades--title">
-					    	¡¡ NOVEDADES !!
+					<div class="card container_novedades">
+					    <div class="card-header container_novedades--title">
+					    	NOVEDADES
 					    </div>
-					    <div class="card-body album_novedades--body">
+					    <div class="card-body container_novedades--body">
 					        <blockquote class="blockquote mb-0">
 					            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -90,37 +86,14 @@
 					    </div>
 					</div>
 				</div>
-
-	            <div class="col-md-6 mb-4">
-				    <div class="card album_producto--style">
-				    	<a href="producto.html">
-				    		<img src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" class="card-img" alt="product">
-					        <div class="card-img-overlay album_producto_text">
-					            <h5 class="card-title album_producto_text--name">PRODUCTO</h5>
-					            <p class="card-text album_producto_text--price">$$$</p>
-					        </div>
-				    	</a>
-				    </div>
-				</div>
-	           <div class="col-md-6 mb-4">
-				    <div class="card album_producto--style">
-				    	<a href="producto.html">
-				    		<img src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" class="card-img" alt="product">
-					        <div class="card-img-overlay album_producto_text">
-					            <h5 class="card-title album_producto_text--name">PRODUCTO</h5>
-					            <p class="card-text album_producto_text--price">$$$</p>
-					        </div>
-				    	</a>
-				    </div>
-				</div>
-	        </div>
-	    </div>
+			</div>
+		</div>
 
 		<div id="carouselOf" class="carousel slide" data-ride="carousel">
 		    <ol class="carousel-indicators">
-		        <li data-target="#carouselOf" data-slide-to="0" style="background-color:#92FB6D" class="active"></li>
-		        <li data-target="#carouselOf" data-slide-to="1" style="background-color:#92FB6D"></li>
-		        <li data-target="#carouselOf" data-slide-to="2" style="background-color:#92FB6D"></li>
+		        <li data-target="#carouselOf" data-slide-to="0" class="active"></li>
+		        <li data-target="#carouselOf" data-slide-to="1"></li>
+		        <li data-target="#carouselOf" data-slide-to="2"></li>
 		    </ol>
 		    <div class="carousel-inner d-block">
 		        <div class="carousel-item active" data-interval="10000">
@@ -144,36 +117,48 @@
 		</div>
 
 
-		<div class="container">
-			<div class="row">
-	            <div class="col-md-6 mt-4">
-	                <div class="card album_producto--style">
-				    	<a href="producto.html">
-				    		<img src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" class="card-img" alt="product">
-					        <div class="card-img-overlay album_producto_text">
-					            <h5 class="card-title album_producto_text--name">PRODUCTO</h5>
-					            <p class="card-text album_producto_text--price">$$$</p>
-					        </div>
-				    	</a>
-				    </div>
+
+		<div class="container-fluid">
+	        <div class="row no-gutters">
+	            <div class="col-xl-8 col-12 mb-5 mb-xl-0">
+	                <div class="media container_media">
+	                    <div class="media_img">
+	                        <img class="img-fluid" src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" alt="Generic placeholder image">
+	                    </div>
+	                    <div class="media_body text-right">
+	                    	<div class="row flex-row-reverse">
+	                    		<div class="col-8">
+			                        <span class="media-date">25 july 2017</span>
+			                        <h5 class="mt-0 sep">Finibus Bonorum Malor.</h5>
+			                        <p>Lorem ipsum dolor amet consectetur adip sicing elit sed eiusm tempor incididunt ut labore dolore.</p>
+			                        <a href="blog-post-right-sidebar.html" class="btn btn-transparent">View More</a>
+	                    		</div>
+	                    	</div>
+	                    </div>
+	                </div>
 	            </div>
-	            <div class="col-md-6 mt-4">
-	                <div class="card album_producto--style">
-				    	<a href="producto.html">
-				    		<img src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" class="card-img" alt="product">
-					        <div class="card-img-overlay album_producto_text">
-					            <h5 class="card-title album_producto_text--name">PRODUCTO</h5>
-					            <p class="card-text album_producto_text--price">$$$</p>
-					        </div>
-				    	</a>
-				    </div>
+	        </div>
+            <div class="row flex-row-reverse rowPass">
+	            <div class="col-xl-8 col-12">
+	                <div class="media container_media flex-row-reverse">
+	                    <div class="media_img">
+	                        <img class="img-fluid" src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" alt="Generic placeholder image">
+	                    </div>
+	                    <div class="media_body--reverse">
+	                        <div class="col-8">
+		                        <span class="media-date">25 july 2017</span>
+		                        <h5 class="mt-0 sep">Finibus Bonorum Malor.</h5>
+		                        <p>Lorem ipsum dolor amet consectetur adip sicing elit sed eiusm tempor incididunt ut labore dolore.</p>
+		                        <a href="blog-post-right-sidebar.html" class="btn btn-transparent">View More</a>
+                    		</div>
+	                    </div>
+	                </div>
 	            </div>
 	        </div>
 	    </div>
+
+
 	</div>
-
-
-
 
 
 	<footer class="page-footer font-small unique-color-dark">

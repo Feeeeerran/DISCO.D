@@ -4,42 +4,131 @@
 div.album--style {background-color:$color4;}
 
 div.album {
+	padding-top: 4vh;padding-bottom: 10vh;
 
-	.album_novedades:hover {box-shadow:2vh 1vh $color1,-2vh -1vh $color2;}
-	.album_novedades{
-		cursor: crosshair;
-		background-color:$color4;
-		border:$amarillo solid 0.5vh;
-		transition: box-shadow 0.9s;
+	div.container{
+		.container_novedades:hover {box-shadow:2vh 1vh $color1,-2vh -1vh $color2;}
+		.container_novedades{
+			margin-bottom:4vh;
+			cursor: crosshair;
+			background-color:$color4;
+			border:$amarillo solid 0.5vh;
+			transition: box-shadow 0.9s;
 
-		.album_novedades--title {
-			border-bottom: $amarillo 0.8vh solid;
-			background-color:$color3;
-			font:{size:4vh;family:$subtitulo;};
-			color:$amarillo;
+			.container_novedades--title {
+				border-bottom: $amarillo 0.8vh solid;
+				background-color:$color3;
+				font:{size:4vh;family:$subtitulo;};
+				letter-spacing: 1.2vh;
+				color:$amarillo;
+			}
 		}
 	}
-	.album_producto--style:hover {
-		background-color:#B0BFD7;
-		transform:scale(1.08);}
-	.album_producto--style{
-		transition: background-color 0.8s,transform 0.8s;
-		background-color:$color3;
 
-		img {opacity: 0.6;}
-		@mixin product {
-			font-size:6.5vh;
-			color:$color3;
-			text-shadow: 0 0 1vh $color1,0 0 1.5vh $color2;
-			font-weight: bold;
+	div.carousel {
+		margin-bottom: 14vh;
+		border-bottom:0.5vh solid $color2;
+		ol {
+			.active {background-color: $color1;box-shadow: 0.15vh 0.15vh black;}
+			transform: translateY(4vh);
+			li{
+				border:0.2vh solid black;
+				background-color:$color2;
+				width:20px;height:20px;
+				transform: skew(-25deg);
+			}
 		}
-		.album_producto_text--name{
-			@include product;}
-		.album_producto_text--price{
-			@include product;
-			text-shadow: 0 0 2vh $amarillo;
-			font-size: 4vh;}
 	}
+
+
+
+	div.rowPass{transform: translateY(-2vh);}
+	div.media.container_media{ 
+		.media_img img {
+			box-shadow:0.8vh 1.5vh #7A8596;
+			border:0.5vh solid $color1;
+			border-radius:2%;
+		}
+
+		@mixin medias($deg) {
+			padding:4vh;
+			position:absolute;
+			width: 80%;
+		    bottom: 24%;
+		    background-image: linear-gradient($deg,rgba(57, 62, 70,0.6), rgba(57, 62, 70,0.9));
+		}
+
+		.media_body {@include medias(90deg);left: 55%;}
+		.media_body--reverse {@include medias(-90deg);right: 55%;}
+	}
+
+
+
+	// @media (min-width: 768px) {
+	//     .media.media-news .media-body {
+	//         position: relative;
+	//         padding: 46.5px 35px;
+	//         right: 0;
+	//     }
+	// }
+	// @media (min-width: 992px) {
+	//     .media.media-news .media-body {
+	//         right: 40px;
+	//         bottom: 0;
+	//     }
+	// }
+	// @media (min-width: 1200px) {
+	//     .media.media-news .media-body {
+	//         position: absolute;
+	//         right: 100px;
+	//         width: 60%;
+	//         padding: 20px;
+	//     }
+	// }
+
+	.media.media-news .media-body .media-date {
+	    font-family: "Open Sans", sans-serif;
+	    color: #848484;
+	    margin-bottom: 10px;
+	}
+	.media.media-news .media-body h5 {
+	    font-size: 22px;
+	    padding-bottom: 15px;
+	    margin-bottom: 20px;
+	}
+	.media.media-news .media-body h5.small {
+	    font-size: 16px;
+	}
+	.media.media-news .media-body p {
+	    font-family: "Open Sans", sans-serif;
+	    color: #848484;
+	}
+	.media.media-news .media-body .common-btn {
+	    margin-top: 10px;
+	}
+
+
+	// .album_producto--style:hover {
+	// 	background-color:#B0BFD7;
+	// 	transform:scale(1.08);}
+	// .album_producto--style{
+	// 	transition: background-color 0.8s,transform 0.8s;
+	// 	background-color:$color3;
+
+	// 	img {opacity: 0.6;}
+	// 	@mixin product {
+	// 		font-size:6.5vh;
+	// 		color:$color3;
+	// 		text-shadow: 0 0 1vh $color1,0 0 1.5vh $color2;
+	// 		font-weight: bold;
+	// 	}
+	// 	.album_producto_text--name{
+	// 		@include product;}
+	// 	.album_producto_text--price{
+	// 		@include product;
+	// 		text-shadow: 0 0 2vh $amarillo;
+	// 		font-size: 4vh;}
+	// }
 }
 
 div.albumSect--style {

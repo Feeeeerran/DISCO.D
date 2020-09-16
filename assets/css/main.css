@@ -119,42 +119,73 @@ footer .footer_contenido {
 div.album--style {
   background-color: #eeeeee; }
 
-div.album .album_novedades:hover {
-  box-shadow: 2vh 1vh #92FB6D, -2vh -1vh #A8D8EA; }
-
-div.album .album_novedades {
-  cursor: crosshair;
-  background-color: #eeeeee;
-  border: #CCE639 solid 0.5vh;
-  transition: box-shadow 0.9s; }
-  div.album .album_novedades .album_novedades--title {
-    border-bottom: #CCE639 0.8vh solid;
-    background-color: #393e46;
-    font-size: 4vh;
-    font-family: "Mukta Malar", sans-serif;
-    color: #CCE639; }
-
-div.album .album_producto--style:hover {
-  background-color: #B0BFD7;
-  transform: scale(1.08); }
-
-div.album .album_producto--style {
-  transition: background-color 0.8s,transform 0.8s;
-  background-color: #393e46; }
-  div.album .album_producto--style img {
-    opacity: 0.6; }
-  div.album .album_producto--style .album_producto_text--name {
-    font-size: 6.5vh;
-    color: #393e46;
-    text-shadow: 0 0 1vh #92FB6D, 0 0 1.5vh #A8D8EA;
-    font-weight: bold; }
-  div.album .album_producto--style .album_producto_text--price {
-    font-size: 6.5vh;
-    color: #393e46;
-    text-shadow: 0 0 1vh #92FB6D, 0 0 1.5vh #A8D8EA;
-    font-weight: bold;
-    text-shadow: 0 0 2vh #CCE639;
-    font-size: 4vh; }
+div.album {
+  padding-top: 4vh;
+  padding-bottom: 10vh; }
+  div.album div.container .container_novedades:hover {
+    box-shadow: 2vh 1vh #92FB6D, -2vh -1vh #A8D8EA; }
+  div.album div.container .container_novedades {
+    margin-bottom: 4vh;
+    cursor: crosshair;
+    background-color: #eeeeee;
+    border: #CCE639 solid 0.5vh;
+    transition: box-shadow 0.9s; }
+    div.album div.container .container_novedades .container_novedades--title {
+      border-bottom: #CCE639 0.8vh solid;
+      background-color: #393e46;
+      font-size: 4vh;
+      font-family: "Mukta Malar", sans-serif;
+      letter-spacing: 1.2vh;
+      color: #CCE639; }
+  div.album div.carousel {
+    margin-bottom: 14vh;
+    border-bottom: 0.5vh solid #A8D8EA; }
+    div.album div.carousel ol {
+      transform: translateY(4vh); }
+      div.album div.carousel ol .active {
+        background-color: #92FB6D;
+        box-shadow: 0.15vh 0.15vh black; }
+      div.album div.carousel ol li {
+        border: 0.2vh solid black;
+        background-color: #A8D8EA;
+        width: 20px;
+        height: 20px;
+        transform: skew(-25deg); }
+  div.album div.rowPass {
+    transform: translateY(-2vh); }
+  div.album div.media.container_media .media_img img {
+    box-shadow: 0.8vh 1.5vh #7A8596;
+    border: 0.5vh solid #92FB6D;
+    border-radius: 2%; }
+  div.album div.media.container_media .media_body {
+    padding: 4vh;
+    position: absolute;
+    width: 80%;
+    bottom: 24%;
+    background-image: linear-gradient(90deg, rgba(57, 62, 70, 0.6), rgba(57, 62, 70, 0.9));
+    left: 55%; }
+  div.album div.media.container_media .media_body--reverse {
+    padding: 4vh;
+    position: absolute;
+    width: 80%;
+    bottom: 24%;
+    background-image: linear-gradient(-90deg, rgba(57, 62, 70, 0.6), rgba(57, 62, 70, 0.9));
+    right: 55%; }
+  div.album .media.media-news .media-body .media-date {
+    font-family: "Open Sans", sans-serif;
+    color: #848484;
+    margin-bottom: 10px; }
+  div.album .media.media-news .media-body h5 {
+    font-size: 22px;
+    padding-bottom: 15px;
+    margin-bottom: 20px; }
+  div.album .media.media-news .media-body h5.small {
+    font-size: 16px; }
+  div.album .media.media-news .media-body p {
+    font-family: "Open Sans", sans-serif;
+    color: #848484; }
+  div.album .media.media-news .media-body .common-btn {
+    margin-top: 10px; }
 
 div.albumSect--style {
   background-color: #eeeeee; }
@@ -292,22 +323,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #6D7786; }
 
-@media only screen and (max-width: 992px) {
-  header h1 {
-    margin: 0;
-    margin-left: -0.2rem;
-    font-size: 10.8rem; }
-    header h1 span {
-      margin: 0 -0.3rem 0 -0.3rem; } }
-
-@media only screen and (max-width: 768px) {
-  header h1 {
-    margin: 0;
-    margin-left: -0.2rem;
-    font-size: 8.8rem; }
-    header h1 span {
-      margin: 0 -0.3rem 0 -0.3rem; } }
-
 @media only screen and (max-width: 600px) {
   header h1 {
     margin: 0;
@@ -384,12 +399,65 @@ body {
         margin-bottom: 0 !important;
         font-size: 1.4rem;
         font-size: 1.1rem; }
-  footer .footer_contenido {
-    font-size: 1rem; }
-    footer .footer_contenido h6 {
-      font-size: 1.8rem; }
   .contacto iframe {
     border: #92FB6D groove 0.5vh;
     height: 165%; }
   .contacto .iframe {
-    margin-bottom: 8rem; } }
+    margin-bottom: 8rem; }
+  section.producto {
+    padding-top: 0;
+    padding-bottom: 0; }
+    section.producto div.order-1 {
+      margin-left: 0 !important;
+      padding-top: 0 !important; }
+    section.producto .producto_nav {
+      padding-bottom: 0.5vh; }
+      section.producto .producto_nav li.breadcrumb-item {
+        padding-left: 0.2rem !important; }
+        section.producto .producto_nav li.breadcrumb-item a.producto_nav--logo {
+          padding-right: 0.2rem;
+          font-size: 1.9rem; }
+      section.producto .producto_nav li.item1 {
+        font-size: 0.9rem !important; }
+      section.producto .producto_nav li.item2 {
+        font-size: 0.8rem !important; }
+    section.producto .producto_data {
+      padding-top: 0.1rem; }
+      section.producto .producto_data .producto_data_name {
+        text-shadow: 0.6rem 0 #A8D8EA;
+        font-size: 3rem; }
+      section.producto .producto_data .producto_data_price {
+        margin-top: -0.8rem !important;
+        margin-bottom: 0.8rem !important;
+        font-size: 2rem; }
+      section.producto .producto_data form {
+        margin-top: 1.5rem;
+        margin-bottom: 4.5rem; }
+        section.producto .producto_data form h6 {
+          margin-bottom: 0.1rem;
+          font-size: 1.2rem; }
+        section.producto .producto_data form .form-group {
+          margin-top: 0rem; }
+        section.producto .producto_data form ul.list-inline {
+          margin-top: 1rem;
+          transform: scale(0.9) translate(11.5rem, 0); }
+  footer .footer_contenido {
+    font-size: 1rem; }
+    footer .footer_contenido h6 {
+      font-size: 1.8rem; } }
+
+@media only screen and (max-width: 768px) {
+  header h1 {
+    margin: 0;
+    margin-left: -0.2rem;
+    font-size: 8.8rem; }
+    header h1 span {
+      margin: 0 -0.3rem 0 -0.3rem; } }
+
+@media only screen and (max-width: 992px) {
+  header h1 {
+    margin: 0;
+    margin-left: -0.2rem;
+    font-size: 10.8rem; }
+    header h1 span {
+      margin: 0 -0.3rem 0 -0.3rem; } }

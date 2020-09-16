@@ -1,34 +1,3 @@
-//  A LA HORA DE PASAR A 78, ACORDARSE DE LOS TAMAÑOS QUE CAMBIAR
-@media only screen and (max-width: 992px) {
-    header {
-        h1 {
-            margin: 0;
-            margin-left: -0.2rem;
-            font-size: 10.8rem;
-
-            span {
-                margin: 0 -0.3rem 0 -0.3rem;
-            }
-        }
-    }
-}
-
-//  A LA HORA DE PASAR A 78, ACORDARSE DE LOS TAMAÑOS QUE CAMBIAR
-@media only screen and (max-width: 768px) {
-    header {
-        h1 {
-            margin: 0;
-            margin-left: -0.2rem;
-            font-size: 8.8rem;
-
-            span {
-                margin: 0 -0.3rem 0 -0.3rem;
-            }
-        }
-    }
-}
-
-
 @media only screen and (max-width: 600px) {
 
     header {
@@ -131,6 +100,54 @@
         }
     }
 
+    .contacto {
+		iframe {border:$color1 groove 0.5vh; height: 165%}
+		.iframe {margin-bottom: 8rem}
+	}
+
+
+	section.producto {
+		padding-top:0;padding-bottom:0;
+		div.order-1 {margin-left: 0 !important;padding-top: 0 !important;}
+
+		.producto_nav {
+			padding-bottom: 0.5vh;
+			li.breadcrumb-item {
+				padding-left:0.2rem !important;
+				a.producto_nav--logo {
+					padding-right:0.2rem;
+					font-size:1.9rem}}
+
+			li.item1 {font-size: 0.9rem !important;}
+			li.item2 {font-size: 0.8rem !important;}
+		}
+
+		.producto_data {
+			padding-top:0.1rem;
+			.producto_data_name{
+				text-shadow: 0.6rem 0 $color2;
+				font-size:3rem;}
+
+			.producto_data_price {
+				margin:{top: -0.8rem !important;bottom:0.8rem !important;}
+				font-size: 2rem;}
+
+			form {
+				margin:{top: 1.5rem;bottom:4.5rem;}
+				h6 {
+					margin-bottom:0.1rem;
+					font-size:1.2rem;}
+
+				.form-group {margin-top: 0rem;}
+				ul.list-inline{
+					margin-top: 1rem;
+					transform: scale(0.9) translate(11.5rem,0);} 
+
+			}	
+		}
+	}
+
+
     footer {
         .footer_contenido {
             font-size: 1rem;
@@ -140,10 +157,6 @@
         }
     }
 
-    .contacto {
-		iframe {border:$color1 groove 0.5vh; height: 165%}
-		.iframe {margin-bottom: 8rem}
-	}
 
 
 }
