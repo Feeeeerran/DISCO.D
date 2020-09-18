@@ -94,34 +94,33 @@ nav {
   nav ul li span {
     transition: color 0.5s; }
 
-footer .footer_barraRedes {
-  border-top: #92FB6D solid 0.5vh;
-  border-bottom: #92FB6D solid 0.5vh;
+footer {
   background-color: #393e46; }
-  footer .footer_barraRedes h6 {
-    color: #eeeeee;
-    font-size: 4vh; }
-
-footer .footer_contenido {
-  padding-top: 5vh;
-  background-color: #393e46;
-  font-size: 2.4vh; }
-  footer .footer_contenido h6 {
-    font-size: 4.5vh;
-    color: #92FB6D;
-    text-shadow: 0 0 0.4vh #A8D8EA;
-    opacity: 0.8;
-    border-bottom: #92FB6D 0.1vh solid; }
-  footer .footer_contenido p, footer .footer_contenido a {
-    color: #eeeeee;
-    opacity: 0.8; }
+  footer .footer_barraRedes {
+    border-top: #92FB6D solid 0.5vh;
+    border-bottom: #92FB6D solid 0.5vh; }
+    footer .footer_barraRedes h6 {
+      color: #eeeeee;
+      font-size: 4vh; }
+  footer .footer_contenido {
+    padding-top: 5vh;
+    font-size: 2.4vh; }
+    footer .footer_contenido h6 {
+      font-size: 4.5vh;
+      color: #92FB6D;
+      text-shadow: 0 0 0.4vh #A8D8EA;
+      opacity: 0.8;
+      border-bottom: #92FB6D 0.1vh solid; }
+    footer .footer_contenido p, footer .footer_contenido a {
+      color: #eeeeee;
+      opacity: 0.8; }
 
 div.album--style {
   background-color: #eeeeee; }
 
 div.album {
   padding-top: 4vh;
-  padding-bottom: 10vh; }
+  padding-bottom: 20vh; }
   div.album div.container .container_novedades:hover {
     box-shadow: 2vh 1vh #92FB6D, -2vh -1vh #A8D8EA; }
   div.album div.container .container_novedades {
@@ -144,48 +143,94 @@ div.album {
       transform: translateY(4vh); }
       div.album div.carousel ol .active {
         background-color: #92FB6D;
-        box-shadow: 0.15vh 0.15vh black; }
+        box-shadow: 0.25vh 0.25vh black; }
       div.album div.carousel ol li {
-        border: 0.2vh solid black;
+        border: 0.2vh solid #393e46;
         background-color: #A8D8EA;
         width: 20px;
         height: 20px;
         transform: skew(-25deg); }
-  div.album div.rowPass {
-    transform: translateY(-2vh); }
-  div.album div.media.container_media .media_img img {
-    box-shadow: 0.8vh 1.5vh #7A8596;
+  div.album div.media.container_media .media_img:hover, div.album div.media.container_media .media_img--reverse:hover {
+    box-shadow: 0 0;
+    border-color: #3A4A50; }
+    div.album div.media.container_media .media_img:hover div, div.album div.media.container_media .media_img--reverse:hover div {
+      opacity: 1;
+      transform: translateY(-2.5vh); }
+  div.album div.media.container_media .media_img {
+    position: relative;
+    box-shadow: 0.4vh 0.75vh #A8D8EA, 0.8vh 1.5vh #A2D0E1, 0.8vh 1.5vh #96C1D1;
     border: 0.5vh solid #92FB6D;
-    border-radius: 2%; }
+    border-radius: 2%;
+    transition: box-shadow 0.8s,border 1.2s; }
+    div.album div.media.container_media .media_img div {
+      transition: opacity 1.8s,transform 2s;
+      opacity: 0;
+      position: absolute;
+      left: 30%;
+      bottom: 5%;
+      text-decoration: none;
+      font-size: 5vh;
+      font-family: "Mukta Malar", sans-serif;
+      font-weight: bold;
+      letter-spacing: 1.5vh;
+      color: #92FB6D;
+      text-shadow: -0.2vh -0.2vh #393e46, 0.2vh 0.2vh #393e46, -0.2vh 0.2vh #393e46, 0.2vh -0.2vh #393e46; }
+  div.album div.media.container_media .media_img--reverse {
+    position: relative;
+    box-shadow: -0.4vh 0.75vh #A8D8EA, -0.8vh 1.5vh #A2D0E1, -0.8vh 1.5vh #96C1D1;
+    border: 0.5vh solid #92FB6D;
+    border-radius: 2%;
+    transition: box-shadow 0.8s,border 1.2s; }
+    div.album div.media.container_media .media_img--reverse div {
+      transition: opacity 1.8s,transform 2s;
+      opacity: 0;
+      position: absolute;
+      left: 40%;
+      bottom: 5%;
+      text-decoration: none;
+      font-size: 5vh;
+      font-family: "Mukta Malar", sans-serif;
+      font-weight: bold;
+      letter-spacing: 1.5vh;
+      color: #92FB6D;
+      text-shadow: -0.2vh -0.2vh #393e46, 0.2vh 0.2vh #393e46, -0.2vh 0.2vh #393e46, 0.2vh -0.2vh #393e46; }
   div.album div.media.container_media .media_body {
-    padding: 4vh;
+    padding: 3vh;
     position: absolute;
     width: 80%;
-    bottom: 24%;
-    background-image: linear-gradient(90deg, rgba(57, 62, 70, 0.6), rgba(57, 62, 70, 0.9));
+    bottom: 20%;
+    background-image: linear-gradient(90deg, rgba(57, 62, 70, 0.4), rgba(57, 62, 70, 0.9));
     left: 55%; }
   div.album div.media.container_media .media_body--reverse {
-    padding: 4vh;
+    padding: 3vh;
     position: absolute;
     width: 80%;
-    bottom: 24%;
-    background-image: linear-gradient(-90deg, rgba(57, 62, 70, 0.6), rgba(57, 62, 70, 0.9));
+    bottom: 20%;
+    background-image: linear-gradient(-90deg, rgba(57, 62, 70, 0.4), rgba(57, 62, 70, 0.9));
     right: 55%; }
-  div.album .media.media-news .media-body .media-date {
-    font-family: "Open Sans", sans-serif;
-    color: #848484;
-    margin-bottom: 10px; }
-  div.album .media.media-news .media-body h5 {
-    font-size: 22px;
-    padding-bottom: 15px;
-    margin-bottom: 20px; }
-  div.album .media.media-news .media-body h5.small {
-    font-size: 16px; }
-  div.album .media.media-news .media-body p {
-    font-family: "Open Sans", sans-serif;
-    color: #848484; }
-  div.album .media.media-news .media-body .common-btn {
-    margin-top: 10px; }
+  div.album div.media.container_media h5:hover {
+    text-shadow: 0 0; }
+    div.album div.media.container_media h5:hover svg {
+      visibility: visible; }
+  div.album div.media.container_media h5 {
+    margin: 0;
+    transition: text-shadow 0.5s;
+    letter-spacing: 0.8vh;
+    color: #92FB6D;
+    text-shadow: 0 0 0.5vh #A8D8EA;
+    font-size: 6.5vh;
+    font-weight: bold; }
+    div.album div.media.container_media h5 svg {
+      margin-right: 2vh;
+      visibility: hidden; }
+  div.album div.media.container_media span {
+    color: #CCE639;
+    font-size: 4vh;
+    text-shadow: 0 0 0.2vh #A8D8EA; }
+  div.album div.media.container_media p {
+    color: #eeeeee;
+    font-size: 2.5vh;
+    margin-top: 1vh; }
 
 div.albumSect--style {
   background-color: #eeeeee; }
