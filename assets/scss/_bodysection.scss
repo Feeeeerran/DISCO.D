@@ -22,6 +22,7 @@ div.album {
 				letter-spacing: 1.2vh;
 				color:$amarillo;
 			}
+			.container_novedades--body {font-family: $general;}
 		}
 	}
 
@@ -40,9 +41,13 @@ div.album {
 		}
 	}
 
-
-	div.media.container_media{ 
+	div.container.col-12 {margin:0;}
+	div.media.container_media{
+		margin:3vh;margin-bottom: 4.5vh;
+		// IMG ----------------
 		@mixin mediaI($rev,$desp) {
+			visibility: hidden;
+			flex-basis:auto;
 			position:relative;
 			box-shadow:$rev*0.4vh 0.75vh $color2,$rev*0.8vh 1.5vh #A2D0E1,$rev*.8vh 1.5vh #96C1D1;
 			border:0.5vh solid $color1;
@@ -52,7 +57,7 @@ div.album {
 				transition:opacity 1.8s,transform 2s;
 				opacity:0;
 				position: absolute;
-				left:30%+$desp;
+				left:5%+$desp;
 				bottom:5%;
 				text-decoration: none;
 				font:{size:5vh;family:$subtitulo;weight:bold;};letter-spacing: 1.5vh;
@@ -66,19 +71,21 @@ div.album {
 			border-color: #3A4A50;
 			div{opacity:1;transform:translateY(-2.5vh);}}
 		.media_img  {@include mediaI(1,0);}
-		.media_img--reverse{@include mediaI(-1,10%);}
+		.media_img--reverse{@include mediaI(-1,55%);}
 
-
-		@mixin mediaC($deg) {
+		// BODY ----------------
+		@mixin mediaC($deg,$dir) {
+			visibility: hidden;
 			padding:3vh;
 			position:absolute;
 			width:80%;
 		    bottom:20%;
 		    background-image:linear-gradient($deg,rgba(57, 62, 70,0.4), rgba(57, 62, 70,0.9));
+		    p {border-#{$dir}:0.7vh solid $amarillo;padding-#{$dir}:1vh;}
 		}
 
-		.media_body {@include mediaC(90deg);left:55%;}
-		.media_body--reverse {@include mediaC(-90deg);right:55%;}
+		.media_body {@include mediaC(90deg,right);left:65%;}
+		.media_body--reverse {@include mediaC(-90deg,left);right:65%;}
 
 		h5:hover {text-shadow: 0 0;svg{visibility: visible;}}
 		h5 {
@@ -87,7 +94,7 @@ div.album {
 			letter-spacing:0.8vh;
 			color:$color1;
 			text-shadow: 0 0 0.5vh $color2;
-			font:{size: 6.5vh;weight:bold;}
+			font:{size: 6.5vh;weight:bold;family:$titulo;}
 			svg {margin-right: 2vh;visibility: hidden;}}
 
 	    span {
@@ -95,18 +102,23 @@ div.album {
 	    	font-size: 4vh;
 	    	text-shadow: 0 0 0.2vh $color2;}
 
-	    p {color:$color4;font-size: 2.5vh;margin-top: 1vh;}
+	    p {color:$color4;font:{size:2.5vh;family:$general;}margin-top: 1vh;}
 	}
 }
 
-
+div.col-md-4 {padding:{left:5vh;right:5vh;}}
 div.albumSect--style {
 	background-color:$color4;
 
-	.albumSect_producto:hover {box-shadow:0 0}
+	.albumSect_producto:hover {
+		box-shadow:0 0;
+		border-color: $color3;
+		.albumSect_producto--body {border-color:$color3;}}
 	.albumSect_producto{
+		margin-bottom: 9vh;
+		visibility: hidden;
 		border:$color1 0.4vh groove;
-		transition: box-shadow 1s;
+		transition: box-shadow 0.4s,border-color 1s;
 		box-shadow:0.8vh 1.2vh $color2,-0.8vh -1.2vh $color1;
 
 		@mixin product {
@@ -114,7 +126,7 @@ div.albumSect--style {
 			color:$color3;
 			font-weight: bold;}
 		.albumSect_producto--body {
-			border-top:$color1 0.8vh groove;
+			border-top:$color1 0.5vh groove;transition:border-color 1s;
 			.albumSect_producto_name{
 				@include product;}
 			.albumSect_producto_text{
@@ -125,4 +137,60 @@ div.albumSect--style {
 				font-size: 2.5vh;}
 		}
 	}
+}
+
+
+// Animaciones de entrada ---------------
+
+
+.slideUp{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;	
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;		
+	visibility: visible !important;
+}			
+
+@keyframes slideUp {
+	0% {transform: translateY(100%);}
+	50%{transform: translateY(-8%);}
+	65%{transform: translateY(4%);}
+	80%{transform: translateY(-4%);}
+	95%{transform: translateY(2%);}			
+	100% {transform: translateY(0%);}	
+}
+
+@-webkit-keyframes slideUp {
+	0% {-webkit-transform: translateY(100%);}
+	50%{-webkit-transform: translateY(-8%);}
+	65%{-webkit-transform: translateY(4%);}
+	80%{-webkit-transform: translateY(-4%);}
+	95%{-webkit-transform: translateY(2%);}			
+	100% {-webkit-transform: translateY(0%);}	
+}
+
+
+
+.fadeIn{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+	animation-duration: 1.4s;	
+	-webkit-animation-duration: 1.4s;
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;		
+	visibility: visible !important;	
+}
+
+@keyframes fadeIn {
+	0% {transform:scale(0.95);opacity: 0.0;}
+	60% {transform: scale(1);}
+	100% {transform: scale(1);opacity: 1;}		
+}
+
+@-webkit-keyframes fadeIn {
+	0% {-webkit-transform:scale(0.95);opacity: 0.0;}
+	60% {-webkit-transform: scale(1);opacity: .5}	
+	100% {-webkit-transform: scale(1);opacity: 1;}	
 }

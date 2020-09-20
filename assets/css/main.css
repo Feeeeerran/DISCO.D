@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 header {
   background-color: #393e46; }
   header h1 {
@@ -136,6 +141,8 @@ div.album {
       font-family: "Mukta Malar", sans-serif;
       letter-spacing: 1.2vh;
       color: #CCE639; }
+    div.album div.container .container_novedades .container_novedades--body {
+      font-family: "Roboto", sans-serif; }
   div.album div.carousel {
     margin-bottom: 14vh;
     border-bottom: 0.5vh solid #A8D8EA; }
@@ -150,98 +157,127 @@ div.album {
         width: 20px;
         height: 20px;
         transform: skew(-25deg); }
-  div.album div.media.container_media .media_img:hover, div.album div.media.container_media .media_img--reverse:hover {
-    box-shadow: 0 0;
-    border-color: #3A4A50; }
-    div.album div.media.container_media .media_img:hover div, div.album div.media.container_media .media_img--reverse:hover div {
-      opacity: 1;
-      transform: translateY(-2.5vh); }
-  div.album div.media.container_media .media_img {
-    position: relative;
-    box-shadow: 0.4vh 0.75vh #A8D8EA, 0.8vh 1.5vh #A2D0E1, 0.8vh 1.5vh #96C1D1;
-    border: 0.5vh solid #92FB6D;
-    border-radius: 2%;
-    transition: box-shadow 0.8s,border 1.2s; }
-    div.album div.media.container_media .media_img div {
-      transition: opacity 1.8s,transform 2s;
-      opacity: 0;
+  div.album div.container.col-12 {
+    margin: 0; }
+  div.album div.media.container_media {
+    margin: 3vh;
+    margin-bottom: 4.5vh; }
+    div.album div.media.container_media .media_img:hover, div.album div.media.container_media .media_img--reverse:hover {
+      box-shadow: 0 0;
+      border-color: #3A4A50; }
+      div.album div.media.container_media .media_img:hover div, div.album div.media.container_media .media_img--reverse:hover div {
+        opacity: 1;
+        transform: translateY(-2.5vh); }
+    div.album div.media.container_media .media_img {
+      visibility: hidden;
+      flex-basis: auto;
+      position: relative;
+      box-shadow: 0.4vh 0.75vh #A8D8EA, 0.8vh 1.5vh #A2D0E1, 0.8vh 1.5vh #96C1D1;
+      border: 0.5vh solid #92FB6D;
+      border-radius: 2%;
+      transition: box-shadow 0.8s,border 1.2s; }
+      div.album div.media.container_media .media_img div {
+        transition: opacity 1.8s,transform 2s;
+        opacity: 0;
+        position: absolute;
+        left: 5%;
+        bottom: 5%;
+        text-decoration: none;
+        font-size: 5vh;
+        font-family: "Mukta Malar", sans-serif;
+        font-weight: bold;
+        letter-spacing: 1.5vh;
+        color: #92FB6D;
+        text-shadow: -0.2vh -0.2vh #393e46, 0.2vh 0.2vh #393e46, -0.2vh 0.2vh #393e46, 0.2vh -0.2vh #393e46; }
+    div.album div.media.container_media .media_img--reverse {
+      visibility: hidden;
+      flex-basis: auto;
+      position: relative;
+      box-shadow: -0.4vh 0.75vh #A8D8EA, -0.8vh 1.5vh #A2D0E1, -0.8vh 1.5vh #96C1D1;
+      border: 0.5vh solid #92FB6D;
+      border-radius: 2%;
+      transition: box-shadow 0.8s,border 1.2s; }
+      div.album div.media.container_media .media_img--reverse div {
+        transition: opacity 1.8s,transform 2s;
+        opacity: 0;
+        position: absolute;
+        left: 60%;
+        bottom: 5%;
+        text-decoration: none;
+        font-size: 5vh;
+        font-family: "Mukta Malar", sans-serif;
+        font-weight: bold;
+        letter-spacing: 1.5vh;
+        color: #92FB6D;
+        text-shadow: -0.2vh -0.2vh #393e46, 0.2vh 0.2vh #393e46, -0.2vh 0.2vh #393e46, 0.2vh -0.2vh #393e46; }
+    div.album div.media.container_media .media_body {
+      visibility: hidden;
+      padding: 3vh;
       position: absolute;
-      left: 30%;
-      bottom: 5%;
-      text-decoration: none;
-      font-size: 5vh;
-      font-family: "Mukta Malar", sans-serif;
-      font-weight: bold;
-      letter-spacing: 1.5vh;
-      color: #92FB6D;
-      text-shadow: -0.2vh -0.2vh #393e46, 0.2vh 0.2vh #393e46, -0.2vh 0.2vh #393e46, 0.2vh -0.2vh #393e46; }
-  div.album div.media.container_media .media_img--reverse {
-    position: relative;
-    box-shadow: -0.4vh 0.75vh #A8D8EA, -0.8vh 1.5vh #A2D0E1, -0.8vh 1.5vh #96C1D1;
-    border: 0.5vh solid #92FB6D;
-    border-radius: 2%;
-    transition: box-shadow 0.8s,border 1.2s; }
-    div.album div.media.container_media .media_img--reverse div {
-      transition: opacity 1.8s,transform 2s;
-      opacity: 0;
+      width: 80%;
+      bottom: 20%;
+      background-image: linear-gradient(90deg, rgba(57, 62, 70, 0.4), rgba(57, 62, 70, 0.9));
+      left: 65%; }
+      div.album div.media.container_media .media_body p {
+        border-right: 0.7vh solid #CCE639;
+        padding-right: 1vh; }
+    div.album div.media.container_media .media_body--reverse {
+      visibility: hidden;
+      padding: 3vh;
       position: absolute;
-      left: 40%;
-      bottom: 5%;
-      text-decoration: none;
-      font-size: 5vh;
-      font-family: "Mukta Malar", sans-serif;
-      font-weight: bold;
-      letter-spacing: 1.5vh;
+      width: 80%;
+      bottom: 20%;
+      background-image: linear-gradient(-90deg, rgba(57, 62, 70, 0.4), rgba(57, 62, 70, 0.9));
+      right: 65%; }
+      div.album div.media.container_media .media_body--reverse p {
+        border-left: 0.7vh solid #CCE639;
+        padding-left: 1vh; }
+    div.album div.media.container_media h5:hover {
+      text-shadow: 0 0; }
+      div.album div.media.container_media h5:hover svg {
+        visibility: visible; }
+    div.album div.media.container_media h5 {
+      margin: 0;
+      transition: text-shadow 0.5s;
+      letter-spacing: 0.8vh;
       color: #92FB6D;
-      text-shadow: -0.2vh -0.2vh #393e46, 0.2vh 0.2vh #393e46, -0.2vh 0.2vh #393e46, 0.2vh -0.2vh #393e46; }
-  div.album div.media.container_media .media_body {
-    padding: 3vh;
-    position: absolute;
-    width: 80%;
-    bottom: 20%;
-    background-image: linear-gradient(90deg, rgba(57, 62, 70, 0.4), rgba(57, 62, 70, 0.9));
-    left: 55%; }
-  div.album div.media.container_media .media_body--reverse {
-    padding: 3vh;
-    position: absolute;
-    width: 80%;
-    bottom: 20%;
-    background-image: linear-gradient(-90deg, rgba(57, 62, 70, 0.4), rgba(57, 62, 70, 0.9));
-    right: 55%; }
-  div.album div.media.container_media h5:hover {
-    text-shadow: 0 0; }
-    div.album div.media.container_media h5:hover svg {
-      visibility: visible; }
-  div.album div.media.container_media h5 {
-    margin: 0;
-    transition: text-shadow 0.5s;
-    letter-spacing: 0.8vh;
-    color: #92FB6D;
-    text-shadow: 0 0 0.5vh #A8D8EA;
-    font-size: 6.5vh;
-    font-weight: bold; }
-    div.album div.media.container_media h5 svg {
-      margin-right: 2vh;
-      visibility: hidden; }
-  div.album div.media.container_media span {
-    color: #CCE639;
-    font-size: 4vh;
-    text-shadow: 0 0 0.2vh #A8D8EA; }
-  div.album div.media.container_media p {
-    color: #eeeeee;
-    font-size: 2.5vh;
-    margin-top: 1vh; }
+      text-shadow: 0 0 0.5vh #A8D8EA;
+      font-size: 6.5vh;
+      font-weight: bold;
+      font-family: "Fugaz One", cursive; }
+      div.album div.media.container_media h5 svg {
+        margin-right: 2vh;
+        visibility: hidden; }
+    div.album div.media.container_media span {
+      color: #CCE639;
+      font-size: 4vh;
+      text-shadow: 0 0 0.2vh #A8D8EA; }
+    div.album div.media.container_media p {
+      color: #eeeeee;
+      font-size: 2.5vh;
+      font-family: "Roboto", sans-serif;
+      margin-top: 1vh; }
+
+div.col-md-4 {
+  padding-left: 5vh;
+  padding-right: 5vh; }
 
 div.albumSect--style {
   background-color: #eeeeee; }
   div.albumSect--style .albumSect_producto:hover {
-    box-shadow: 0 0; }
+    box-shadow: 0 0;
+    border-color: #393e46; }
+    div.albumSect--style .albumSect_producto:hover .albumSect_producto--body {
+      border-color: #393e46; }
   div.albumSect--style .albumSect_producto {
+    margin-bottom: 9vh;
+    visibility: hidden;
     border: #92FB6D 0.4vh groove;
-    transition: box-shadow 1s;
+    transition: box-shadow 0.4s,border-color 1s;
     box-shadow: 0.8vh 1.2vh #A8D8EA, -0.8vh -1.2vh #92FB6D; }
     div.albumSect--style .albumSect_producto .albumSect_producto--body {
-      border-top: #92FB6D 0.8vh groove; }
+      border-top: #92FB6D 0.5vh groove;
+      transition: border-color 1s; }
       div.albumSect--style .albumSect_producto .albumSect_producto--body .albumSect_producto_name {
         font-size: 3.2vh;
         color: #393e46;
@@ -254,6 +290,73 @@ div.albumSect--style {
         color: #393e46;
         font-weight: bold;
         font-size: 2.5vh; }
+
+.slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important; }
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%); }
+  50% {
+    transform: translateY(-8%); }
+  65% {
+    transform: translateY(4%); }
+  80% {
+    transform: translateY(-4%); }
+  95% {
+    transform: translateY(2%); }
+  100% {
+    transform: translateY(0%); } }
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(100%); }
+  50% {
+    -webkit-transform: translateY(-8%); }
+  65% {
+    -webkit-transform: translateY(4%); }
+  80% {
+    -webkit-transform: translateY(-4%); }
+  95% {
+    -webkit-transform: translateY(2%); }
+  100% {
+    -webkit-transform: translateY(0%); } }
+
+.fadeIn {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 1.4s;
+  -webkit-animation-duration: 1.4s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  visibility: visible !important; }
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.0; }
+  60% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.0; }
+  60% {
+    -webkit-transform: scale(1);
+    opacity: .5; }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1; } }
 
 section.producto {
   padding-top: 3vh;
@@ -408,16 +511,20 @@ body {
       nav ul li span {
         font-size: 1rem !important; }
   div.album {
-    padding-top: 0.8rem !important; }
-    div.album .album_novedades:hover {
-      box-shadow: -0.5rem -0.5rem #A8D8EA, 0.5rem 0.5rem #92FB6D; }
-    div.album .album_novedades {
-      box-shadow: -0.5rem -0.5rem #A8D8EA, 0.5rem 0.5rem #92FB6D;
-      transition: none; }
-      div.album .album_novedades .album_novedades--title {
+    padding-top: 0.8rem !important;
+    padding-bottom: 4rem !important; }
+    div.album div.container .container_novedades:hover {
+      box-shadow: -0.4rem -0.4rem #92FB6D, 0.4rem 0.4rem #A8D8EA; }
+    div.album div.container .container_novedades {
+      box-shadow: -0.4rem -0.4rem #A8D8EA, 0.4rem 0.4rem #92FB6D;
+      transition: box-shadow 1.2s; }
+      div.album div.container .container_novedades .container_novedades--title {
         font-size: 1.6rem; }
-      div.album .album_novedades .album_novedades--body > blockquote {
-        font-size: 0.9rem; }
+      div.album div.container .container_novedades .container_novedades--body {
+        padding-bottom: 0.1rem;
+        padding-top: 0.9rem; }
+        div.album div.container .container_novedades .container_novedades--body blockquote {
+          font-size: 1rem; }
     div.album .album_producto--style:hover {
       transform: scale(1.03); }
     div.album .album_producto--style {
@@ -426,8 +533,84 @@ body {
         font-size: 1.8rem; }
       div.album .album_producto--style .album_producto_text--price {
         font-size: 1.5rem; }
-    div.album div.carousel-item > img {
-      height: 15rem; }
+    div.album div.carousel {
+      margin-bottom: 1.8rem; }
+      div.album div.carousel ol > li {
+        margin: 0 0.2rem 0 0.2rem;
+        width: 0.8rem;
+        height: 0.8rem; }
+      div.album div.carousel img {
+        height: 17.5rem; }
+    div.album div.container.col-12 {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem; }
+    div.album div.media.container_media {
+      margin: 0;
+      margin-bottom: 0; }
+      div.album div.media.container_media .media_img:hover, div.album div.media.container_media .media_img--reverse:hover {
+        box-shadow: 0 0;
+        border-color: #92FB6D; }
+        div.album div.media.container_media .media_img:hover div, div.album div.media.container_media .media_img--reverse:hover div {
+          opacity: 0; }
+      div.album div.media.container_media .media_img {
+        box-shadow: 0 0;
+        border-width: 0.18rem;
+        border-radius: 1%;
+        border-left-color: #A8D8EA;
+        border-left-width: 0.23rem;
+        border-top-color: #A8D8EA;
+        border-top-width: 0.23rem; }
+      div.album div.media.container_media .media_img--reverse {
+        box-shadow: 0 0;
+        border-width: 0.18rem;
+        border-radius: 1%;
+        border-left-color: #A8D8EA;
+        border-left-width: 0.23rem;
+        border-top-color: #A8D8EA;
+        border-top-width: 0.23rem; }
+      div.album div.media.container_media .media_body {
+        margin-top: 0.3rem;
+        margin-bottom: 4.4rem;
+        border-top: 0.45rem solid #92FB6D;
+        text-align: left !important;
+        padding: 1rem;
+        position: relative;
+        background-image: linear-gradient(180deg, rgba(57, 62, 70, 0.95), rgba(57, 62, 70, 0));
+        left: 0%; }
+        div.album div.media.container_media .media_body p {
+          border-left: 0.25rem solid #CCE639;
+          padding-left: 1vh;
+          border-right: none !important; }
+      div.album div.media.container_media .media_body--reverse {
+        margin-top: 0.3rem;
+        margin-bottom: 4.4rem;
+        border-top: 0.45rem solid #92FB6D;
+        text-align: left !important;
+        padding: 1rem;
+        position: relative;
+        background-image: linear-gradient(180deg, rgba(57, 62, 70, 0.95), rgba(57, 62, 70, 0));
+        right: 0%; }
+        div.album div.media.container_media .media_body--reverse p {
+          border-left: 0.25rem solid #CCE639;
+          padding-left: 1vh;
+          border-right: none !important; }
+      div.album div.media.container_media h5:hover {
+        text-shadow: 0 0; }
+      div.album div.media.container_media h5 {
+        margin: 0;
+        letter-spacing: 0.2rem;
+        font-size: 2.2rem;
+        text-shadow: 0 0 1rem #393e46; }
+        div.album div.media.container_media h5 svg {
+          display: none; }
+      div.album div.media.container_media span {
+        font-size: 1.6rem;
+        text-shadow: 0 0; }
+      div.album div.media.container_media p {
+        color: #393e46;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 1vh; }
   div.albumSect--style .albumSect_producto {
     box-shadow: 0.2rem 0.4rem #A8D8EA, -0.2rem -0.4rem #92FB6D;
     transition: box-shadow 0.4s; }
@@ -444,11 +627,6 @@ body {
         margin-bottom: 0 !important;
         font-size: 1.4rem;
         font-size: 1.1rem; }
-  .contacto iframe {
-    border: #92FB6D groove 0.5vh;
-    height: 165%; }
-  .contacto .iframe {
-    margin-bottom: 8rem; }
   section.producto {
     padding-top: 0;
     padding-bottom: 0; }
@@ -485,24 +663,13 @@ body {
           margin-top: 0rem; }
         section.producto .producto_data form ul.list-inline {
           margin-top: 1rem;
-          transform: scale(0.9) translate(11.5rem, 0); }
+          text-align: center !important; }
+  .contacto iframe {
+    border: #92FB6D groove 0.5vh;
+    height: 165%; }
+  .contacto .iframe {
+    margin-bottom: 8rem; }
   footer .footer_contenido {
     font-size: 1rem; }
     footer .footer_contenido h6 {
       font-size: 1.8rem; } }
-
-@media only screen and (max-width: 768px) {
-  header h1 {
-    margin: 0;
-    margin-left: -0.2rem;
-    font-size: 8.8rem; }
-    header h1 span {
-      margin: 0 -0.3rem 0 -0.3rem; } }
-
-@media only screen and (max-width: 992px) {
-  header h1 {
-    margin: 0;
-    margin-left: -0.2rem;
-    font-size: 10.8rem; }
-    header h1 span {
-      margin: 0 -0.3rem 0 -0.3rem; } }

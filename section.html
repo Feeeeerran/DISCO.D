@@ -8,9 +8,12 @@
     <meta name="author" content="Ferris">
     <meta name="description" content="Producto x">
     <meta name="keywords" content="(Pais),(Producto),Fiabilidad,Compre segura,Económico,Calidad, Original,Variedad">
+
     <link rel="icon" type="image/svg" href="http://www.w3.org/2000/svg" />
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 
 <body>
@@ -65,11 +68,12 @@
             </ul>
         </div>
     </nav>
+
     <div class="album py-5 bg-light albumSect--style">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 ">
-                    <div class="card mb-4 cardProduct albumSect_producto">
+                    <div class="card cardProduct albumSect_producto">
                         <a href="producto.html" class="text-decoration-none">
                             <img src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" class="card-img" alt="product">
                             <div class="card-body albumSect_producto--body">
@@ -81,7 +85,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4 cardProduct albumSect_producto">
+                    <div class="card cardProduct albumSect_producto">
                         <a href="producto.html" class="text-decoration-none">
                             <img src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" class="card-img" alt="product">
                             <div class="card-body albumSect_producto--body">
@@ -93,7 +97,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4 cardProduct albumSect_producto">
+                    <div class="card cardProduct albumSect_producto">
                         <a href="producto.html" class="text-decoration-none">
                             <img src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" class="card-img" alt="product">
                             <div class="card-body albumSect_producto--body">
@@ -105,7 +109,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4 cardProduct albumSect_producto">
+                    <div class="card cardProduct albumSect_producto">
                         <a href="producto.html" class="text-decoration-none">
                             <img src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" class="card-img" alt="product">
                             <div class="card-body albumSect_producto--body">
@@ -117,7 +121,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4 cardProduct albumSect_producto">
+                    <div class="card cardProduct albumSect_producto">
                         <a href="producto.html" class="text-decoration-none">
                             <img src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" class="card-img" alt="product">
                             <div class="card-body albumSect_producto--body">
@@ -129,7 +133,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4 cardProduct albumSect_producto">
+                    <div class="card cardProduct albumSect_producto">
                         <a href="producto.html" class="text-decoration-none">
                             <img src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" class="card-img" alt="product">
                             <div class="card-body albumSect_producto--body">
@@ -141,7 +145,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4 cardProduct albumSect_producto">
+                    <div class="card cardProduct albumSect_producto">
                         <a href="producto.html" class="text-decoration-none">
                             <img src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" class="card-img" alt="product">
                             <div class="card-body albumSect_producto--body">
@@ -153,7 +157,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4 cardProduct albumSect_producto">
+                    <div class="card cardProduct albumSect_producto">
                         <a href="producto.html" class="text-decoration-none">
                             <img src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" class="card-img" alt="product">
                             <div class="card-body albumSect_producto--body">
@@ -165,7 +169,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4 cardProduct albumSect_producto">
+                    <div class="card cardProduct albumSect_producto">
                         <a href="producto.html" class="text-decoration-none">
                             <img src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" class="card-img" alt="product">
                             <div class="card-body albumSect_producto--body">
@@ -277,8 +281,20 @@
         </div>
     </footer>
 </body>
+<script>
+    $(window).scroll(function() {
+        $('.albumSect_producto').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+400) {
+                $(this).addClass("fadeIn");
+            }
+        });
+    });
+</script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </html>

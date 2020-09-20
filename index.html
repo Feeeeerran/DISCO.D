@@ -11,6 +11,8 @@
 
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/main.css">
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 <body>
 
@@ -29,7 +31,7 @@
 
 	<nav class="navbar navbar--navColor sticky-top justify-content-center">
         <span onclick="myFunction(this)" data-target="#navbars" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond navbar_navIcon" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round" >
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond navbar_navIcon" width="70" height="70" viewBox="0 -1 24 24" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round" >
             <path stroke="none" d="M0 0h24v24H0z" />
             <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
             <path d="M10 12l-2 -2.2l.6 -1" />
@@ -70,7 +72,7 @@
 	<div class="album album--style">
 		<div class="container">
 	        <div class="row">
-	        	<div class="col-md-12 mb-4">
+	        	<div class="col-md-12 mb-3">
 					<div class="card container_novedades">
 					    <div class="card-header container_novedades--title">
 					    	NOVEDADES
@@ -120,21 +122,21 @@
 
 
 		<div class="container-fluid">
-	        <div class="row no-gutters">
-	            <div class="col-xl-8 col-12 mb-5 mb-xl-0">
-	                <div class="media container_media">
+			<div class="row">
+            	<div class="container col-12 col-xl-8">
+	                <div class="row row-cols-1 media container_media">
 	                    <div class="media_img">
 	                    	<a href="producto.html">
-	                        	<img class="img-fluid" src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" alt="Generic placeholder image">
+	                        	<img class="img-fluid" src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" alt="Producto en oferta">
 	                        	<div>VER MAS</div>
 	                        </a>
 	                    </div>
 	                    <div class="media_body text-right">
 	                    	<div class="row flex-row-reverse">
-	                    		<div class="col-9">
+	                    		<div class="col-12 col-xl-9">
 			                        <a href="#" class="text-decoration-none">
 			                        	<h5>
-			                        		<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond" width="50" height="50" viewBox="0 1 26 26" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round" >
+			                        		<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond" width="50" height="50" viewBox="0 2 26 26" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round" >
 								            <path stroke="none" d="M0 0h24v24H0z" />
 								            <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
 								            <path d="M10 12l-2 -2.2l.6 -1" />
@@ -144,16 +146,15 @@
 			                        <span>$$$</span>
 			                        <p>$$$ en 3 cuotas sin interes</p>
 			                        <p>Lorem ipsum dolor amet consectetur adip sicing elit sed eiusm tempor incididunt ut labore dolore.</p>
-
 	                    		</div>
 	                    	</div>
 	                    </div>
 	                </div>
 	            </div>
 	        </div>
-            <div class="row flex-row-reverse">
-	            <div class="col-xl-8 col-12">
-	                <div class="media container_media flex-row-reverse">
+            <div class="row flex-row-reverse ">
+            	<div class="container col-xl-8 col-12">
+	                <div class="row row-cols-1 media container_media flex-row-reverse">
 	                    <div class="media_img--reverse">
 	                    	<a href="producto.html">
 	                        	<img class="img-fluid" src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" alt="Generic placeholder image">
@@ -161,41 +162,43 @@
 	                    	</a>
 	                    </div>
 	                    <div class="media_body--reverse">
-	                        <div class="col-9">
-		                        <a href="#" class="text-decoration-none">
-		                        	<h5>
-		                        		PRODUCTO
-		                        		<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond" width="50" height="50" viewBox="0 1 26 26" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round" >
-							            <path stroke="none" d="M0 0h24v24H0z" />
-							            <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
-							            <path d="M10 12l-2 -2.2l.6 -1" />
-							            </svg>
-					        		</h5>
-						        </a>
-		                        <span>$$$</span>
-		                        <p>$$$ en 3 cuotas sin interes</p>
-		                        <p>Lorem ipsum dolor amet consectetur adip sicing elit sed eiusm tempor incididunt ut labore dolore.</p>
-		                        
-                    		</div>
+	                    	<div class="row">
+		                        <div class="col-sm-12 col-lg-9">
+			                        <a href="#" class="text-decoration-none">
+			                        	<h5>
+			                        		PRODUCTO
+			                        		<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond" width="50" height="50" viewBox="0 2 26 26" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round" >
+								            <path stroke="none" d="M0 0h24v24H0z" />
+								            <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
+								            <path d="M10 12l-2 -2.2l.6 -1" />
+								            </svg>
+						        		</h5>
+							        </a>
+			                        <span>$$$</span>
+			                        <p>$$$ en 3 cuotas sin interes</p>
+			                        <p>Lorem ipsum dolor amet consectetur adip sicing elit sed eiusm tempor incididunt ut labore dolore.</p>
+			                        
+	                    		</div>
+                			</div>
 	                    </div>
 	                </div>
-	            </div>
+               	</div>
 	        </div>
-	        <div class="row no-gutters">
-	            <div class="col-xl-8 col-12 mb-5 mb-xl-0">
-	                <div class="media container_media">
+	        <div class="row">
+            	<div class="container col-12 col-xl-8">
+	                <div class="row row-cols-1 media container_media">
 	                    <div class="media_img">
 	                    	<a href="producto.html">
-	                        	<img class="img-fluid" src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" alt="Generic placeholder image">
+	                        	<img class="img-fluid" src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" alt="Producto en oferta">
 	                        	<div>VER MAS</div>
 	                        </a>
 	                    </div>
 	                    <div class="media_body text-right">
 	                    	<div class="row flex-row-reverse">
-	                    		<div class="col-9">
+	                    		<div class="col-12 col-xl-9">
 			                        <a href="#" class="text-decoration-none">
 			                        	<h5>
-			                        		<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond" width="50" height="50" viewBox="0 1 26 26" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round" >
+			                        		<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond" width="50" height="50" viewBox="0 2 26 26" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round" >
 								            <path stroke="none" d="M0 0h24v24H0z" />
 								            <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
 								            <path d="M10 12l-2 -2.2l.6 -1" />
@@ -205,16 +208,15 @@
 			                        <span>$$$</span>
 			                        <p>$$$ en 3 cuotas sin interes</p>
 			                        <p>Lorem ipsum dolor amet consectetur adip sicing elit sed eiusm tempor incididunt ut labore dolore.</p>
-
 	                    		</div>
 	                    	</div>
 	                    </div>
 	                </div>
 	            </div>
 	        </div>
-            <div class="row flex-row-reverse">
-	            <div class="col-xl-8 col-12">
-	                <div class="media container_media flex-row-reverse">
+            <div class="row flex-row-reverse ">
+            	<div class="container col-xl-8 col-12">
+	                <div class="row row-cols-1 media container_media flex-row-reverse">
 	                    <div class="media_img--reverse">
 	                    	<a href="producto.html">
 	                        	<img class="img-fluid" src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" alt="Generic placeholder image">
@@ -222,25 +224,27 @@
 	                    	</a>
 	                    </div>
 	                    <div class="media_body--reverse">
-	                        <div class="col-9">
-		                        <a href="#" class="text-decoration-none">
-		                        	<h5>
-		                        		PRODUCTO
-		                        		<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond" width="50" height="50" viewBox="0 1 26 26" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round" >
-							            <path stroke="none" d="M0 0h24v24H0z" />
-							            <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
-							            <path d="M10 12l-2 -2.2l.6 -1" />
-							            </svg>
-					        		</h5>
-						        </a>
-		                        <span>$$$</span>
-		                        <p>$$$ en 3 cuotas sin interes</p>
-		                        <p>Lorem ipsum dolor amet consectetur adip sicing elit sed eiusm tempor incididunt ut labore dolore.</p>
-		                        
-                    		</div>
+	                        <div class="row">
+		                        <div class="col-sm-12 col-lg-9">
+			                        <a href="#" class="text-decoration-none">
+			                        	<h5>
+			                        		PRODUCTO
+			                        		<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond" width="50" height="50" viewBox="0 2 26 26" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round" >
+								            <path stroke="none" d="M0 0h24v24H0z" />
+								            <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
+								            <path d="M10 12l-2 -2.2l.6 -1" />
+								            </svg>
+						        		</h5>
+							        </a>
+			                        <span>$$$</span>
+			                        <p>$$$ en 3 cuotas sin interes</p>
+			                        <p>Lorem ipsum dolor amet consectetur adip sicing elit sed eiusm tempor incididunt ut labore dolore.</p>
+			                        
+	                    		</div>
+                			</div>
 	                    </div>
 	                </div>
-	            </div>
+               	</div>
 	        </div>
 	    </div>
 	</div>
@@ -351,6 +355,21 @@
 	    </div>
 	</footer>	
 </body>
+
+<script>
+	$(window).scroll(function() {
+		$('.media_img,.media_body,.media_img--reverse,.media_body--reverse').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+</script>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
