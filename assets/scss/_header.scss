@@ -21,33 +21,28 @@ header {
 			text-shadow: 0 0 0.5vh $color1;
 		}
 	}
-	
 
+	a:hover {text-decoration:none;}
 	h1 {
 		@include LOGObasic;
-		@include LOGOinteract;}
+		@include LOGOinteract;
+	}
 
 	h1.titulo_section {
 		@include LOGObasic;
-		a {@include LOGOinteract;}}
-
-
-	a:hover {text-decoration:none;}
-
-
-	@for $i from 1 through 6 {
-	.logo-letter#{$i}{
-		animation: logo_letter 0.3s linear 0.08s*$i forwards;}
+		a {@include LOGOinteract;}
 	}
-
-	@keyframes logo_letter {
-		45%{color:white;}
-		50%{color:$color2;transform: scale(0.98);text-shadow: 0 0 3vh $color2}
-		55%{color:white;}
-	}
-
 }
 
 
+@for $i from 1 through 7 {
+.logo_letter#{$i}{
+	animation: flash 0.3s linear 0.08s*$i forwards;}
+}
 
+@keyframes flash {
+	45%{color:white;}
+	50%{color:$color2;transform: scale(0.98);text-shadow: 0 0 3vh $color2}
+	55%{color:white;}
+}
 

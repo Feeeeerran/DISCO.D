@@ -15,6 +15,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 header {
   background-color: #393e46; }
+  header a:hover {
+    text-decoration: none; }
   header h1 {
     display: flex;
     cursor: cell;
@@ -47,22 +49,29 @@ header {
       margin: 0 -1vh 0 -1vh;
       user-select: none;
       text-shadow: 0 0 0.5vh #92FB6D; }
-  header a:hover {
-    text-decoration: none; }
-  header .logo-letter1 {
-    animation: logo_letter 0.3s linear 0.08s forwards; }
-  header .logo-letter2 {
-    animation: logo_letter 0.3s linear 0.16s forwards; }
-  header .logo-letter3 {
-    animation: logo_letter 0.3s linear 0.24s forwards; }
-  header .logo-letter4 {
-    animation: logo_letter 0.3s linear 0.32s forwards; }
-  header .logo-letter5 {
-    animation: logo_letter 0.3s linear 0.4s forwards; }
-  header .logo-letter6 {
-    animation: logo_letter 0.3s linear 0.48s forwards; }
 
-@keyframes logo_letter {
+.logo_letter1 {
+  animation: flash 0.3s linear 0.08s forwards; }
+
+.logo_letter2 {
+  animation: flash 0.3s linear 0.16s forwards; }
+
+.logo_letter3 {
+  animation: flash 0.3s linear 0.24s forwards; }
+
+.logo_letter4 {
+  animation: flash 0.3s linear 0.32s forwards; }
+
+.logo_letter5 {
+  animation: flash 0.3s linear 0.4s forwards; }
+
+.logo_letter6 {
+  animation: flash 0.3s linear 0.48s forwards; }
+
+.logo_letter7 {
+  animation: flash 0.3s linear 0.56s forwards; }
+
+@keyframes flash {
   45% {
     color: white; }
   50% {
@@ -72,32 +81,28 @@ header {
   55% {
     color: white; } }
 
-nav.navbar--navColor {
-  padding: 0;
+nav {
   background-color: #393e46;
+  padding: 0;
   cursor: cell;
   border-bottom: #92FB6D solid 1.5vh; }
-  nav.navbar--navColor .navbar_navIcon {
+  nav .navbar_navIcon {
     transform: rotate(-45deg); }
-  nav.navbar--navColor .navbar_navIcon {
+  nav .navbar_navIcon {
     transition: 0.4s; }
-  nav.navbar--navColor .change .navbar_navIcon {
+  nav .change .navbar_navIcon {
     transform: rotate(0deg); }
-
-#navbars {
-  cursor: pointer; }
-
-nav {
-  justify-content: start; }
-  nav ul li:hover {
-    color: #eeeeee; }
-  nav ul li .nav-item--style {
+  nav #navbars {
+    cursor: pointer; }
+  nav .nav-link:hover {
+    color: white;
+    letter-spacing: 0.2vh; }
+  nav .nav-link {
     user-select: none;
     text-decoration: none;
     color: #92FB6D;
-    font-size: 3vh; }
-  nav ul li span {
-    transition: color 0.5s; }
+    font-size: 3vh;
+    transition: color 1s,letter-spacing 1s; }
 
 footer {
   background-color: #393e46; }
@@ -116,32 +121,34 @@ footer {
       text-shadow: 0 0 0.4vh #A8D8EA;
       opacity: 0.8;
       border-bottom: #92FB6D 0.1vh solid; }
+    footer .footer_contenido p > a:hover {
+      color: white !important;
+      opacity: 1; }
     footer .footer_contenido p, footer .footer_contenido a {
       color: #eeeeee;
-      opacity: 0.8; }
-
-div.album--style {
-  background-color: #eeeeee; }
+      opacity: 0.7;
+      transition: color 0.2s,opacity 0.2s; }
 
 div.album {
+  background-color: #eeeeee;
   padding-top: 4vh;
   padding-bottom: 20vh; }
-  div.album div.container .container_novedades:hover {
+  div.album div.container_novedades:hover {
     box-shadow: 2vh 1vh #92FB6D, -2vh -1vh #A8D8EA; }
-  div.album div.container .container_novedades {
+  div.album div.container_novedades {
     margin-bottom: 4vh;
     cursor: crosshair;
     background-color: #eeeeee;
     border: #CCE639 solid 0.5vh;
     transition: box-shadow 0.9s; }
-    div.album div.container .container_novedades .container_novedades--title {
+    div.album div.container_novedades .container_novedades--title {
       border-bottom: #CCE639 0.8vh solid;
       background-color: #393e46;
       font-size: 4vh;
       font-family: "Mukta Malar", sans-serif;
       letter-spacing: 1.2vh;
       color: #CCE639; }
-    div.album div.container .container_novedades .container_novedades--body {
+    div.album div.container_novedades .container_novedades--body {
       font-family: "Roboto", sans-serif; }
   div.album div.carousel {
     margin-bottom: 14vh;
@@ -157,6 +164,8 @@ div.album {
         width: 20px;
         height: 20px;
         transform: skew(-25deg); }
+    div.album div.carousel .img {
+      height: 20%; }
   div.album div.container.col-12 {
     margin: 0; }
   div.album div.media.container_media {
@@ -258,37 +267,46 @@ div.album {
       font-family: "Roboto", sans-serif;
       margin-top: 1vh; }
 
-div.col-md-4 {
+div.albumSection {
   padding-left: 5vh;
-  padding-right: 5vh; }
-
-div.albumSect--style {
+  padding-right: 5vh;
   background-color: #eeeeee; }
-  div.albumSect--style .albumSect_producto:hover {
+  div.albumSection .albumSection_producto:hover {
     box-shadow: 0 0;
     border-color: #393e46; }
-    div.albumSect--style .albumSect_producto:hover .albumSect_producto--body {
+    div.albumSection .albumSection_producto:hover .albumSection_producto_body {
       border-color: #393e46; }
-  div.albumSect--style .albumSect_producto {
+      div.albumSection .albumSection_producto:hover .albumSection_producto_body .albumSection_producto--name {
+        color: #eeeeee;
+        background-position: -100% 0;
+        padding-left: 1vh; }
+  div.albumSection .albumSection_producto {
     margin-bottom: 9vh;
     visibility: hidden;
     border: #92FB6D 0.4vh groove;
     transition: box-shadow 0.4s,border-color 1s;
     box-shadow: 0.8vh 1.2vh #A8D8EA, -0.8vh -1.2vh #92FB6D; }
-    div.albumSect--style .albumSect_producto .albumSect_producto--body {
+    div.albumSection .albumSection_producto .albumSection_producto_body {
       border-top: #92FB6D 0.5vh groove;
       transition: border-color 1s; }
-      div.albumSect--style .albumSect_producto .albumSect_producto--body .albumSect_producto_name {
+      div.albumSection .albumSection_producto .albumSection_producto_body .albumSection_producto--name {
         font-size: 3.2vh;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
         color: #393e46;
-        font-weight: bold; }
-      div.albumSect--style .albumSect_producto .albumSect_producto--body .albumSect_producto_text {
+        transition: color 0.8s,background-position 0.5s ease-out,padding-left 0.8s;
+        font-family: "Fugaz One", cursive;
+        background-image: linear-gradient(to right, white 50%, #393e46 50%, rgba(57, 62, 70, 0.2));
+        background-size: 200% auto;
+        background-position: 0 0; }
+      div.albumSection .albumSection_producto .albumSection_producto_body .albumSection_producto--text {
         font-size: 2.5vh;
         color: #393e46; }
-      div.albumSect--style .albumSect_producto .albumSect_producto--body .albumSect_producto_price {
+      div.albumSection .albumSection_producto .albumSection_producto_body .albumSection_producto--price {
         font-size: 3.2vh;
-        color: #393e46;
         font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        color: #393e46;
         font-size: 2.5vh; }
 
 .slideUp {
@@ -304,13 +322,7 @@ div.albumSect--style {
   0% {
     transform: translateY(100%); }
   50% {
-    transform: translateY(-8%); }
-  65% {
-    transform: translateY(4%); }
-  80% {
-    transform: translateY(-4%); }
-  95% {
-    transform: translateY(2%); }
+    transform: translateY(-12%); }
   100% {
     transform: translateY(0%); } }
 
@@ -318,42 +330,37 @@ div.albumSect--style {
   0% {
     -webkit-transform: translateY(100%); }
   50% {
-    -webkit-transform: translateY(-8%); }
-  65% {
-    -webkit-transform: translateY(4%); }
-  80% {
-    -webkit-transform: translateY(-4%); }
-  95% {
-    -webkit-transform: translateY(2%); }
+    -webkit-transform: translateY(-12%); }
   100% {
     -webkit-transform: translateY(0%); } }
 
 .fadeIn {
   animation-name: fadeIn;
   -webkit-animation-name: fadeIn;
-  animation-duration: 1.4s;
-  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.2s;
   animation-timing-function: ease-out;
+  -webkit-animation-duration: 1.2s;
   -webkit-animation-timing-function: ease-out;
   visibility: visible !important; }
 
 @keyframes fadeIn {
   0% {
-    transform: scale(0.95);
+    transform: scale(0.9);
     opacity: 0.0; }
   60% {
-    transform: scale(1); }
+    transform: scale(1);
+    opacity: 0.5; }
   100% {
     transform: scale(1);
     opacity: 1; } }
 
 @-webkit-keyframes fadeIn {
   0% {
-    -webkit-transform: scale(0.95);
+    -webkit-transform: scale(0.9);
     opacity: 0.0; }
   60% {
     -webkit-transform: scale(1);
-    opacity: .5; }
+    opacity: 0.5; }
   100% {
     -webkit-transform: scale(1);
     opacity: 1; } }
@@ -362,34 +369,45 @@ section.producto {
   padding-top: 3vh;
   padding-bottom: 8vh;
   background-color: #eeeeee; }
-  section.producto .producto_nav {
+  section.producto ol.producto_nav {
     padding-bottom: 0.5vh; }
-    section.producto .producto_nav li.breadcrumb-item a {
+    section.producto ol.producto_nav li a {
       color: #393e46; }
-    section.producto .producto_nav li.breadcrumb-item a.producto_nav--logo:hover {
-      text-decoration: none; }
-    section.producto .producto_nav li.breadcrumb-item a.producto_nav--logo {
+    section.producto ol.producto_nav li a.producto_nav--logo:hover {
+      text-decoration: none;
+      transform: scale(1.1); }
+    section.producto ol.producto_nav li a.producto_nav--logo {
       color: #92FB6D;
       font-family: "Fugaz One", cursive;
-      font-size: 6vh; }
-  section.producto .producto_foto {
+      font-size: 6vh;
+      transition: transform 1s; }
+  section.producto .carousel.producto_foto {
     border-radius: 0.5vh;
     border: #92FB6D 0.4vh groove;
     box-shadow: 0.5vh 0.9vh #A8D8EA, -0.5vh -0.9vh #92FB6D; }
-    section.producto .producto_foto .producto_foto--slider {
-      background-color: #393e46; }
+    section.producto .carousel.producto_foto ol {
+      transform: translateY(4vh); }
+      section.producto .carousel.producto_foto ol .active {
+        background-color: #92FB6D;
+        box-shadow: 0.25vh 0.25vh black; }
+      section.producto .carousel.producto_foto ol li {
+        border: 0.2vh solid #393e46;
+        background-color: #A8D8EA;
+        width: 20px;
+        height: 20px;
+        transform: skew(-25deg); }
   section.producto .producto_data {
     padding-top: 5vh; }
-    section.producto .producto_data .producto_data_name {
+    section.producto .producto_data .producto_data--name {
       text-shadow: 1vh 0 #A8D8EA;
       margin: 0;
       color: #393e46;
-      font-family: "Mukta Malar", sans-serif;
+      font-family: "Fugaz One", cursive;
       font-size: 10vh;
       font-weight: bold; }
-    section.producto .producto_data .producto_data_price {
-      filter: grayscale(40%);
-      color: #92FB6D;
+    section.producto .producto_data .producto_data--price {
+      filter: grayscale(25%);
+      color: #CCE639;
       font-weight: bold;
       font-size: 6.5vh;
       font-family: "Mukta Malar", sans-serif;
@@ -397,25 +415,30 @@ section.producto {
     section.producto .producto_data ul.nav-tabs {
       border-bottom: 0.2vh solid #92FB6D; }
       section.producto .producto_data ul.nav-tabs a.nav-link {
-        color: #393e46; }
+        color: #393e46;
+        font-family: "Mukta Malar", sans-serif;
+        letter-spacing: 0.1vh; }
       section.producto .producto_data ul.nav-tabs a.nav-link.active {
         font-weight: bold; }
-    section.producto .producto_data .producto_data_text {
-      color: #393e46; }
+    section.producto .producto_data .producto_data--text {
+      color: #393e46;
+      font-family: "Roboto", sans-serif; }
     section.producto .producto_data form {
       margin-top: 8vh;
       color: #393e46; }
       section.producto .producto_data form h6 {
-        margin-bottom: 1.5vh;
+        margin-bottom: 0.5vh;
         font-size: 3vh;
-        font-weight: bold; }
+        font-weight: bold;
+        font-family: "Mukta Malar", sans-serif; }
       section.producto .producto_data form label.active.btn-secondary {
         color: #92FB6D;
         filter: blur(0); }
       section.producto .producto_data form label.btn {
-        filter: blur(0.08vh); }
+        filter: blur(0.07vh); }
       section.producto .producto_data form .modal-header {
-        border-color: #A8D8EA; }
+        border-color: #A8D8EA;
+        border-width: 0.5vh; }
         section.producto .producto_data form .modal-header h5 {
           margin-left: 3vh;
           font-family: "Mukta Malar", sans-serif;
@@ -435,13 +458,20 @@ section.producto {
   .contacto .contacto_data {
     letter-spacing: -0.2vh; }
     .contacto .contacto_data h2 {
+      box-shadow: -0.5vh 0 #eeeeee, -1vh 0 #92FB6D;
+      padding-left: 1vh;
+      background-image: linear-gradient(to right, #92FB6D, #eeeeee);
       color: #393e46;
       font-family: "Mukta Malar", sans-serif;
       font-size: 4.8vh; }
     .contacto .contacto_data form {
-      color: #393e46; }
+      color: #393e46;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      letter-spacing: 0.1vh; }
       .contacto .contacto_data form .modal-header {
-        border-color: #A8D8EA; }
+        border-color: #A8D8EA;
+        border-width: 0.5vh; }
         .contacto .contacto_data form .modal-header h5 {
           margin-left: 3vh;
           font-family: "Mukta Malar", sans-serif;
@@ -452,24 +482,6 @@ section.producto {
         background-color: #393e46;
         border-color: #A8D8EA;
         font-size: 3vh; }
-
-body {
-  background-color: #eeeeee; }
-
-/* width */
-::-webkit-scrollbar {
-  width: 8px; }
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #CDFB6D; }
-
-::-webkit-scrollbar-thumb {
-  background: #393e46; }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #6D7786; }
 
 @media only screen and (max-width: 600px) {
   header h1 {
@@ -673,3 +685,18 @@ body {
     font-size: 1rem; }
     footer .footer_contenido h6 {
       font-size: 1.8rem; } }
+
+body {
+  background-color: #eeeeee; }
+
+::-webkit-scrollbar {
+  width: 8px; }
+
+::-webkit-scrollbar-track {
+  background: #CDFB6D; }
+
+::-webkit-scrollbar-thumb {
+  background: #393e46; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6D7786; }

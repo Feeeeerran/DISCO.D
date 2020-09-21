@@ -1,33 +1,24 @@
-nav.navbar--navColor {
-	padding: 0;
+nav{
 	background-color: $color3;
+	padding: 0;
 	cursor: cell;
 	border-bottom: $color1 solid 1.5vh;
-
 
 	.navbar_navIcon {transform: rotate(-45deg);}
 	.navbar_navIcon {transition:0.4s;} 
 	.change .navbar_navIcon {transform: rotate(0deg);}
-}
+
+	#navbars {cursor: pointer;}
 
 
 
-
-
-#navbars {cursor: pointer;}
-nav{
-	justify-content: start;
-	ul {
-		li:hover {color:$color4;}
-		li {
-			.nav-item--style {
-				user-select: none;
-				text-decoration: none;
-				color: $color1;
-				font-size: 3vh;
-			}
-			span {transition: color 0.5s}	
-		}
+	.nav-link:hover{color:white;letter-spacing: 0.2vh}
+	.nav-link {
+		user-select: none;
+		text-decoration: none;
+		color: $color1;
+		font-size: 3vh;
+		transition:color 1s,letter-spacing 1s;
 	}
 	
 }

@@ -7,28 +7,14 @@
 @import "contacto";
 
 
-body {background-color: $color4;}
-
-/* width */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background:#CDFB6D;
-}
-
- // Handle 
-::-webkit-scrollbar-thumb {
-  background:$color3
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background:#6D7786;
-}
-
 @import "media/mediaqueries_main";
+
+
+body {background-color: $color4;}
+::-webkit-scrollbar {width: 8px;}
+::-webkit-scrollbar-track {background:#CDFB6D;}
+::-webkit-scrollbar-thumb {background:$color3}
+::-webkit-scrollbar-thumb:hover {background:#6D7786;}
+
 
 

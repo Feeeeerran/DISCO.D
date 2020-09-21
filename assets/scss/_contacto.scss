@@ -6,14 +6,20 @@
 	
 	.contacto_data {
 		h2 {
+			box-shadow: -0.5vh 0 $color4,-1vh 0 $color1;
+			padding-left: 1vh;
+			background-image: linear-gradient(to right,$color1,$color4);
 			color:$color3;
 			font:{family:$subtitulo;size:4.8vh;}}
 			letter-spacing: -0.2vh;
 
 		form {
 			color:$color3;
+			font:{family:$general;weight:bold;}
+			letter-spacing: 0.1vh;
+			
 			.modal-header {
-				border-color: $color2;
+				border:{color: $color2;width:0.5vh;}
 				h5 {
 					margin-left: 3vh;
 					font-family: $subtitulo;

@@ -1,37 +1,36 @@
 @import "utilities/variables";
 
 
-div.album--style {background-color:$color4;}
-
 div.album {
+	background-color:$color4;
 	padding-top: 4vh;padding-bottom: 20vh;
 
-	div.container{
-		.container_novedades:hover {box-shadow:2vh 1vh $color1,-2vh -1vh $color2;}
-		.container_novedades{
-			margin-bottom:4vh;
-			cursor: crosshair;
-			background-color:$color4;
-			border:$amarillo solid 0.5vh;
-			transition: box-shadow 0.9s;
 
-			.container_novedades--title {
-				border-bottom: $amarillo 0.8vh solid;
-				background-color:$color3;
-				font:{size:4vh;family:$subtitulo;};
-				letter-spacing: 1.2vh;
-				color:$amarillo;
-			}
-			.container_novedades--body {font-family: $general;}
+	div.container_novedades:hover {box-shadow:2vh 1vh $color1,-2vh -1vh $color2;}
+	div.container_novedades{
+		margin-bottom:4vh;
+		cursor: crosshair;
+		background-color:$color4;
+		border:$amarillo solid 0.5vh;
+		transition: box-shadow 0.9s;
+
+		.container_novedades--title {
+			border-bottom: $amarillo 0.8vh solid;
+			background-color:$color3;
+			font:{size:4vh;family:$subtitulo;};
+			letter-spacing: 1.2vh;
+			color:$amarillo;
 		}
+		.container_novedades--body {font-family: $general;}
 	}
+
 
 	div.carousel {
 		margin-bottom: 14vh;
 		border-bottom:0.5vh solid $color2;
 		ol {
-			.active {background-color: $color1;box-shadow: 0.25vh 0.25vh black;}
 			transform: translateY(4vh);
+			.active {background-color:$color1;box-shadow: 0.25vh 0.25vh black;}
 			li{
 				border:0.2vh solid $color3;
 				background-color:$color2;
@@ -39,6 +38,8 @@ div.album {
 				transform: skew(-25deg);
 			}
 		}
+
+		.img {height: 20%;}
 	}
 
 	div.container.col-12 {margin:0;}
@@ -60,7 +61,8 @@ div.album {
 				left:5%+$desp;
 				bottom:5%;
 				text-decoration: none;
-				font:{size:5vh;family:$subtitulo;weight:bold;};letter-spacing: 1.5vh;
+				font:{size:5vh;family:$subtitulo;weight:bold;};
+				letter-spacing: 1.5vh;
 				color:$color1;
 				text-shadow: -0.2vh -0.2vh $color3,0.2vh 0.2vh $color3,-0.2vh 0.2vh $color3,0.2vh -0.2vh $color3;
 			}
@@ -87,6 +89,7 @@ div.album {
 		.media_body {@include mediaC(90deg,right);left:65%;}
 		.media_body--reverse {@include mediaC(-90deg,left);right:65%;}
 
+		// TEXT ----------------
 		h5:hover {text-shadow: 0 0;svg{visibility: visible;}}
 		h5 {
 			margin:0;
@@ -106,43 +109,67 @@ div.album {
 	}
 }
 
-div.col-md-4 {padding:{left:5vh;right:5vh;}}
-div.albumSect--style {
+
+div.albumSection {
+	padding:{left:5vh;right:5vh;}
 	background-color:$color4;
 
-	.albumSect_producto:hover {
+
+	.albumSection_producto:hover {
 		box-shadow:0 0;
 		border-color: $color3;
-		.albumSect_producto--body {border-color:$color3;}}
-	.albumSect_producto{
+		.albumSection_producto_body {
+			border-color:$color3;
+			.albumSection_producto--name{
+				color:$color4;
+				background-position: -100% 0;
+				padding-left: 1vh;
+			}
+		}
+	}
+	.albumSection_producto{
 		margin-bottom: 9vh;
 		visibility: hidden;
 		border:$color1 0.4vh groove;
 		transition: box-shadow 0.4s,border-color 1s;
 		box-shadow:0.8vh 1.2vh $color2,-0.8vh -1.2vh $color1;
 
-		@mixin product {
-			font-size:3.2vh;
+		@mixin producto {
+			font:{
+				size:3.2vh;
+				weight:bold;
+				family:$general;}
 			color:$color3;
-			font-weight: bold;}
-		.albumSect_producto--body {
-			border-top:$color1 0.5vh groove;transition:border-color 1s;
-			.albumSect_producto_name{
-				@include product;}
-			.albumSect_producto_text{
+		}
+
+		.albumSection_producto_body {
+			border-top:$color1 0.5vh groove;
+			transition:border-color 1s;
+
+			.albumSection_producto--name{
+				@include producto;
+				transition:color 0.8s,background-position 0.5s ease-out,padding-left 0.8s;
+				font-family: $titulo;
+				background-image:linear-gradient(to right,white 50%,$color3 50%,rgba(57, 62, 70,0.2));
+				background-size: 200% auto;
+				background-position: 0 0;
+			}
+
+			.albumSection_producto--text{
 				font-size: 2.5vh;
-				color:$color3;}
-			.albumSect_producto_price{
-				@include product;
-				font-size: 2.5vh;}
+				color:$color3;
+			}
+			.albumSection_producto--price{
+				@include producto;
+				font-size: 2.5vh;
+			}
 		}
 	}
 }
 
 
+
 // Animaciones de entrada ---------------
-
-
 .slideUp{
 	animation-name: slideUp;
 	-webkit-animation-name: slideUp;
@@ -155,19 +182,13 @@ div.albumSect--style {
 
 @keyframes slideUp {
 	0% {transform: translateY(100%);}
-	50%{transform: translateY(-8%);}
-	65%{transform: translateY(4%);}
-	80%{transform: translateY(-4%);}
-	95%{transform: translateY(2%);}			
+	50%{transform: translateY(-12%);}		
 	100% {transform: translateY(0%);}	
 }
 
 @-webkit-keyframes slideUp {
 	0% {-webkit-transform: translateY(100%);}
-	50%{-webkit-transform: translateY(-8%);}
-	65%{-webkit-transform: translateY(4%);}
-	80%{-webkit-transform: translateY(-4%);}
-	95%{-webkit-transform: translateY(2%);}			
+	50%{-webkit-transform: translateY(-12%);}	
 	100% {-webkit-transform: translateY(0%);}	
 }
 
@@ -175,22 +196,23 @@ div.albumSect--style {
 
 .fadeIn{
 	animation-name: fadeIn;
-	-webkit-animation-name: fadeIn;	
-	animation-duration: 1.4s;	
-	-webkit-animation-duration: 1.4s;
-	animation-timing-function: ease-out;	
-	-webkit-animation-timing-function: ease-out;		
+	-webkit-animation-name: fadeIn;
+	animation-duration: 1.2s;
+	animation-timing-function: ease-out;
+	-webkit-animation-duration: 1.2s;
+	-webkit-animation-timing-function: ease-out;
 	visibility: visible !important;	
 }
 
 @keyframes fadeIn {
-	0% {transform:scale(0.95);opacity: 0.0;}
-	60% {transform: scale(1);}
-	100% {transform: scale(1);opacity: 1;}		
+	0% {transform:scale(0.9);opacity: 0.0;}
+	60% {transform: scale(1);opacity: 0.5}
+	100% {transform: scale(1);opacity: 1;}	
 }
 
 @-webkit-keyframes fadeIn {
-	0% {-webkit-transform:scale(0.95);opacity: 0.0;}
-	60% {-webkit-transform: scale(1);opacity: .5}	
-	100% {-webkit-transform: scale(1);opacity: 1;}	
+	0% {-webkit-transform:scale(0.9);opacity: 0.0;}
+	60% {-webkit-transform: scale(1);opacity: 0.5}
+	100% {-webkit-transform: scale(1);opacity: 1;}
 }
+

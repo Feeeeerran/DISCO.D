@@ -1,69 +1,83 @@
 section.producto {
-	padding-top: 3vh;padding-bottom:8vh;
+	padding:{top: 3vh;bottom:8vh;}
 	background-color: $color4;
 
-
-
-
-	.producto_nav {
+	ol.producto_nav {
 		padding-bottom: 0.5vh;
-		li.breadcrumb-item {
+		li {
 			a {color:$color3;}
-			a.producto_nav--logo:hover {text-decoration: none;}
+
+			a.producto_nav--logo:hover {text-decoration: none;transform: scale(1.1);}
 			a.producto_nav--logo {
 				color:$color1;
-				font:{family:$titulo;size:6vh};}
+				font:{family:$titulo;size:6vh};
+				transition: transform 1s;
+			}
 		}
-		
 	}
 
-	.producto_foto{
+	.carousel.producto_foto{
 		border-radius: 0.5vh;
 		border:$color1 0.4vh groove;
 		box-shadow:0.5vh 0.9vh $color2, -0.5vh -0.9vh $color1;
 
-		.producto_foto--slider {background-color: $color3;}
+		ol {
+			.active {background-color: $color1;box-shadow: 0.25vh 0.25vh black;}
+			transform: translateY(4vh);
+			li{
+				border:0.2vh solid $color3;
+				background-color:$color2;
+				width:20px;height:20px;
+				transform: skew(-25deg);
+			}
+		}
 	}
-
 
 	.producto_data {
 		padding-top:5vh;
-		.producto_data_name{
-			text-shadow: 1vh 0 $color2;
+
+		.producto_data--name{
+			text-shadow:1vh 0 $color2;
 			margin:0;
 			color:$color3;
 			font:{
-				family:$subtitulo;
+				family:$titulo;
 				size:10vh;
 				weight:bold;}
 		}
-		.producto_data_price {
-			filter: grayscale(40%);
-			color:$color1;
+		.producto_data--price {
+			filter: grayscale(25%);
+			color:$amarillo;
 			font:{weight: bold;size: 6.5vh;family:$subtitulo;}
 			text-shadow:$color3 0.15vh 0.1vh,$color3 -0.1vh 0.1vh,$color3 -0.1vh -0.1vh,$color3 0.15vh -0.1vh;
 		}
 
 		ul.nav-tabs {
 			border-bottom: 0.2vh solid $color1;
-			a.nav-link {color:$color3;}
+			a.nav-link {color:$color3;font-family:$subtitulo;letter-spacing: 0.1vh;}
 			a.nav-link.active {font-weight: bold;}
 		}
 
-		.producto_data_text {color:$color3;}
+		.producto_data--text {color:$color3;font-family:$general;}
 
 
 		form {
 			margin-top: 8vh;
 			color:$color3;
 			h6 {
-				margin-bottom: 1.5vh;
-				font:{size:3vh;weight:bold;}}
+				margin-bottom: 0.5vh;
+				font:{
+					size:3vh;
+					weight:bold;
+					family:$subtitulo;
+				}
+			}
+
 			label.active.btn-secondary {color:$color1;filter:blur(0)}
-			label.btn {filter:blur(0.08vh);}
+			label.btn {filter:blur(0.07vh);}
 
 			.modal-header {
-				border-color: $color2;
+				border:{color: $color2;width:0.5vh;}
 				h5 {
 					margin-left: 3vh;
 					font-family: $subtitulo;
@@ -78,7 +92,6 @@ section.producto {
 				font-size:3vh;
 			}	
 		}
-			
 	}
 }
 

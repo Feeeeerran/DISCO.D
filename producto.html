@@ -17,7 +17,7 @@
 	
     <nav class="navbar navbar--navColor justify-content-center sticky-top">
 
-        <span onclick="myFunction(this)" data-target="#navbars" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span onclick="iconFunction(this)" data-target="#navbars" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond navbar_navIcon" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" />
             <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
@@ -25,33 +25,30 @@
             </svg>
         </span>
 
-        <script>
-            function myFunction(x) {x.classList.toggle("change");}
-        </script>
+        <script>function iconFunction(x) {x.classList.toggle("change");}</script>
 
         <div class="collapse navbar-collapse" id="navbars">
             <ul class="navbar-nav navbar-expand-md justify-content-around">
-
-                <li class="nav-item active">
-                    <a class="nav-link nav-item--style" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="section.html">TIENDA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="section.html"><span class="nav-item--style">PRODUCTO 1</span></a>
+                    <a class="nav-link" href="section.html">PRODUCTO 1</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="section.html"><span class="nav-item--style">PRODUCTO 2</span></a>
+                    <a class="nav-link" href="section.html">PRODUCTO 2</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="section.html"><span class="nav-item--style">PRODUCTO 3</span></a>
+                    <a class="nav-link" href="section.html">PRODUCTO 3</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="section.html"><span class="nav-item--style">PRODUCTO 4</span></a>
+                    <a class="nav-link" href="section.html">PRODUCTO 4</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="section.html"><span class="nav-item--style">PRODUCTO 5</span></a>
+                    <a class="nav-link" href="section.html">PRODUCTO 5</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contacto.html"><span class="nav-item--style">CONTACTO</span></a>
+                    <a class="nav-link" href="contacto.html">CONTACTO</a>
                 </li>
             </ul>
         </div>
@@ -70,28 +67,28 @@
                     </ol>
 
 
-                    <div id="carouselExampleControls" class="carousel slide producto_foto" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-interval="10000000000000000">
-                                <img src="https://image.freepik.com/free-vector/bills-coins-isometric-design_23-2147604444.jpg" class="d-block w-100" alt="product">
+                    <div id="carouselProducto" class="carousel slide producto_foto" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselProducto" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselProducto" data-slide-to="1"></li>
+                            <li data-target="#carouselProducto" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner d-block">
+                            <div class="carousel-item active">
+                                <img src="https://image.freepik.com/free-vector/bills-coins-isometric-design_23-2147604444.jpg" class="d-block w-100" alt="product1">
                             </div>
-                            <div class="carousel-item" data-interval="10000000000000000">
-                                <img src="https://image.freepik.com/free-vector/bills-coins-isometric-design_23-2147604444.jpg" class="d-block w-100" alt="product">
+                            <div class="carousel-item">
+                                <img src="https://image.freepik.com/free-vector/bills-coins-isometric-design_23-2147604444.jpg" class="d-block w-100" alt="product2">
                             </div>
-                            <div class="carousel-item" data-interval="10000000000000000">
-                                <img src="https://image.freepik.com/free-vector/bills-coins-isometric-design_23-2147604444.jpg" class="d-block w-100" alt="product">
+                            <div class="carousel-item">
+                                <img src="https://image.freepik.com/free-vector/bills-coins-isometric-design_23-2147604444.jpg" class="d-block w-100" alt="product3">
                             </div>
                         </div>
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="producto_foto--slider active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="producto_foto--slider "></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2" class="producto_foto--slider "></li>
-                        </ol>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#carouselProducto" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#carouselProducto" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -99,22 +96,22 @@
                 </div>
 
 
-                <div class="d-flex align-items-center col-lg-6 col-xl-5 pl-lg-5 mb-5 order-2 order-lg-2 producto_data">
-                    <div>
-                        <h1 class="producto_data_name">PRODUCTO</h1>
-                        <div class="d-flex flex-column flex-sm-row font-weight-light align-items-sm-center mb-4 producto_data_price">
+                <div class="d-flex align-items-center col-lg-6 col-xl-5 pl-lg-2 mb-5 order-2 order-lg-2 producto_data">
+                    <div class="container-fluid">
+                        <h1 class="producto_data--name">PRODUCTO</h1>
+                        <div class="d-flex flex-column flex-sm-row align-items-sm-center mb-4 producto_data--price">
                             $$$
                         </div>
 
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Informacion</a>
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Información</a>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Adicional</a>
                             </li>
                         </ul>
-                        <div class="tab-content my-3 producto_data_text" id="myTabContent">
+                        <div class="tab-content my-3 producto_data--text" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Eaque, dolorem magni delectus rem, beatae temporibus dicta tempora porro, commodi officia totam sunt hic labore quaerat itaque, vel dolores! Quo, incidunt?</div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam eligendi nihil quam atque tempora eveniet, qui quasi ab aliquam? Similique eius, ad modi perferendis dolore officiis voluptas eos aliquam dolorem?</div>
                         </div>
@@ -122,7 +119,7 @@
 
                         <form action="#">
                             <div class="row">
-                                <div class="col-sm-6 col-lg-6 detail-option mb-3">
+                                <div class="col-sm-6 col-lg-6 detail-option mb-4">
                                     <h6 class="detail-option-heading">Talle/tamaño</h6>
                                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-secondary active">
@@ -139,7 +136,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 col-lg-6 detail-option mb-3">
+                                <div class="col-sm-6 col-lg-6 detail-option mb-4">
                                     <h6 class="detail-option-heading">Estilo/Tipo</h6>
                                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-secondary active">
@@ -150,7 +147,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-12 detail-option mb-3">
+                                <div class="col-12 detail-option mb-4">
                                     <h6 class="detail-option-heading">Colores</h6>
                                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-secondary active">
@@ -214,26 +211,17 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
     <footer class="page-footer font-small unique-color-dark">
         <div class="container-fluid footer_barraRedes">
-            <div class="row py-1">
+            <div class="row py-2">
                 <div class="col-md-6 col-lg-7 text-center text-md-right">
-                    <a href="#" class="text-decoration-none">
+                    <a href="http://www.facebook.com" class="text-decoration-none">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="52" height="52" viewBox="0 0 24 24" stroke-width="1" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" />
                             <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
                         </svg>
                     </a>
-                    <a href="#" class="text-decoration-none ml-2 mr-3">
+                    <a href="http://www.instagram.com" class="text-decoration-none ml-2 mr-3">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="52" height="52" viewBox="0 0 24 24" stroke-width="1" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" />
                             <rect x="4" y="4" width="16" height="16" rx="4" />
@@ -241,7 +229,7 @@
                             <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
                         </svg>
                     </a>
-                    <a href="#" class="text-decoration-none">
+                    <a href="http://www.twitter.com" class="text-decoration-none">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="52" height="52" viewBox="0 0 24 24" stroke-width="1" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" />
                             <path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497 -3.753C20.18 7.773 21.692 5.25 22 4.009z" />
@@ -322,19 +310,6 @@
     </footer>
 
 </body>
-<script>
-    $(window).scroll(function() {
-        $('.media_img,.media_body,.media_img--reverse,.media_body--reverse').each(function(){
-        var imagePos = $(this).offset().top;
-
-        var topOfWindow = $(window).scrollTop();
-            if (imagePos < topOfWindow+400) {
-                $(this).addClass("fadeIn");
-            }
-        });
-    });
-</script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
