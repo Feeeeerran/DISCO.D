@@ -27,7 +27,7 @@ div.album {
 
 	div.carousel {
 		margin-bottom: 14vh;
-		border-bottom:0.5vh solid $color2;
+		border-bottom:0.8vh solid $color2;
 		ol {
 			transform: translateY(4vh);
 			.active {background-color:$color1;box-shadow: 0.25vh 0.25vh black;}
@@ -38,8 +38,6 @@ div.album {
 				transform: skew(-25deg);
 			}
 		}
-
-		.img {height: 20%;}
 	}
 
 	.album_destacados {
@@ -208,8 +206,8 @@ div.albumSection {
 	animation-name: fadeIn;
 	-webkit-animation-name: fadeIn;
 	animation-duration: 1.2s;
-	animation-timing-function: ease-out;
 	-webkit-animation-duration: 1.2s;
+	animation-timing-function: ease-out;
 	-webkit-animation-timing-function: ease-out;
 	visibility: visible !important;	
 }

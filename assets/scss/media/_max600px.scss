@@ -5,7 +5,7 @@
             margin: 0;
             margin-left: -0.1rem;
             margin-bottom: -1rem;
-            font-size: 6.8rem;
+            font-size: 6rem;
         }
 
         @mixin LOGOinteract--query {
@@ -34,15 +34,14 @@
 
     nav {
         justify-content: center !important;
-        transform: translate(0, -1rem);
+        transform: translate(0, -0.6rem);
 
         span {transform: scale(0.7) translate(0, 1rem);}
 
-        ul {
-            li {
-                margin: 0 auto;
-                span {font-size: 1rem !important;}
-            }
+        .nav-link:hover{color:white;letter-spacing:0;transform: scale(1);}
+        .nav-link {
+            margin:auto;
+            font-size: 1rem;
         }
     }
 
@@ -61,17 +60,16 @@
             }
         }
 
-        .album_producto--style:hover {transform: scale(1.03);}
-        .album_producto--style {
-            transition: background-color 0.3s, transform 0.8s;
-            .album_producto_text--name {font-size: 1.8rem;}
-            .album_producto_text--price {font-size: 1.5rem;}
-        }
-
         div.carousel {
             margin-bottom:1.8rem;
             ol>li {margin:0 0.2rem 0 0.2rem;width: 0.8rem;height: 0.8rem;}
-            img {height: 17.5rem;}
+            img {height: 9rem;}
+        }
+
+        .album_destacados {
+            margin:{top:3.5rem;bottom: 1.5rem;}
+            font-size:1rem;
+            letter-spacing: 1.4rem
         }
 
         div.container.col-12 {padding:{right:0.5rem;left:0.5rem;}}
@@ -120,8 +118,21 @@
         }
     }
 
-    div.albumSect--style {
-        .albumSect_producto {
+    div.albumSection {
+        padding:{left:0.5rem;right:0.5rem;}
+        .albumSection_producto:hover {
+            .albumSection_producto_body {
+                border-color:$color3;
+                .albumSection_producto--name{
+                    color:$color3;
+                    background-position: 0 0;
+                    padding-left: 0;
+                }
+            }
+        }
+
+        .albumSection_producto {
+            margin-bottom: 1.5rem;
         	box-shadow:0.2rem 0.4rem $color2,-0.2rem -0.4rem $color1;
             transition: box-shadow 0.4s;
 
@@ -130,20 +141,20 @@
                 font-size: 1.4rem;
             }
 
-            .albumSect_producto--body {
+            .albumSection_producto_body {
             	padding:0.6rem !important;
                 border-top: $color1 0.3rem groove;
 
-                .albumSect_producto_name {
+                .albumSection_producto--name {
                     @include product;
                 }
 
-                .albumSect_producto_text {
+                .albumSection_producto--text {
                 	margin-bottom: 0.2rem !important;
                     font-size: 1rem;
                 }
 
-                .albumSect_producto_price {
+                .albumSection_producto--price {
                     @include product;
                     font-size: 1.1rem;
                 }

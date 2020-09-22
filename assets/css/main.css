@@ -153,7 +153,7 @@ div.album {
       font-family: "Roboto", sans-serif; }
   div.album div.carousel {
     margin-bottom: 14vh;
-    border-bottom: 0.5vh solid #A8D8EA; }
+    border-bottom: 0.8vh solid #A8D8EA; }
     div.album div.carousel ol {
       transform: translateY(4vh); }
       div.album div.carousel ol .active {
@@ -165,8 +165,6 @@ div.album {
         width: 20px;
         height: 20px;
         transform: skew(-25deg); }
-    div.album div.carousel .img {
-      height: 20%; }
   div.album .album_destacados {
     margin-top: 2vh;
     margin-bottom: 8vh;
@@ -349,8 +347,8 @@ div.albumSection {
   animation-name: fadeIn;
   -webkit-animation-name: fadeIn;
   animation-duration: 1.2s;
-  animation-timing-function: ease-out;
   -webkit-animation-duration: 1.2s;
+  animation-timing-function: ease-out;
   -webkit-animation-timing-function: ease-out;
   visibility: visible !important; }
 
@@ -494,12 +492,12 @@ section.producto {
         border-color: #A8D8EA;
         font-size: 3vh; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   header h1 {
     margin: 0;
     margin-left: -0.1rem;
     margin-bottom: -1rem;
-    font-size: 6.8rem; }
+    font-size: 9rem; }
     header h1 span:hover {
       font-size: 6.8rem; }
     header h1 span {
@@ -508,7 +506,7 @@ section.producto {
     margin: 0;
     margin-left: -0.1rem;
     margin-bottom: -1rem;
-    font-size: 6.8rem; }
+    font-size: 9rem; }
     header h1.titulo_section a span:hover {
       font-size: 6.8rem; }
     header h1.titulo_section a span {
@@ -517,7 +515,7 @@ section.producto {
     margin: 0;
     margin-left: -0.1rem;
     margin-bottom: -1rem;
-    font-size: 6.8rem;
+    font-size: 9rem;
     font-size: 6rem;
     padding-top: 0.5rem; }
     header h1.contacto_logo--style span:hover {
@@ -525,45 +523,51 @@ section.producto {
     header h1.contacto_logo--style span {
       margin: 0 -0.2rem 0 -0.2rem; }
   nav {
-    justify-content: center !important;
-    transform: translate(0, -1rem); }
+    transform: translate(0, -0.5rem); }
     nav span {
       transform: scale(0.7) translate(0, 1rem); }
-    nav ul li {
-      margin: 0 auto; }
-      nav ul li span {
-        font-size: 1rem !important; }
+    nav ul {
+      text-align: center; }
+    nav .nav-link:hover {
+      color: white;
+      letter-spacing: 0;
+      transform: scale(1); }
+    nav .nav-link {
+      margin: auto;
+      font-size: 1rem; }
   div.album {
     padding-top: 0.8rem !important;
     padding-bottom: 4rem !important; }
-    div.album div.container .container_novedades:hover {
-      box-shadow: -0.4rem -0.4rem #92FB6D, 0.4rem 0.4rem #A8D8EA; }
-    div.album div.container .container_novedades {
-      box-shadow: -0.4rem -0.4rem #A8D8EA, 0.4rem 0.4rem #92FB6D;
-      transition: box-shadow 1.2s; }
-      div.album div.container .container_novedades .container_novedades--title {
-        font-size: 1.6rem; }
-      div.album div.container .container_novedades .container_novedades--body {
-        padding-bottom: 0.1rem;
-        padding-top: 0.9rem; }
-        div.album div.container .container_novedades .container_novedades--body blockquote {
-          font-size: 1rem; }
-    div.album .album_producto--style:hover {
-      transform: scale(1.03); }
-    div.album .album_producto--style {
-      transition: background-color 0.3s, transform 0.8s; }
-      div.album .album_producto--style .album_producto_text--name {
-        font-size: 1.8rem; }
-      div.album .album_producto--style .album_producto_text--price {
-        font-size: 1.5rem; }
+    div.album div.container {
+      max-width: 700px; }
+      div.album div.container .container_novedades:hover {
+        box-shadow: -0.4rem -0.4rem #92FB6D, 0.4rem 0.4rem #A8D8EA; }
+      div.album div.container .container_novedades {
+        box-shadow: -0.4rem -0.4rem #A8D8EA, 0.4rem 0.4rem #92FB6D;
+        transition: box-shadow 1.2s; }
+        div.album div.container .container_novedades .container_novedades--title {
+          font-size: 1.6rem; }
+        div.album div.container .container_novedades .container_novedades--body {
+          padding-bottom: 0.1rem;
+          padding-top: 0.9rem; }
+          div.album div.container .container_novedades .container_novedades--body blockquote {
+            font-size: 1rem; }
     div.album div.carousel {
+      border-width: 0.6rem;
       margin-bottom: 1.8rem; }
+      div.album div.carousel ol {
+        transform: translateY(2rem); }
       div.album div.carousel ol > li {
-        margin: 0 0.2rem 0 0.2rem;
-        width: 0.8rem;
-        height: 0.8rem; }
+        margin: 0 0.2rem 0 0.8rem;
+        width: 1.2rem;
+        height: 1.2rem; }
       div.album div.carousel img {
-        height: 17.5rem; }
+        height: 18rem; }
+    div.album .album_destacados {
+      margin-top: 3.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 3rem;
+      letter-spacing: 2rem; }
     div.album div.container.col-12 {
       padding-right: 0.5rem;
       padding-left: 0.5rem; }
@@ -634,22 +638,255 @@ section.producto {
         font-size: 1rem;
         font-weight: bold;
         margin-top: 1vh; }
-  div.albumSect--style .albumSect_producto {
-    box-shadow: 0.2rem 0.4rem #A8D8EA, -0.2rem -0.4rem #92FB6D;
-    transition: box-shadow 0.4s; }
-    div.albumSect--style .albumSect_producto .albumSect_producto--body {
-      padding: 0.6rem !important;
-      border-top: #92FB6D 0.3rem groove; }
-      div.albumSect--style .albumSect_producto .albumSect_producto--body .albumSect_producto_name {
-        margin-bottom: 0 !important;
-        font-size: 1.4rem; }
-      div.albumSect--style .albumSect_producto .albumSect_producto--body .albumSect_producto_text {
-        margin-bottom: 0.2rem !important;
-        font-size: 1rem; }
-      div.albumSect--style .albumSect_producto .albumSect_producto--body .albumSect_producto_price {
-        margin-bottom: 0 !important;
-        font-size: 1.4rem;
-        font-size: 1.1rem; }
+  div.albumSection {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
+    div.albumSection .albumSection_producto:hover .albumSection_producto_body {
+      border-color: #393e46; }
+      div.albumSection .albumSection_producto:hover .albumSection_producto_body .albumSection_producto--name {
+        color: #393e46;
+        background-position: 0 0;
+        padding-left: 0; }
+    div.albumSection .albumSection_producto {
+      margin-bottom: 1.5rem;
+      box-shadow: 0.2rem 0.4rem #A8D8EA, -0.2rem -0.4rem #92FB6D;
+      transition: box-shadow 0.4s; }
+      div.albumSection .albumSection_producto .albumSection_producto_body {
+        padding: 0.6rem !important;
+        border-top: #92FB6D 0.3rem groove; }
+        div.albumSection .albumSection_producto .albumSection_producto_body .albumSection_producto--name {
+          margin-bottom: 0 !important;
+          font-size: 1.4rem; }
+        div.albumSection .albumSection_producto .albumSection_producto_body .albumSection_producto--text {
+          margin-bottom: 0.2rem !important;
+          font-size: 1rem; }
+        div.albumSection .albumSection_producto .albumSection_producto_body .albumSection_producto--price {
+          margin-bottom: 0 !important;
+          font-size: 1.4rem;
+          font-size: 1.1rem; }
+  section.producto {
+    padding-top: 0;
+    padding-bottom: 0; }
+    section.producto div.order-1 {
+      margin-left: 0 !important;
+      padding-top: 0 !important; }
+    section.producto .producto_nav {
+      padding-bottom: 0.5vh; }
+      section.producto .producto_nav li.breadcrumb-item {
+        padding-left: 0.2rem !important; }
+        section.producto .producto_nav li.breadcrumb-item a.producto_nav--logo {
+          padding-right: 0.2rem;
+          font-size: 1.9rem; }
+      section.producto .producto_nav li.item1 {
+        font-size: 0.9rem !important; }
+      section.producto .producto_nav li.item2 {
+        font-size: 0.8rem !important; }
+    section.producto .carousel.producto_foto ol {
+      transform: translateY(1.8rem); }
+      section.producto .carousel.producto_foto ol li {
+        border: 0.2vh solid #393e46;
+        background-color: #A8D8EA;
+        width: 20px;
+        height: 20px;
+        transform: skew(-25deg); }
+    section.producto .producto_data {
+      padding-top: 0.1rem; }
+      section.producto .producto_data .producto_data--name {
+        text-shadow: 0.3rem 0 #A8D8EA;
+        font-size: 2.3rem; }
+      section.producto .producto_data .producto_data--price {
+        margin-top: -0.8rem !important;
+        margin-bottom: 0.8rem !important;
+        font-size: 2.2rem; }
+      section.producto .producto_data form {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem; }
+        section.producto .producto_data form h6 {
+          margin-bottom: 0.1rem;
+          font-size: 1.2rem; }
+        section.producto .producto_data form .form-group {
+          margin-top: 0rem; }
+        section.producto .producto_data form ul.list-inline {
+          margin-top: 1rem;
+          text-align: center !important; }
+  .contacto h2 {
+    font-size: 3rem !important; }
+  .contacto iframe {
+    border: #92FB6D groove 0.5vh;
+    height: 165%; }
+  .contacto .iframe {
+    margin-bottom: 8rem; }
+  footer .footer_contenido {
+    font-size: 1rem; }
+    footer .footer_contenido h6 {
+      font-size: 1.8rem; } }
+
+@media only screen and (max-width: 600px) {
+  header h1 {
+    margin: 0;
+    margin-left: -0.1rem;
+    margin-bottom: -1rem;
+    font-size: 6rem; }
+    header h1 span:hover {
+      font-size: 6.8rem; }
+    header h1 span {
+      margin: 0 -0.2rem 0 -0.2rem; }
+  header h1.titulo_section {
+    margin: 0;
+    margin-left: -0.1rem;
+    margin-bottom: -1rem;
+    font-size: 6rem; }
+    header h1.titulo_section a span:hover {
+      font-size: 6.8rem; }
+    header h1.titulo_section a span {
+      margin: 0 -0.2rem 0 -0.2rem; }
+  header h1.contacto_logo--style {
+    margin: 0;
+    margin-left: -0.1rem;
+    margin-bottom: -1rem;
+    font-size: 6rem;
+    font-size: 6rem;
+    padding-top: 0.5rem; }
+    header h1.contacto_logo--style span:hover {
+      font-size: 6.8rem; }
+    header h1.contacto_logo--style span {
+      margin: 0 -0.2rem 0 -0.2rem; }
+  nav {
+    justify-content: center !important;
+    transform: translate(0, -0.6rem); }
+    nav span {
+      transform: scale(0.7) translate(0, 1rem); }
+    nav .nav-link:hover {
+      color: white;
+      letter-spacing: 0;
+      transform: scale(1); }
+    nav .nav-link {
+      margin: auto;
+      font-size: 1rem; }
+  div.album {
+    padding-top: 0.8rem !important;
+    padding-bottom: 4rem !important; }
+    div.album div.container .container_novedades:hover {
+      box-shadow: -0.4rem -0.4rem #92FB6D, 0.4rem 0.4rem #A8D8EA; }
+    div.album div.container .container_novedades {
+      box-shadow: -0.4rem -0.4rem #A8D8EA, 0.4rem 0.4rem #92FB6D;
+      transition: box-shadow 1.2s; }
+      div.album div.container .container_novedades .container_novedades--title {
+        font-size: 1.6rem; }
+      div.album div.container .container_novedades .container_novedades--body {
+        padding-bottom: 0.1rem;
+        padding-top: 0.9rem; }
+        div.album div.container .container_novedades .container_novedades--body blockquote {
+          font-size: 1rem; }
+    div.album div.carousel {
+      margin-bottom: 1.8rem; }
+      div.album div.carousel ol > li {
+        margin: 0 0.2rem 0 0.2rem;
+        width: 0.8rem;
+        height: 0.8rem; }
+      div.album div.carousel img {
+        height: 9rem; }
+    div.album .album_destacados {
+      margin-top: 3.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      letter-spacing: 1.4rem; }
+    div.album div.container.col-12 {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem; }
+    div.album div.media.container_media {
+      margin: 0;
+      margin-bottom: 0; }
+      div.album div.media.container_media .media_img:hover, div.album div.media.container_media .media_img--reverse:hover {
+        box-shadow: 0 0;
+        border-color: #92FB6D; }
+        div.album div.media.container_media .media_img:hover div, div.album div.media.container_media .media_img--reverse:hover div {
+          opacity: 0; }
+      div.album div.media.container_media .media_img {
+        box-shadow: 0 0;
+        border-width: 0.18rem;
+        border-radius: 1%;
+        border-left-color: #A8D8EA;
+        border-left-width: 0.23rem;
+        border-top-color: #A8D8EA;
+        border-top-width: 0.23rem; }
+      div.album div.media.container_media .media_img--reverse {
+        box-shadow: 0 0;
+        border-width: 0.18rem;
+        border-radius: 1%;
+        border-left-color: #A8D8EA;
+        border-left-width: 0.23rem;
+        border-top-color: #A8D8EA;
+        border-top-width: 0.23rem; }
+      div.album div.media.container_media .media_body {
+        margin-top: 0.3rem;
+        margin-bottom: 4.4rem;
+        border-top: 0.45rem solid #92FB6D;
+        text-align: left !important;
+        padding: 1rem;
+        position: relative;
+        background-image: linear-gradient(180deg, rgba(57, 62, 70, 0.95), rgba(57, 62, 70, 0));
+        left: 0%; }
+        div.album div.media.container_media .media_body p {
+          border-left: 0.25rem solid #CCE639;
+          padding-left: 1vh;
+          border-right: none !important; }
+      div.album div.media.container_media .media_body--reverse {
+        margin-top: 0.3rem;
+        margin-bottom: 4.4rem;
+        border-top: 0.45rem solid #92FB6D;
+        text-align: left !important;
+        padding: 1rem;
+        position: relative;
+        background-image: linear-gradient(180deg, rgba(57, 62, 70, 0.95), rgba(57, 62, 70, 0));
+        right: 0%; }
+        div.album div.media.container_media .media_body--reverse p {
+          border-left: 0.25rem solid #CCE639;
+          padding-left: 1vh;
+          border-right: none !important; }
+      div.album div.media.container_media h5:hover {
+        text-shadow: 0 0; }
+      div.album div.media.container_media h5 {
+        margin: 0;
+        letter-spacing: 0.2rem;
+        font-size: 2.2rem;
+        text-shadow: 0 0 1rem #393e46; }
+        div.album div.media.container_media h5 svg {
+          display: none; }
+      div.album div.media.container_media span {
+        font-size: 1.6rem;
+        text-shadow: 0 0; }
+      div.album div.media.container_media p {
+        color: #393e46;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 1vh; }
+  div.albumSection {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
+    div.albumSection .albumSection_producto:hover .albumSection_producto_body {
+      border-color: #393e46; }
+      div.albumSection .albumSection_producto:hover .albumSection_producto_body .albumSection_producto--name {
+        color: #393e46;
+        background-position: 0 0;
+        padding-left: 0; }
+    div.albumSection .albumSection_producto {
+      margin-bottom: 1.5rem;
+      box-shadow: 0.2rem 0.4rem #A8D8EA, -0.2rem -0.4rem #92FB6D;
+      transition: box-shadow 0.4s; }
+      div.albumSection .albumSection_producto .albumSection_producto_body {
+        padding: 0.6rem !important;
+        border-top: #92FB6D 0.3rem groove; }
+        div.albumSection .albumSection_producto .albumSection_producto_body .albumSection_producto--name {
+          margin-bottom: 0 !important;
+          font-size: 1.4rem; }
+        div.albumSection .albumSection_producto .albumSection_producto_body .albumSection_producto--text {
+          margin-bottom: 0.2rem !important;
+          font-size: 1rem; }
+        div.albumSection .albumSection_producto .albumSection_producto_body .albumSection_producto--price {
+          margin-bottom: 0 !important;
+          font-size: 1.4rem;
+          font-size: 1.1rem; }
   section.producto {
     padding-top: 0;
     padding-bottom: 0; }
