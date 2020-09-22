@@ -37,18 +37,21 @@ section.producto {
 		padding-top:5vh;
 
 		.producto_data--name{
-			text-shadow:1vh 0 $color2;
+			text-shadow:0.8vh 0 $color2;
 			margin:0;
 			color:$color3;
 			font:{
 				family:$titulo;
-				size:10vh;
+				size:7vh;
 				weight:bold;}
 		}
 		.producto_data--price {
 			filter: grayscale(25%);
 			color:$amarillo;
-			font:{weight: bold;size: 6.5vh;family:$subtitulo;}
+			font:{
+				family:$subtitulo;
+				size: 6.8vh;
+				weight: bold;}
 			text-shadow:$color3 0.15vh 0.1vh,$color3 -0.1vh 0.1vh,$color3 -0.1vh -0.1vh,$color3 0.15vh -0.1vh;
 		}
 

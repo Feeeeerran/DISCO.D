@@ -16,7 +16,7 @@
 </head>
 <body>
 
-	<header class="container-fluid">
+	<header id="homeLink" class="container-fluid">
 		<section class="row">
 			<h1 class="d-flex justify-content-center">
 				<span class="logo_letter1">D</span>
@@ -44,22 +44,22 @@
 	    <div class="collapse navbar-collapse" id="navbars">
 	        <ul class="navbar-nav navbar-expand-md justify-content-around">
 	        	<li class="nav-item">
-	                <a class="nav-link" href="section.html">TIENDA</a>
+	                <a class="nav-link" href="#homeLink">HOME</a>
 	            </li>
 	            <li class="nav-item">
-	                <a class="nav-link" href="section.html">PRODUCTO 1</a>
+	                <a class="nav-link" href="motherboards.html">MOTHER</a>
 	            </li>
 	            <li class="nav-item">
-	                <a class="nav-link" href="section.html">PRODUCTO 2</a>
+	                <a class="nav-link" href="memoriasram.html">RAM</a>
 	            </li>
 	            <li class="nav-item">
-	                <a class="nav-link" href="section.html">PRODUCTO 3</a>
+	                <a class="nav-link" href="graficas.html">GRÁFICA</a>
 	            </li>
 	            <li class="nav-item">
-	                <a class="nav-link" href="section.html">PRODUCTO 4</a>
+	                <a class="nav-link" href="procesadores.html">PROCESADOR</a>
 	            </li>
 	            <li class="nav-item">
-	                <a class="nav-link" href="section.html">PRODUCTO 5</a>
+	                <a class="nav-link" href="perifericos.html">PERIFÉRICOS</a>
 	            </li>
 	            <li class="nav-item">
 	                <a class="nav-link" href="contacto.html">CONTACTO</a>
@@ -96,13 +96,13 @@
 		    </ol>
 		    <div class="carousel-inner d-block">
 		        <div class="carousel-item active" data-interval="10000">
-		            <img src="img/banner1.jpg" class="d-block w-100" alt="CarouselImg">
+		            <img src="img/index/banner1.jpg" class="d-block w-100" alt="CarouselImg">
 		        </div>
 		        <div class="carousel-item" data-interval="10000">
-		            <img src="img/banner2.jpg" class="d-block w-100" alt="CarouselImg">
+		            <img src="img/index/banner2.jpg" class="d-block w-100" alt="CarouselImg">
 		        </div>
 		        <div class="carousel-item" data-interval="10000">
-		            <img src="img/banner3.jpg" class="d-block w-100" alt="CarouselImg">
+		            <img src="img/index/banner3.jpg" class="d-block w-100" alt="CarouselImg">
 		        </div>
 		    </div>
 		    <a class="carousel-control-prev" href="#carouselOf" role="button" data-slide="prev">
@@ -115,13 +115,17 @@
 		    </a>
 		</div>
 
+		<div class="container-fluid text-center">
+			<div class="album_destacados">DESTACADOS</div>
+		</div>
+
 		<div class="container-fluid">
 			<div class="row">
             	<div class="container col-12 col-xl-8">
 	                <div class="row row-cols-1 media container_media">
 	                    <div class="media_img">
-	                    	<a href="producto.html">
-	                        	<img class="img-fluid" src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" alt="Producto en oferta">
+	                    	<a href="producto/producto.html">
+	                        	<img class="img-fluid" src="img/index/index1.png" alt="Producto en oferta">
 	                        	<div>VER MAS</div>
 	                        </a>
 	                    </div>
@@ -134,12 +138,12 @@
 								            <path stroke="none" d="M0 0h24v24H0z" />
 								            <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
 								            <path d="M10 12l-2 -2.2l.6 -1" />
-								            </svg>PRODUCTO
+								            </svg>PC ARMADA
 						        		</h5>
 						        	</a>
-			                        <span>$$$</span>
-			                        <p>$$$ en 3 cuotas sin interes</p>
-			                        <p>Lorem ipsum dolor amet consectetur adip sicing elit sed eiusm tempor incididunt ut labore dolore.</p>
+			                        <span>$ 36.000</span>
+			                        <p>$12.000 en 3 cuotas sin interés</p>
+			                        <p>AMD APU A10 9700 - 8GB DDR4 - 240GB SSD</p>
 	                    		</div>
 	                    	</div>
 	                    </div>
@@ -150,8 +154,8 @@
             	<div class="container col-xl-8 col-12">
 	                <div class="row row-cols-1 media container_media flex-row-reverse">
 	                    <div class="media_img--reverse">
-	                    	<a href="producto.html">
-	                        	<img class="img-fluid" src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" alt="Generic placeholder image">
+	                    	<a href="producto/producto.html">
+	                        	<img class="img-fluid" src="img/index/index2.jpg" alt="Generic placeholder image">
 	                        	<div>VER MAS</div>
 	                    	</a>
 	                    </div>
@@ -160,7 +164,7 @@
 		                        <div class="col-sm-12 col-lg-9">
 			                        <a href="#" class="text-decoration-none">
 			                        	<h5>
-			                        		PRODUCTO
+			                        		MOTHERBOARD
 			                        		<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond" width="50" height="50" viewBox="0 2 26 26" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round" >
 								            <path stroke="none" d="M0 0h24v24H0z" />
 								            <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
@@ -168,9 +172,9 @@
 								            </svg>
 						        		</h5>
 							        </a>
-			                        <span>$$$</span>
-			                        <p>$$$ en 3 cuotas sin interes</p>
-			                        <p>Lorem ipsum dolor amet consectetur adip sicing elit sed eiusm tempor incididunt ut labore dolore.</p>
+			                        <span>$ 21.000</span>
+			                        <p>$7.000 en 3 cuotas sin interes</p>
+			                        <p>Motherboard ASUS B450-F ROG STRIX</p>
 	                    		</div>
                 			</div>
 	                    </div>
@@ -181,8 +185,8 @@
             	<div class="container col-12 col-xl-8">
 	                <div class="row row-cols-1 media container_media">
 	                    <div class="media_img">
-	                    	<a href="producto.html">
-	                        	<img class="img-fluid" src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" alt="Producto en oferta">
+	                    	<a href="producto/producto.html">
+	                        	<img class="img-fluid" src="img/index/index3.jpg" alt="Producto en oferta">
 	                        	<div>VER MAS</div>
 	                        </a>
 	                    </div>
@@ -195,12 +199,12 @@
 								            <path stroke="none" d="M0 0h24v24H0z" />
 								            <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
 								            <path d="M10 12l-2 -2.2l.6 -1" />
-								            </svg>PRODUCTO
+								            </svg>TECLADO
 						        		</h5>
 						        	</a>
-			                        <span>$$$</span>
-			                        <p>$$$ en 3 cuotas sin interes</p>
-			                        <p>Lorem ipsum dolor amet consectetur adip sicing elit sed eiusm tempor incididunt ut labore dolore.</p>
+			                        <span>$ 9.000</span>
+			                        <p>$3.000 en 3 cuotas sin interes</p>
+			                        <p>LOGITECH G213 PRODIGY GAMING</p>
 	                    		</div>
 	                    	</div>
 	                    </div>
@@ -211,8 +215,8 @@
             	<div class="container col-xl-8 col-12">
 	                <div class="row row-cols-1 media container_media flex-row-reverse">
 	                    <div class="media_img--reverse">
-	                    	<a href="producto.html">
-	                        	<img class="img-fluid" src="https://image.freepik.com/free-vector/bleach-icons-set-outline-style_96318-6332.jpg" alt="Generic placeholder image">
+	                    	<a href="producto/producto.html">
+	                        	<img class="img-fluid" src="img/index/index4.png" alt="Generic placeholder image">
 	                        	<div>VER MAS</div>
 	                    	</a>
 	                    </div>
@@ -221,7 +225,7 @@
 		                        <div class="col-sm-12 col-lg-9">
 			                        <a href="#" class="text-decoration-none">
 			                        	<h5>
-			                        		PRODUCTO
+			                        		MEMORIA RAM
 			                        		<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond" width="50" height="50" viewBox="0 2 26 26" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round" >
 								            <path stroke="none" d="M0 0h24v24H0z" />
 								            <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
@@ -229,9 +233,9 @@
 								            </svg>
 						        		</h5>
 							        </a>
-			                        <span>$$$</span>
-			                        <p>$$$ en 3 cuotas sin interes</p>
-			                        <p>Lorem ipsum dolor amet consectetur adip sicing elit sed eiusm tempor incididunt ut labore dolore.</p>
+			                        <span>$ 15.000</span>
+			                        <p>$5.000 en 3 cuotas sin interes</p>
+			                        <p>16GB DDR4 3200 RGB CORSAIR VENG PRO 2X8</p>
 	                    		</div>
                 			</div>
 	                    </div>
@@ -271,29 +275,28 @@
 	    <div class="container-fluid">
 	        <div class="row footer_contenido d-flex justify-content-around">
 	            <div class="col-md-4 col-lg-5 col-xl-4 mb-4 text-left">
-	                <h6 class="text-uppercase font-weight-bold mb-4">TIENDA</h6>
-	                <p>
-	                    Sobre nosotros.
-	                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, numquam maiores quis! Iusto tenetur, expedita explicabo dolorem fugit ad, inventore voluptas at architecto minus corporis dignissimos nisi tempore doloribus laudantium.
-	                </p>
+	                <h6 class="text-uppercase font-weight-bold mb-4">Sobre nosotros</h6>
+	                <p>DISCO.D es una tienda con más 800 años dentro del rubro tecnológico.</p>
+	                <p>Nos dedicamos a la venta de Pc's, hardware y productos periféricos para consumidores particulares, empresas o revendedores.</p> 
+	            	<p>En DISCO.D encontrarás todo lo que compone la PC de tus sueños. Conocemos nuestros productos y por ello te asesoramos para que hagas una compra personalizada a la altura de tus necesidades.</p>
 	            </div>
 	            <div class="col-md-3 col-lg-3 col-xl-3 text-center mb-4">
 	                <h6 class="text-uppercase font-weight-bold mb-4">PRODUCTOS</h6>
 	                <div class="row">
-	                    <p class="col-sm-6">
-	                        <a class="text-decoration-none" href="#">Producto 1</a>
+	                    <p class="col-12">
+	                        <a class="text-decoration-none" href="motherboards.html">Motherboards</a>
 	                    </p>
-	                    <p class="col-sm-6">
-	                        <a class="text-decoration-none" href="#">Producto 2</a>
+	                    <p class="col-12">
+	                        <a class="text-decoration-none" href="memoriasram.html">Memorias RAM</a>
 	                    </p>
-	                    <p class="col-sm-6">
-	                        <a class="text-decoration-none" href="#!">Producto 3</a>
+	                    <p class="col-12">
+	                        <a class="text-decoration-none" href="graficas.html">Placas de video</a>
 	                    </p>
-	                    <p class="col-sm-6">
-	                        <a class="text-decoration-none" href="#">Producto 4</a>
+	                    <p class="col-12">
+	                        <a class="text-decoration-none" href="procesadores.html">Procesadores</a>
 	                    </p>
-	                    <p class="col-sm-6">
-	                        <a class="text-decoration-none" href="#">Producto 5</a>
+	                    <p class="col-12">
+	                        <a class="text-decoration-none" href="perifericos.html">Periféricos</a>
 	                    </p>
 	                </div>
 	            </div>
@@ -352,7 +355,7 @@
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+500) {
+			if (imagePos < topOfWindow+400) {
 				$(this).addClass("slideUp");
 			}
 		});

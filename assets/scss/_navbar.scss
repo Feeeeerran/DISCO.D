@@ -12,13 +12,13 @@ nav{
 
 
 
-	.nav-link:hover{color:white;letter-spacing: 0.2vh}
+	.nav-link:hover{color:white;letter-spacing: 0.5vh;transform: scale(1.2);}
 	.nav-link {
 		user-select: none;
 		text-decoration: none;
 		color: $color1;
 		font-size: 3vh;
-		transition:color 1s,letter-spacing 1s;
+		transition:color 1s,letter-spacing 1s,transform 1s;
 	}
 	
 }

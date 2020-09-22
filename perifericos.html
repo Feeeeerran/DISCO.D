@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>TIENDA - Producto X</title>
     <meta charset="UTF-8">
@@ -12,9 +13,11 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
+
 <body>
-	
+    
     <header class="container-fluid">
         <section class="row">
             <h1 class="d-flex justify-content-center titulo_section">
@@ -29,20 +32,18 @@
         </section>
     </header>
 
-
-
-    <nav class="navbar navbar--navColor justify-content-center sticky-top">
+    <nav class="navbar navbar--navColor sticky-top justify-content-center">
         <span onclick="iconFunction(this)" data-target="#navbars" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond navbar_navIcon_prod" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" />
-            <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
-            <path d="M10 12l-2 -2.2l.6 -1" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-diamond navbar_navIcon" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#92FB6D" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <path d="M6 5h12l3 5l-8.5 9.5a.7 .7 0 0 1 -1 0l-8.5 -9.5l3 -5" />
+                <path d="M10 12l-2 -2.2l.6 -1" />
             </svg>
         </span>
 
-        <script>function iconFunction(x) {x.classList.toggle("change");}</script>
+        <script>function iconFunction(x) { x.classList.toggle("change"); }</script>
 
-        <div class="collapse navbar-collapse hide" id="navbars">
+        <div class="collapse navbar-collapse" id="navbars">
             <ul class="navbar-nav navbar-expand-md justify-content-around">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">HOME</a>
@@ -69,70 +70,120 @@
         </div>
     </nav>
 
-    
-    <section class="contacto py-5">
+    <div class="album py-5 bg-light albumSection">
         <div class="container-fluid">
-            <div class="row justify-content-around">
-                <div class="col-lg-6 px-4 px-xl-5 pb-5 contacto_data">
-                    <h2 class="mb-4 text-left">CONTÁCTANOS</h2>
-                    <form class="needs-validation my-3" novalidate="">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="cf-name">Nombre:&nbsp;<span class="text-warning">*</span></label>
-                                    <input class="form-control" type="text" id="cf-name" placeholder="Sr. Ejemplo" required="">
-                                </div>
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="card cardProduct albumSection_producto">
+                        <a href="producto/elmouse.html" class="text-decoration-none">
+                            <img src="img/perifericos/periferico1.jpg" class="card-img" alt="producto">
+                            <div class="card-body albumSection_producto_body">
+                                <p class="card-text albumSection_producto--name">SILLA GAMER</p>
+                                <p class="card-text albumSection_producto--text">AEROCOOL AC40C AIR NEGRA/AZUL</p>
+                                <p class="card-text albumSection_producto--price">$ 46.400</p>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="cf-email">Email:&nbsp;<span class="text-warning">*</span></label>
-                                    <input class="form-control" type="email" id="cf-email" placeholder="ejemplo@email.com" required="">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="cf-phone">Nº de teléfono:&nbsp;<span class="text-warning">*</span></label>
-                                    <input class="form-control" type="text" id="cf-phone" placeholder="+54 (2604) 111 11" required="">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="cf-subject">Dirección:</label>
-                                    <input class="form-control" type="text" id="cf-subject" placeholder="Alaska">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="cf-message">Lo que nos quieras decir :) &nbsp;<span class="text-warning">*</span></label>
-                            <textarea class="form-control" id="cf-message" rows="6" placeholder="Esta pagina esta muy fachera" required=""></textarea>
-                        </div>
-                        <button class="mt-2 btn btn-outline-dark" type="button" data-toggle="modal" data-target="#enviar">
-                            Enviar
-                        </button>
-
-                        <div class="modal fade" id="enviar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Ajá !</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        Creias que ibas a enviar algo, bueno lo siento, todavia me falta backend
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-lg-6 iframe-full-height-wrap iframe">
-                    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Chuo%20City,%20T%C5%8Dky%C5%8D-to%20103-0026+(TIENDA)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <div class="col-md-4">
+                    <div class="card cardProduct albumSection_producto">
+                        <a href="producto/elmouse.html" class="text-decoration-none">
+                            <img src="img/perifericos/periferico2.jpg" class="card-img" alt="producto">
+                            <div class="card-body albumSection_producto_body">
+                                <p class="card-text albumSection_producto--name">MOUSE GAMER</p>
+                                <p class="card-text albumSection_producto--text">TRUST HERON RGB GXT 170</p>
+                                <p class="card-text albumSection_producto--price">$ 5.800</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card cardProduct albumSection_producto">
+                        <a href="producto/elmouse.html" class="text-decoration-none">
+                            <img src="img/perifericos/periferico3.jpg" class="card-img" alt="producto">
+                            <div class="card-body albumSection_producto_body">
+                                <p class="card-text albumSection_producto--name">TECLADO</p>
+                                <p class="card-text albumSection_producto--text">CORSAIR K55 RGB BACKKIT MULTICOLOR LED</p>
+                                <p class="card-text albumSection_producto--price">$ 10.050</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card cardProduct albumSection_producto">
+                        <a href="producto/elmouse.html" class="text-decoration-none">
+                            <img src="img/perifericos/periferico4.jpg" class="card-img" alt="producto">
+                            <div class="card-body albumSection_producto_body">
+                                <p class="card-text albumSection_producto--name">AURICULARES</p>
+                                <p class="card-text albumSection_producto--text">PS4 GOLD WIRELESS STEREO</p>
+                                <p class="card-text albumSection_producto--price">$ 10.500</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card cardProduct albumSection_producto">
+                        <a href="producto/elmouse.html" class="text-decoration-none">
+                            <img src="img/perifericos/periferico5.jpg" class="card-img" alt="producto">
+                            <div class="card-body albumSection_producto_body">
+                                <p class="card-text albumSection_producto--name">SILLA GAMER</p>
+                                <p class="card-text albumSection_producto--text">NOGA TYPHONE RGB REMOTO AMORT RECLINABLE</p>
+                                <p class="card-text albumSection_producto--price">$ 43.000</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card cardProduct albumSection_producto">
+                        <a href="producto/elmouse.html" class="text-decoration-none">
+                            <img src="img/perifericos/periferico6.jpg" class="card-img" alt="producto">
+                            <div class="card-body albumSection_producto_body">
+                                <p class="card-text albumSection_producto--name">MOUSE GAMER</p>
+                                <p class="card-text albumSection_producto--text">TRUST GAV JUNGLE GXT101C</p>
+                                <p class="card-text albumSection_producto--price">$ 3.450</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card cardProduct albumSection_producto">
+                        <a href="producto/elmouse.html" class="text-decoration-none">
+                            <img src="img/perifericos/periferico7.jpg" class="card-img" alt="producto">
+                            <div class="card-body albumSection_producto_body">
+                                <p class="card-text albumSection_producto--name">TECLADO</p>
+                                <p class="card-text albumSection_producto--text">TRUST THURA SEMI ES GXT860</p>
+                                <p class="card-text albumSection_producto--price">$ 10.200</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card cardProduct albumSection_producto">
+                        <a href="producto/elmouse.html" class="text-decoration-none">
+                            <img src="img/perifericos/periferico8.jpg" class="card-img" alt="producto">
+                            <div class="card-body albumSection_producto_body">
+                                <p class="card-text albumSection_producto--name">TECLADO Y MOUSE</p>
+                                <p class="card-text albumSection_producto--text">GAMER TRUST AZOR ES GXT 838</p>
+                                <p class="card-text albumSection_producto--price">$ 6.600</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card cardProduct albumSection_producto">
+                        <a href="producto/elmouse.html" class="text-decoration-none">
+                            <img src="img/perifericos/periferico9.jpg" class="card-img" alt="producto">
+                            <div class="card-body albumSection_producto_body">
+                                <p class="card-text albumSection_producto--name">MOUSE GAMER</p>
+                                <p class="card-text albumSection_producto--text">RAZER VIPER AMBIDEXTROUS WIRED</p>
+                                <p class="card-text albumSection_producto--price">$ 12.000</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <footer class="page-footer font-small unique-color-dark">
         <div class="container-fluid footer_barraRedes">
@@ -237,8 +288,20 @@
             </div>
         </div>
     </footer>
-
 </body>
+<script>
+    $(window).scroll(function() {
+        $('.albumSection_producto').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+700) {
+                $(this).addClass("fadeIn");
+            }
+        });
+    });
+</script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
