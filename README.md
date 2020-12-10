@@ -1,6 +1,5 @@
 # TIENDAgen
-Una Ecommerce genérico creado gracias a los conocimientos adquiridos en CODERHOUSE.
-
+Una Ecommerce genérico creado gracias a la divinidad.
 Agustin si estas leyendo esto, gracias por aprobarme las entregas.
 
 
